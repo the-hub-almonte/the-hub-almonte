@@ -1,0 +1,26 @@
+:root {
+  --color-primary: #555;
+  --color-primary-dark: #000;
+  --color-secondary: #aaa;
+  --font-primary: 'Open Sans', sans-serif;
+  --font-secondary: Roboto, sans-serif;
+  --transition-primary: .25s cubic-bezier(.75, 0, .25, 1);
+  --shadow-primary: 0 3px 6px rgba(0, 0, 0, .15);
+}
+
+html {
+  font-family: var(--font-primary);
+}
+
+h1, h2, h3, h4, h5, h6, .font-alt {
+  font-family: var(--font-secondary);
+}
+
+.hero {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("{{site.baseurl}}/images/hero-home.jpg") center / cover no-repeat;
+  color: #fff;
+}
