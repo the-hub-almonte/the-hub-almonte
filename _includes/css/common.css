@@ -1,7 +1,9 @@
 :root {
-  --color-primary: #555;
-  --color-primary-dark: #000;
-  --color-secondary: #aaa;
+  --color-primary: #8fcc3a;
+  --color-primary-dark: #577d21;
+  --color-secondary: #333;
+  --color-secondary-dark: #000;
+  --color-accent: #62c1b5;
   --font-primary: 'Open Sans', sans-serif;
   --font-secondary: Roboto, sans-serif;
   --transition-primary: .25s cubic-bezier(.75, 0, .25, 1);

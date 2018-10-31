@@ -1,0 +1,41 @@
+.footer {
+  background-color: var(--color-secondary);
+  text-align: center;
+  color: #fff;
+}
+
+.footer .logo {
+  max-width: 10rem;
+  width: 100%;
+}
+
+.footer a:not(.btn) {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 37.999em) {
+
+  .footer li,
+  .footer .unit:first-child {
+    margin-bottom: 1.3rem;
+  }
+
+  .footer .btn-wrap {
+    margin-bottom: 2.6rem;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .footer {
+    text-align: left;
+  }
+
+
+  .footer .unit:last-child {
+    text-align: right;
+  }
+
+}
