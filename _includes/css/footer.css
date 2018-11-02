@@ -14,6 +14,22 @@
   text-decoration: none;
 }
 
+.footer a:not(.btn):hover,
+.footer a:not(.btn):focus {
+  color: var(--color-primary);
+}
+
+.footer .btn-white:hover,
+.footer .btn-white:focus {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+address.icon-label {
+  display: inline-block;
+}
+
 @media only screen and (max-width: 37.999em) {
 
   .footer li,

@@ -1,14 +1,30 @@
 :root {
   --color-primary: #8fcc3a;
-  --color-primary-dark: #577d21;
+  --color-primary-dark: #6f9f2d;
   --color-secondary: #333;
   --color-secondary-dark: #000;
   --color-accent: #62c1b5;
+  --color-lg: #f2f2f2;
+  --color-lg-lighter: #fafafa;
   --font-primary: 'Open Sans', sans-serif;
-  --font-secondary: Roboto, sans-serif;
+  --font-secondary: omnes-pro, sans-serif;
   --transition-primary: .25s cubic-bezier(.75, 0, .25, 1);
   --shadow-primary: 0 3px 6px rgba(0, 0, 0, .15);
 }
+/*
+:root .rebound {
+  --color-primary: #62c1b5;
+  --color-primary-dark: #577d21;
+  --color-secondary: #333;
+  --color-secondary-dark: #000;
+  --color-accent: #8fcc3a;
+  --color-lg: #f2f2f2;
+  --color-lg-lighter: #fafafa;
+  --font-primary: 'Open Sans', sans-serif;
+  --font-secondary: omnes-pro, sans-serif;
+  --transition-primary: .25s cubic-bezier(.75, 0, .25, 1);
+  --shadow-primary: 0 3px 6px rgba(0, 0, 0, .15);
+} */
 
 html {
   font-family: var(--font-primary);
@@ -18,6 +34,62 @@ h1, h2, h3, h4, h5, h6, .font-alt {
   font-family: var(--font-secondary);
 }
 
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition:
+    background-color var(--transition-primary),
+    color var(--transition-primary);
+}
+
+p a,
+.hyperlink {
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus,
+p a:hover,
+p a:focus,
+.hyperlink:hover,
+.hyperlink:focus {
+  color: var(--color-primary-dark);
+}
+
+address {
+  font-style: normal;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.wrap-pre {
+  white-space: pre;
+}
+
+/* ---------- Colors ---------- */
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-lg,
+.bg-lg-hov:hover {
+  background-color: var(--color-lg);
+}
+
+.bg-lg-lighter,
+.bg-lg-lighter-hov:hover {
+  background-color: var(--color-lg-lighter);
+}
+
+.text-000 {
+  color: #000;
+}
+
+/* ---------- End Colors ---------- */
+
 .hero {
   min-height: 95vh;
   display: flex;
@@ -25,4 +97,33 @@ h1, h2, h3, h4, h5, h6, .font-alt {
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("{{site.baseurl}}/images/hero-home.jpg") center / cover no-repeat;
   color: #fff;
+  box-shadow: var(--shadow-primary);
+  position: relative;
+  z-index: 1;
+}
+
+.hours-block .stretch-rows {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.stretch-rows .row {
+  display: flex;
+}
+
+.stretch-rows .row .stretch {
+  flex-grow: 2;
+}
+
+.hours-block .logo {
+  width: 100%;
+  max-width: 17em;
+}
+
+.media-flex {
+  display: flex;
+}
+
+.media-flex-body {
+  flex-grow: 2;
 }

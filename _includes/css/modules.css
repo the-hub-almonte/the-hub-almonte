@@ -1040,25 +1040,25 @@ button:hover,
 .btn:hover {
   background-color: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
-  color: #fff;
+  color: var(--color-secondary);
 }
 
 button[disabled] {
   cursor: default;
 }
 
-.btn-light, .btn--light {
-  background-color: #e2e2e2;
-  border-color: #e2e2e2;
+.btn-white, .btn--white {
+  background-color: #fff;
+  border-color: #fff;
   color: #000;
 }
 
-.btn-light:focus,
-.btn-light:hover,
-.btn--light:focus,
-.btn--light:hover {
-  background-color: #666;
-  border-color: #666;
+.btn-white:focus,
+.btn-white:hover,
+.btn--white:focus,
+.btn--white:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
   color: #fff;
 }
 

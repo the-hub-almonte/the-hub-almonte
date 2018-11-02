@@ -126,12 +126,12 @@ thead th {
 .wrapper {
   margin-left: auto;
   margin-right: auto;
-  max-width: 52em;
+  max-width: 60em;
   width: 100%;
 }
 
 .wrapper-no-center {
-  max-width: 52em;
+  max-width: 60em;
   width: 100%;
 }
 
@@ -349,6 +349,16 @@ select {
 .pad-bottom,
 .pad-b {
   padding-bottom: 1.3rem;
+}
+
+.pad-t-b {
+  padding-bottom: 1.3rem;
+  padding-top: 1.3rem;
+}
+
+.pad-t-b-2 {
+  padding-bottom: 2.6rem;
+  padding-top: 2.6rem;
 }
 
 .pad-top-double,
@@ -765,6 +775,16 @@ legend {
     padding-bottom: 1.4rem;
   }
 
+  .pad-t-b {
+    padding-bottom: 1.4rem;
+    padding-top: 1.4rem;
+  }
+
+  .pad-t-b-2 {
+    padding-bottom: 2.8rem;
+    padding-top: 2.8rem;
+  }
+
   .pad-top-double,
   .pad-t-2 {
     padding-top: 2.8rem;
@@ -953,7 +973,7 @@ legend {
 @media only screen and (min-width: 60em) {
 
   html {
-    font-size: 120%;
+    /* font-size: 120%; */
     line-height: 1.5;
   }
 
@@ -1181,6 +1201,16 @@ legend {
     padding-bottom: 1.5rem;
   }
 
+  .pad-t-b {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .pad-t-b-2 {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+
   .pad-top-double,
   .pad-t-2 {
     padding-top: 3rem;
@@ -1369,7 +1399,7 @@ legend {
 @media only screen and (min-width: 90em) {
 
   html {
-    font-size: 130%;
+    /* font-size: 130%; */
     line-height: 1.5;
   }
 

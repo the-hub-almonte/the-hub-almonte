@@ -4,6 +4,7 @@
   transition:
     background-color var(--transition-primary),
     box-shadow var(--transition-primary);
+  z-index: 1000000;
 }
 
 .masthead.sticky {
@@ -67,6 +68,7 @@
   display: none;
 }
 
+.nav .current::after,
 .nav .line-hover:hover::after {
   width: calc(100% - 2.6rem);
 }

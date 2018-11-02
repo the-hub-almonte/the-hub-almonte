@@ -46,6 +46,8 @@
   word-spacing: normal;
   display: inline-block;
   visibility: visible;
+  transition:
+    background-color var(--transition-primary);
 }
 
 .grid-bottom .unit {

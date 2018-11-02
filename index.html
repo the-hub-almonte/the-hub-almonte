@@ -1,10 +1,76 @@
 ---
 layout: main
+pageClass: home
 ---
-<header class="hero hero-home">
+<header class="hero">
   <div class="wrapper gutter">
     <h1>Giving back to the community since 1974.</h1>
     <p class="giga text-fff">The Hub’s goal has always been to service the greater Almonte community and be there when they need us most. </p>
-    <a class="btn giga" href="{{site.baseurl}}/about/">Learn More</a>
+    <a id="content-start" class="btn giga" href="{{site.baseurl}}/about/">Learn More</a>
   </div>
 </header>
+<section id="announcements" class="announcements bg-lg pad-t-b" tabindex="0">
+  <div class="grid grid-middle wrapper island-1-2">
+    <div class="unit [ xs-1 m-2-3 ] unit-push-m-1-3 island-1-2">
+      <h2 class="push-0">Enter to win this month's contest!</h2
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae rutrum eros, ac elementum nisl. Morbi ut rhoncus nisi. Phasellus aliquam nulla id placerat porta.</p>
+      <a class="btn" href="#">Enter Now</a>
+    </div>
+    <div class="unit [ xs-1 m-1-3 ] unit-pull-m-2-3 island-1-2">
+      <div class="embed embed-4by3">
+        <img class="embed-item" src="https://placehold.it/800x600" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="hours" class="hours pad-t-b-2" tabindex="0">
+  <div class="wrapper">
+    <h2 class='gutter push-0'>Store Hours & Locations</h2>
+    <div class="grid island-1-2">
+      {% for hours in site.data.store-hours %}
+        <div class="unit [ xs-1 m-1-2 ] island-1-2">
+          {% include hours-block.html %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section id="news-preview" class="news-preview pad-t-b-2 bg-lg" tabindex="0">
+  <div class="wrapper">
+    <h2 class="gutter push-0">News & Events</h2>
+    <ul class="grid list-group island-1-2">
+      {% for news in site.categories.news limit:1 %}
+        <li class="unit [ xs-1 m-1-2 ]">
+          <a href="{{site.baseurl}}/{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
+            <div class="unit [ xs-1-2 m-1 l-1-2 ] island-1-2">
+              <div class="embed embed-1by1">
+                <img class="embed-item" src="{{news.prevImage}}" alt="">
+              </div>
+            </div>
+            <div class="unit [ xs-1-2 m-1 l-1-2 ] island-1-2 unit-content-distribute">
+              <h3 class="giga push-1-2 text-000">{{news.title}}</h3>
+              <p class="content-fill text-000 push-0">{{news.meta}}</p>
+              <span class="hyperlink">Read more...</span>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+      {% for news in site.categories.events limit:1 %}
+        <li class="unit [ xs-1 m-1-2 ]">
+          <a href="{{site.baseurl}}/{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
+            <div class="unit [ xs-1-2 m-1 l-1-2 ] island-1-2">
+              <div class="embed embed-1by1">
+                <img class="embed-item" src="{{news.prevImage}}" alt="">
+              </div>
+            </div>
+            <div class="unit [ xs-1-2 m-1 l-1-2 ] island-1-2 unit-content-distribute">
+              <h3 class="giga push-1-2 text-000">{{news.title}}</h3>
+              <p class="content-fill text-000 push-0">{{news.meta}}</p>
+              <span class="hyperlink">Read more...</span>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
