@@ -4147,6 +4147,8 @@ address.icon-label {
   width: 10rem;
   vertical-align: middle;
   display: inline-block;
+  z-index: 10000;
+  position: relative;
 }
 
 .nav .nav-items a:not(.btn) {
@@ -4157,11 +4159,6 @@ address.icon-label {
     color var(--transition-primary),
     background-color var(--transition-primary);
 }
-
-.sticky .nav .nav-items a:not(.btn) {
-  color: var(--color-secondary);
-}
-
 
 .line-hover {
   position: relative;
@@ -4213,7 +4210,7 @@ address.icon-label {
   .nav .nav-items {
     position: fixed;
     width: 100%;
-    top: 4.881875rem;
+    top: 0;
     height: 0;
     left: 0;
     background-color: var(--color-secondary);
@@ -4222,11 +4219,17 @@ address.icon-label {
     text-align: center;
     overflow: hidden;
     transition:
-      height var(--transition-primary);
+      height var(--transition-primary),
+      padding-top var(--transition-primary);
+  }
+
+  .masthead.sticky {
+    background-color: #fff;
   }
 
   .open .nav-items {
-    height: calc(100vh - 4.881875rem);
+    height: 100vh;
+    padding-top: 3.590625rem;
   }
 
   .nav .nav-items li:first-child {
@@ -4261,6 +4264,10 @@ address.icon-label {
 }
 
 @media only screen and (min-width: 38em) {
+
+  .sticky .nav .nav-items a:not(.btn) {
+    color: var(--color-secondary);
+  }
 
   .nav .nav-items li {
     display: inline-block;
