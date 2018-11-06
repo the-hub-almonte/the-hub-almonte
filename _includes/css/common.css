@@ -1,9 +1,10 @@
 :root {
-  --color-primary: #8fcc3a;
-  --color-primary-dark: #6f9f2d;
+  --color-primary: #68bf9b;
+  --color-primary-dark: #52997c;
   --color-secondary: #333;
   --color-secondary-dark: #000;
-  --color-accent: #62c1b5;
+  --color-accent: #8fcc3a;
+  --color-accent-dark: #6f9f2d;
   --color-lg: #f2f2f2;
   --color-lg-lighter: #fafafa;
   --font-primary: 'Open Sans', sans-serif;
@@ -113,6 +114,10 @@ address {
 
 .stretch-rows .row .stretch {
   flex-grow: 2;
+}
+
+.hours-block .logo-wrap {
+  align-items: flex-start;
 }
 
 .hours-block .logo {

@@ -1,5 +1,5 @@
 - storeName: The Hub
-  storeLogo: https://placehold.it/300x100
+  storeLogo: images/logo-hub.svg
   storeAddress1: 14 Industrial Dr
   storeAddress2: Almonte, ON K0A 1A0
   monOpen: 1pm
@@ -18,7 +18,7 @@
   sunClose: Closed
   bgColor: lg
 - storeName: Rebound
-  storeLogo: https://placehold.it/300x100
+  storeLogo: images/logo-rebound.svg
   storeAddress1: 14 Industrial Dr
   storeAddress2: Almonte, ON K0A 1A0
   monOpen: 1pm

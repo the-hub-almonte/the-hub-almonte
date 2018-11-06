@@ -15,6 +15,7 @@
 .nav .logo {
   width: 10rem;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .nav .nav-items a:not(.btn) {
@@ -59,6 +60,7 @@
   transform: translateX(0);
 }
 
+.line-hover:focus::after,
 .line-hover:hover::after {
   width: 100%;
 }
@@ -69,7 +71,8 @@
 }
 
 .nav .current::after,
-.nav .line-hover:hover::after {
+.nav .line-hover:hover::after,
+.nav .line-hover:focus::after {
   width: calc(100% - 2.6rem);
 }
 
@@ -161,6 +164,7 @@
     display: block;
   }
 
+  .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {
     width: calc(100% - 1.4rem);
     background-color: var(--color-primary);
@@ -188,6 +192,7 @@
     width: 12.5rem;
   } */
 
+  .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {
     width: calc(100% - 1.5rem);
   }

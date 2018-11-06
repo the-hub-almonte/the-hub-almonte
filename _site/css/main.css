@@ -3937,11 +3937,12 @@ legend {
 }
 
 :root {
-  --color-primary: #8fcc3a;
-  --color-primary-dark: #6f9f2d;
+  --color-primary: #68bf9b;
+  --color-primary-dark: #52997c;
   --color-secondary: #333;
   --color-secondary-dark: #000;
-  --color-accent: #62c1b5;
+  --color-accent: #8fcc3a;
+  --color-accent-dark: #6f9f2d;
   --color-lg: #f2f2f2;
   --color-lg-lighter: #fafafa;
   --font-primary: 'Open Sans', sans-serif;
@@ -4053,6 +4054,10 @@ address {
   flex-grow: 2;
 }
 
+.hours-block .logo-wrap {
+  align-items: flex-start;
+}
+
 .hours-block .logo {
   width: 100%;
   max-width: 17em;
@@ -4141,6 +4146,7 @@ address.icon-label {
 .nav .logo {
   width: 10rem;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .nav .nav-items a:not(.btn) {
@@ -4185,6 +4191,7 @@ address.icon-label {
   transform: translateX(0);
 }
 
+.line-hover:focus::after,
 .line-hover:hover::after {
   width: 100%;
 }
@@ -4195,7 +4202,8 @@ address.icon-label {
 }
 
 .nav .current::after,
-.nav .line-hover:hover::after {
+.nav .line-hover:hover::after,
+.nav .line-hover:focus::after {
   width: calc(100% - 2.6rem);
 }
 
@@ -4287,6 +4295,7 @@ address.icon-label {
     display: block;
   }
 
+  .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {
     width: calc(100% - 1.4rem);
     background-color: var(--color-primary);
@@ -4314,6 +4323,7 @@ address.icon-label {
     width: 12.5rem;
   } */
 
+  .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {
     width: calc(100% - 1.5rem);
   }

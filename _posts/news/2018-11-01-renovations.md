@@ -4,7 +4,7 @@ title: Renovation Update!
 meta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit lamet tolk amel yut…
 source:
 category: news
-prevImage: https://placehold.it/400x400
+prevImage: reno-front.jpg
 ---
 
 Started an awesome new job at a marketing firm! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
