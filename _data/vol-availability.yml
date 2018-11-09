@@ -1,0 +1,45 @@
+- day: Monday
+  shift1: 9:00am - 12:30pm
+  shiftid: monAM
+  shiftname: monAM
+  shift2: 12:30pm - 4:30pm
+  shif2id: monPM
+  shif2name: monPM
+- day: Tuesday
+  shift1: 9:00am - 12:30pm
+  shift1id: tuesAM
+  shift1name: tuesAM
+  shift2: 12:30pm - 4:30pm
+  shift2id: tuesPM
+  shift2name: tuesPM
+- day: Wednesday
+  shift1: 9:00am - 12:30pm
+  shift1id: wedAM
+  shift1name: wedAM
+  shift2: 12:30pm - 4:30pm
+  shift2id: wedPM
+  shift2name: wedPM
+- day: Thursday
+  shift1: 9:00am - 12:30pm
+  shift1id: thursAM
+  shift1name: thursAM
+  shift2: 12:30pm - 4:30pm
+  shift2id: thursPM
+  shift2name: thursPM
+  shift3: 5:30pm - 8:30pm
+  shift3id: thursLate
+  shift3name: thursLate
+- day: Friday
+  shift1: 9:00am - 12:30pm
+  shift1id: friAM
+  shift1name: friAM
+  shift2: 12:30pm - 4:30pm
+  shift2id: friPM
+  shift2name: friPM
+- day: Saturday
+  shift1: 9:00am - 12:30pm
+  shift1id: satAM
+  shift1name: satAM
+  shift2: 12:30pm - 4:30pm
+  shift2id: satPM
+  shift2name: satPM

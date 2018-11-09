@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-
-<header class="masthead sticky">
+{% assign pages=site.data.page-content[page.pageNumber] %}
+<header class="masthead sticky {% if pages.hero == false %}nav-dark-items{% endif %}">
   {% include nav.html navClass='nav wrapper gutter pad-t-1-2 pad-b-1-2' ulClass='list-group push-0' ulInner='nav-items list-group push-0' aLogo='inline-block' aInner='block line-hover' liHours='hidden' %}
   <a class="tog-nav m-0" href="#nav-footer">
     <span class="tog tog-top"></span>
@@ -11,9 +11,21 @@ layout: default
   </a>
 </header>
 <main id="main" tabindex="0">
+    {% if pages.hero == true %}
+      {% include hero.html %}
+    {% elsif pages.hero == false %}
+      <header class="header-basic">
+        <div class="max-length gutter">
+          <h1 class="">{{pages.h1Text}}</h1>
+          {% if pages.byline == true %}
+            <p class="byline mega">{{pages.bylineText}}</p>
+          {% endif %}
+        </div>
+      </header>
+    {% endif %}
   {{content}}
 </main>
-<footer class="footer pad-t-2 pad-b-2">
+<footer class="footer pad-t-b">
   <div class="grid grid-bottom wrapper island-1-2">
     <div class="unit [ xs-1 m-1-2 ] island-1-2">
       {% include nav.html ulClass='list-group push-0 milli' aLogo='inline-block push-1-2' liInner='push-1-4' ulInner='list-group push-0' liBtn='hidden' aInner='' %}

@@ -1,0 +1,47 @@
+- legend: Personal Information
+  additionalInfo: (Select all that apply)
+  fields:
+    - label: Full Name
+      type: text
+      id: full-name
+      name: full-name
+    - label: Full Name 2
+      type: text
+      id: full-name
+      name: full-name
+    - label: Full Name 3
+      type: text
+      id: full-name
+      name: full-name 3
+- legend: Personal Information 2
+  fields:
+    - label: Full Name 3
+      type: checkbox
+      id: full-name
+      name: full-name
+    - label: Full Name 4
+      type: checkbox
+      id: full-name
+      name: full-name
+    - label: Full Name 5
+      type: checkbox
+      id: full-name
+      name: full-name
+- legend: Personal Information 3
+  additionalInfo: (Select all that apply)
+  fields:
+    - label: Full Name 2
+      type: password
+      id: full-name
+      name: full-name
+- legend: Personal Information 4
+  additionalInfo: (Select all that apply)
+  fields:
+    - label: Full Name 2
+      type: password
+      id: full-name
+      name: full-name
+    - label: Full Name 3
+      type: password
+      id: full-name
+      name: full-name

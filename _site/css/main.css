@@ -826,15 +826,21 @@ select {
   border-radius: 0;
 }
 
+[type="checkbox"] + label {
+  position: relative;
+  padding-left: 1.75rem;
+}
+
 [type="checkbox"] + label::before {
   content: " ";
   display: inline-block;
-  height: 1.8em;
+  height: 1.25rem;
   margin-right: .3em;
-  position: relative;
+  position: absolute;
+  left: 0;
   vertical-align: middle;
-  top: -.1em;
-  width: 1.8em;
+  top: .1em;
+  width: 1.25rem;
 
   background-color: #fff;
   background-size: cover;
@@ -1107,6 +1113,10 @@ button:focus,
 select:focus {
   outline: 3px solid #000;
   outline-offset: 0;
+}
+
+section[tabindex="0"]:focus {
+  outline: 3px solid rgba(0, 0, 0, 0);
 }
 
 a:focus, [tabindex="0"]:focus {
@@ -2250,12 +2260,12 @@ thead th {
 .wrapper {
   margin-left: auto;
   margin-right: auto;
-  max-width: 60em;
+  max-width: 65em;
   width: 100%;
 }
 
 .wrapper-no-center {
-  max-width: 60em;
+  max-width: 65em;
   width: 100%;
 }
 
@@ -4027,7 +4037,7 @@ address {
   color: #000;
 }
 
-/* ---------- End Colors ---------- */
+/* ---------- Main > Header ---------- */
 
 .hero {
   min-height: 95vh;
@@ -4039,6 +4049,11 @@ address {
   box-shadow: var(--shadow-primary);
   position: relative;
   z-index: 1;
+}
+
+.header-basic {
+  text-align: center;
+  padding-top: 5.2rem;
 }
 
 .hours-block .stretch-rows {
@@ -4069,6 +4084,26 @@ address {
 
 .media-flex-body {
   flex-grow: 2;
+}
+
+@media only screen and (min-width: 38em) {
+
+  /* ---------- Main > Header ---------- */
+
+  .header-basic {
+    padding-top: 5.6rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  /* ---------- Main > Header ---------- */
+
+  .header-basic {
+    padding-top: 6rem;
+  }
+
 }
 
 .footer {
@@ -4265,6 +4300,7 @@ address.icon-label {
 
 @media only screen and (min-width: 38em) {
 
+  .nav-dark-items .nav .nav-items a:not(.btn),
   .sticky .nav .nav-items a:not(.btn) {
     color: var(--color-secondary);
   }
@@ -4302,6 +4338,7 @@ address.icon-label {
     display: block;
   }
 
+  .nav .current::after,
   .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {
     width: calc(100% - 1.4rem);
@@ -4329,7 +4366,8 @@ address.icon-label {
   /* .nav .logo {
     width: 12.5rem;
   } */
-
+  
+  .nav .current::after,
   .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {
     width: calc(100% - 1.5rem);
@@ -4384,5 +4422,27 @@ address.icon-label {
 .open .tog-bottom {
   bottom: 50%;
   transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+.categories-wrap .news,
+.categories-wrap .events{
+  display: none;
+}
+
+.categories-wrap.cat-news .news {
+  display: block;
+}
+
+.categories-wrap.cat-events .events{
+  display: block;
+}
+
+.categories-wrap.cat-news .no-articles,
+.categories-wrap.cat-events .no-articles {
+  display: none;
+}
+
+.no-articles {
+  padding-bottom: 7.5rem;
 }
 

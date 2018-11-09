@@ -1,0 +1,21 @@
+.categories-wrap .news,
+.categories-wrap .events{
+  display: none;
+}
+
+.categories-wrap.cat-news .news {
+  display: block;
+}
+
+.categories-wrap.cat-events .events{
+  display: block;
+}
+
+.categories-wrap.cat-news .no-articles,
+.categories-wrap.cat-events .no-articles {
+  display: none;
+}
+
+.no-articles {
+  padding-bottom: 7.5rem;
+}

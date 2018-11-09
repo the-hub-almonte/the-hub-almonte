@@ -89,7 +89,7 @@ address {
   color: #000;
 }
 
-/* ---------- End Colors ---------- */
+/* ---------- Main > Header ---------- */
 
 .hero {
   min-height: 95vh;
@@ -101,6 +101,11 @@ address {
   box-shadow: var(--shadow-primary);
   position: relative;
   z-index: 1;
+}
+
+.header-basic {
+  text-align: center;
+  padding-top: 5.2rem;
 }
 
 .hours-block .stretch-rows {
@@ -131,4 +136,24 @@ address {
 
 .media-flex-body {
   flex-grow: 2;
+}
+
+@media only screen and (min-width: 38em) {
+
+  /* ---------- Main > Header ---------- */
+
+  .header-basic {
+    padding-top: 5.6rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  /* ---------- Main > Header ---------- */
+
+  .header-basic {
+    padding-top: 6rem;
+  }
+
 }

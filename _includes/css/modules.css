@@ -826,15 +826,21 @@ select {
   border-radius: 0;
 }
 
+[type="checkbox"] + label {
+  position: relative;
+  padding-left: 1.75rem;
+}
+
 [type="checkbox"] + label::before {
   content: " ";
   display: inline-block;
-  height: 1.8em;
+  height: 1.25rem;
   margin-right: .3em;
-  position: relative;
+  position: absolute;
+  left: 0;
   vertical-align: middle;
-  top: -.1em;
-  width: 1.8em;
+  top: .1em;
+  width: 1.25rem;
 
   background-color: #fff;
   background-size: cover;
@@ -1107,6 +1113,10 @@ button:focus,
 select:focus {
   outline: 3px solid #000;
   outline-offset: 0;
+}
+
+section[tabindex="0"]:focus {
+  outline: 3px solid rgba(0, 0, 0, 0);
 }
 
 a:focus, [tabindex="0"]:focus {

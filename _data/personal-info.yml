@@ -1,0 +1,16 @@
+- label: Full Name
+  type: text
+  id: full-name
+  name: full-name
+- label: Email Address
+  type: email
+  id: email
+  name: email
+- label: Address
+  type: text
+  id: address
+  name: address
+- label: Phone
+  type: tel
+  id: phone
+  name: phone

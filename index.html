@@ -1,20 +1,16 @@
 ---
 layout: main
 pageClass: home
+pageNumber: 0
 ---
-<header class="hero">
-  <div class="wrapper gutter">
-    <h1>Giving back to the community since 1974.</h1>
-    <p class="giga text-fff">The Hub’s goal has always been to service the greater Almonte community and be there when they need us most. </p>
-    <a id="content-start" class="btn giga" href="{{site.baseurl}}/about/">Learn More</a>
-  </div>
-</header>
 <section id="announcements" class="announcements bg-lg pad-t-b" tabindex="0">
   <div class="grid grid-middle wrapper island-1-2">
     <div class="unit [ xs-1 m-2-3 ] unit-push-m-1-3 island-1-2">
-      <h2 class="push-0">Enter to win this month's contest!</h2
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae rutrum eros, ac elementum nisl. Morbi ut rhoncus nisi. Phasellus aliquam nulla id placerat porta.</p>
-      <a class="btn" href="#">Enter Now</a>
+      <div class="max-length">
+        <h2 class="push-0">Enter to win this month's contest!</h2
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae rutrum eros, ac elementum nisl. Morbi ut rhoncus nisi. Phasellus aliquam nulla id placerat porta.</p>
+        <a class="btn" href="#">Enter Now</a>
+      </div>
     </div>
     <div class="unit [ xs-1 m-1-3 ] unit-pull-m-2-3 island-1-2">
       <div class="embed embed-4by3">
@@ -41,7 +37,7 @@ pageClass: home
     <ul class="grid list-group island-1-2">
       {% for news in site.categories.news limit:1 %}
         <li class="unit [ xs-1 m-1-2 ]">
-          <a href="{{site.baseurl}}/{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
+          <a href="{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
             <div class="unit [ xs-1 s-1-2 m-1 l-1-2 ] island-1-2">
               <div class="embed embed-1by1">
                 <img class="embed-item" src="{{site.baseurl}}/images/{{news.prevImage}}" alt="">
@@ -57,7 +53,7 @@ pageClass: home
       {% endfor %}
       {% for news in site.categories.events limit:1 %}
         <li class="unit [ xs-1 m-1-2 ]">
-          <a href="{{site.baseurl}}/{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
+          <a href="{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
             <div class="unit [ xs-1 s-1-2 m-1 l-1-2 ] island-1-2">
               <div class="embed embed-1by1">
                 <img class="embed-item" src="{{site.baseurl}}/images/{{news.prevImage}}" alt="">

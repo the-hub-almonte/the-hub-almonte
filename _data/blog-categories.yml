@@ -1,0 +1,12 @@
+# - category: All
+#   id: all
+#   name: all
+#   checked: true
+- category: News
+  id: cat-news
+  name: cat-news
+  checked: true
+- category: Events
+  id: cat-events
+  name: cat-events
+  checked: true

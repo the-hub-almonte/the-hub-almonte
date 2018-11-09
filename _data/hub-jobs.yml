@@ -1,0 +1,28 @@
+- label: Cashier
+  type: checkbox
+  id: hub-cashier
+  name: hub-cashier
+- label: Bagging Purchases at Cash
+  type: checkbox
+  id: hub-bagging
+  name: hub-bagging
+- label: Hanging Up Clothing/Hanger Organization
+  type: checkbox
+  id: hub-hanging-org
+  name: hub-hanging-org
+- label: Crafts/Notions/Seasonal
+  type: checkbox
+  id: hub-crafts-seasonal
+  name: hub-crafts-seasonal
+- label: Toys
+  type: checkbox
+  id: hub-toys
+  name: hub-toys
+- label: Books
+  type: checkbox
+  id: hub-bagging
+  name: hub-bagging
+- label: Recycling
+  type: checkbox
+  id: hub-recycling
+  name: hub-recycling

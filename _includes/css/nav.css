@@ -134,6 +134,7 @@
 
 @media only screen and (min-width: 38em) {
 
+  .nav-dark-items .nav .nav-items a:not(.btn),
   .sticky .nav .nav-items a:not(.btn) {
     color: var(--color-secondary);
   }
@@ -171,6 +172,7 @@
     display: block;
   }
 
+  .nav .current::after,
   .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {
     width: calc(100% - 1.4rem);
@@ -198,7 +200,8 @@
   /* .nav .logo {
     width: 12.5rem;
   } */
-
+  
+  .nav .current::after,
   .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {
     width: calc(100% - 1.5rem);

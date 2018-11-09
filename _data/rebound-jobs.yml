@@ -1,0 +1,28 @@
+- label: Cashier
+  type: checkbox
+  id: reb-cashier
+  name: reb-cashier
+- label: Loading & Unloading
+  type: checkbox
+  id: reb-loading
+  name: reb-loading
+- label: Rearranging Furniture
+  type: checkbox
+  id: reb-rearrange
+  name: reb-rearrange
+- label: Electronics
+  type: checkbox
+  id: reb-electronics
+  name: reb-electronics
+- label: Appliance Testing
+  type: checkbox
+  id: reb-appliance-testing
+  name: reb-appliance-testing
+- label: Cleaning
+  type: checkbox
+  id: reb-cleaning
+  name: reb-cleaning
+- label: Recycling
+  type: checkbox
+  id: reb-recycling
+  name: reb-recycling
