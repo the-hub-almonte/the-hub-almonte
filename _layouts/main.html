@@ -25,8 +25,8 @@ layout: default
     {% endif %}
   {{content}}
 </main>
-<footer class="footer pad-t-b">
-  <div class="grid grid-bottom wrapper island-1-2">
+<footer class="footer pad-t">
+  <div class="grid grid-bottom wrapper island-1-2 push">
     <div class="unit [ xs-1 m-1-2 ] island-1-2">
       {% include nav.html ulClass='list-group push-0 milli' aLogo='inline-block push-1-2' liInner='push-1-4' ulInner='list-group push-0' liBtn='hidden' aInner='' %}
     </div>
@@ -36,5 +36,8 @@ layout: default
       </div>
       {% include contact-info.html ulClass='list-group push-0 milli' liClass='push-1-4' titleSize='mega' aClass='' %}
     </div>
+  </div>
+  <div class="footer-disclaimer pad-t-b-2">
+    {% include charitable-status.html wrapClass='wrapper gutter' titleClass='bold mega push-1-2' pClass="push-0" %}
   </div>
 </footer>

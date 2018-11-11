@@ -1,5 +1,6 @@
 :root {
   --color-primary: #68bf9b;
+  --color-primary-light: #8ae0bd;
   --color-primary-dark: #52997c;
   --color-secondary: #333;
   --color-secondary-dark: #000;
@@ -10,6 +11,7 @@
   --font-primary: 'Open Sans', sans-serif;
   --font-secondary: omnes-pro, sans-serif;
   --transition-primary: .25s cubic-bezier(.75, 0, .25, 1);
+  --transition-quick: .1s cubic-bezier(.75, 0, .25, 1);
   --shadow-primary: 0 3px 6px rgba(0, 0, 0, .15);
 }
 /*
@@ -67,6 +69,53 @@ address {
 
 .wrap-pre {
   white-space: pre;
+}
+
+.form-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 45em;
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+fieldset .additional-info {
+  font-weight: normal;
+  color: #777;
+}
+
+input.dollar-input {
+  padding-left: 1.5rem;
+}
+
+.dollar-input + label {
+  position: relative;
+}
+
+.dollar-input + label::after {
+  content: '$';
+  position: absolute;
+  left: .5rem;
+  top: -1.5rem;
+}
+
+.test-after {
+  position: relative;
+}
+
+.test-after::after {
+  content: '$';
+  position: absolute;
+  left: .5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 100%;
+  color: #000;
 }
 
 /* ---------- Colors ---------- */
@@ -146,6 +195,10 @@ address {
     padding-top: 5.6rem;
   }
 
+  .dollar-input + label::after {
+    top: -1.65rem;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -154,6 +207,10 @@ address {
 
   .header-basic {
     padding-top: 6rem;
+  }
+
+  .dollar-input + label::after {
+    top: -1.75rem;
   }
 
 }

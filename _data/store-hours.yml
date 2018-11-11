@@ -1,5 +1,6 @@
 - storeName: The Hub
   storeLogo: images/logo-hub.svg
+  addressLink: https://goo.gl/maps/sByyfsxP7w82
   storeAddress1: 14 Industrial Dr
   storeAddress2: Almonte, ON K0A 1A0
   monOpen: 10am
@@ -19,6 +20,7 @@
   bgColor: lg
 - storeName: Rebound
   storeLogo: images/logo-rebound.svg
+  addressLink: https://goo.gl/maps/sByyfsxP7w82
   storeAddress1: 14 Industrial Dr
   storeAddress2: Almonte, ON K0A 1A0
   monOpen: 1pm

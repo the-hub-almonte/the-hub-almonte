@@ -9,13 +9,13 @@
   width: 100%;
 }
 
-.footer a:not(.btn) {
+.footer li a:not(.btn) {
   color: #fff;
   text-decoration: none;
 }
 
-.footer a:not(.btn):hover,
-.footer a:not(.btn):focus {
+.footer li a:not(.btn):hover,
+.footer li a:not(.btn):focus {
   color: var(--color-primary);
 }
 
@@ -28,6 +28,16 @@
 
 address.icon-label {
   display: inline-block;
+}
+
+.footer-disclaimer {
+  background-color: #222;
+  color: #ddd;
+  text-align: left;
+}
+
+.footer-disclaimer strong {
+  color: #fff;
 }
 
 @media only screen and (max-width: 37.999em) {

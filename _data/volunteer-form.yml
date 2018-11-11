@@ -1,47 +1,188 @@
 - legend: Personal Information
-  additionalInfo: (Select all that apply)
+  additionalInfo: Select all that apply
+  fieldlayout: textarea
   fields:
-    - label: Full Name
-      type: text
-      id: full-name
-      name: full-name
-    - label: Full Name 2
-      type: text
-      id: full-name
-      name: full-name
-    - label: Full Name 3
-      type: text
-      id: full-name
-      name: full-name 3
-- legend: Personal Information 2
+  - label: Full Name
+    type: text
+    id: full-name
+    name: full-name
+  - label: Email Address
+    type: email
+    id: email
+    name: email
+  - label: Address
+    type: text
+    id: address
+    name: address
+  - label: Phone
+    type: tel
+    id: phone
+    name: phone
+- legend: Are you a student seeking volunteer hours?
   fields:
-    - label: Full Name 3
+    - label: 'Yes'
+      type: radio
+      id: student-yes
+      name: student
+    - label: 'No'
+      type: radio
+      id: student-no
+      name: student
+- legend: Where are you interested in volunteering?
+  additionalInfo: Select all that apply
+  fields:
+    - label: The Hub
       type: checkbox
-      id: full-name
-      name: full-name
-    - label: Full Name 4
+      id: the-hub
+      name: the-hub
+    - label: Rebound
       type: checkbox
-      id: full-name
-      name: full-name
-    - label: Full Name 5
-      type: checkbox
-      id: full-name
-      name: full-name
-- legend: Personal Information 3
-  additionalInfo: (Select all that apply)
+      id: rebound
+      name: rebound
+- legend: Which jobs interest you the most?
+  additionalInfo: Select all that apply
+  fieldLayout: checklists
+  group:
+    - groupTitle: The Hub
+      groupXSSize: 1
+      groupMSize: 1-2
+      fields:
+        - label: Cashier
+          type: checkbox
+          id: hub-cashier
+          name: hub-cashier
+        - label: Bagging Purchases at Cash
+          type: checkbox
+          id: hub-bagging
+          name: hub-bagging
+        - label: Hanging Up Clothing/Hanger Organization
+          type: checkbox
+          id: hub-hanging-org
+          name: hub-hanging-org
+        - label: Crafts/Notions/Seasonal
+          type: checkbox
+          id: hub-crafts-seasonal
+          name: hub-crafts-seasonal
+        - label: Toys
+          type: checkbox
+          id: hub-toys
+          name: hub-toys
+        - label: Books
+          type: checkbox
+          id: hub-books
+          name: hub-books
+        - label: Recycling
+          type: checkbox
+          id: hub-recycling
+          name: hub-recycling
+    - groupTitle: Rebound
+      groupXSSize: 1
+      groupMSize: 1-2
+      fields:
+        - label: Cashier
+          type: checkbox
+          id: reb-cashier
+          name: reb-cashier
+        - label: Loading & Unloading
+          type: checkbox
+          id: reb-loading
+          name: reb-loading
+        - label: Rearranging Furniture
+          type: checkbox
+          id: reb-rearrange
+          name: reb-rearrange
+        - label: Electronics
+          type: checkbox
+          id: reb-electronics
+          name: reb-electronics
+        - label: Appliance Testing
+          type: checkbox
+          id: reb-appliance-testing
+          name: reb-appliance-testing
+        - label: Cleaning
+          type: checkbox
+          id: reb-cleaning
+          name: reb-cleaning
+        - label: Recycling
+          type: checkbox
+          id: reb-recycling
+          name: reb-recycling
+- legend: When are you available to work?
+  additionalInfo: Select all that apply
+  fieldLayout: checklists
+  group:
+    - groupTitle: Monday
+      groupXSSize: 1
+      groupSSize: 1-2
+      groupMSize: 1-3
+      fields:
+        - label: 9:00am - 12:30pm
+          id: monAM
+          name: monAM
+        - label: 12:30pm - 4:30pm
+          id: monPM
+          name: monPM
+    - groupTitle: Tuesday
+      groupXSSize: 1
+      groupSSize: 1-2
+      groupMSize: 1-3
+      fields:
+        - label: 9:00am - 12:30pm
+          id: tuesAM
+          name: tuesAM
+        - label: 12:30pm - 4:30pm
+          id: tuesPM
+          name: tuesPM
+    - groupTitle: Wednesday
+      groupXSSize: 1
+      groupSSize: 1-2
+      groupMSize: 1-3
+      fields:
+        - label: 9:00am - 12:30pm
+          id: wedAM
+          name: wedAM
+        - label: 12:30pm - 4:30pm
+          id: wedPM
+          name: wedPM
+    - groupTitle: Thursday
+      groupXSSize: 1
+      groupSSize: 1-2
+      groupMSize: 1-3
+      fields:
+        - label: 9:00am - 12:30pm
+          id: thursAM
+          name: thursAM
+        - label: 12:30pm - 4:30pm
+          id: thursPM
+          name: thursPM
+        - label: 5:30pm - 8:30pm
+          id: thursLate
+          name: thursLate
+    - groupTitle: Friday
+      groupXSSize: 1
+      groupSSize: 1-2
+      groupMSize: 1-3
+      fields:
+        - label: 9:00am - 12:30pm
+          id: friAM
+          name: friAM
+        - label: 12:30pm - 4:30pm
+          id: friPM
+          name: friPM
+    - groupTitle: Saturday
+      groupXSSize: 1
+      groupSSize: 1-2
+      groupMSize: 1-3
+      fields:
+        - label: 9:00am - 12:30pm
+          id: satAM
+          name: satAM
+        - label: 12:30pm - 4:30pm
+          id: satPM
+          name: satPM
+- legend: Describe any related experience or qualifications.
+  fieldLayout: textarea
   fields:
-    - label: Full Name 2
-      type: password
-      id: full-name
-      name: full-name
-- legend: Personal Information 4
-  additionalInfo: (Select all that apply)
-  fields:
-    - label: Full Name 2
-      type: password
-      id: full-name
-      name: full-name
-    - label: Full Name 3
-      type: password
-      id: full-name
-      name: full-name
+    - label: Qualifications
+      id: qualifications
+      name: qualifications

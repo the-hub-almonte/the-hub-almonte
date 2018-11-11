@@ -2,7 +2,10 @@
 layout: main
 pageClass: volunteer
 title: Volunteer
-pageNumber: 1
+pageNumber: 2
+formTitle: Volunteer Application
+formData: volunteer-form
+formID: volunteer-form
 ---
 <div class="max-length island">
   <p class="bold">Hub & Rebound’s volunteers play an integral role in every aspect of the organization.</p>
@@ -11,109 +14,6 @@ pageNumber: 1
   <p>Join the Hub & Rebound’s volunteer team today!</p>
   <p>Fill out our <a class="smooth-scroll" href="#volunteer-form">Volunteer Application</a> form below. Our Volunteer Coordinator will get in touch with you shortly!</p>
 </div>
-<div id="volunteer-form" class="max-length">
-  <form class="volunteer-form" method="post" action="//formspree.io/robi0653@algonquinlive.com">
-    <h2>Volunteer Application</h2>
-
-  {% for fieldset in site.data.volunteer-form %}
-    <fieldset>
-      <legend class="legend-question required">{{fieldset.legend}} {% if fieldset.additionalInfo %}<span class="additional-info">({{fieldset.additionalInfo}})</span>{% endif %}</legend>
-      <div class="grid island-1-2">
-        {% for field in fieldset.fields %}
-        <div class="unit [ xs-1 m-1-2 ] island-1-2">
-          <input type="{{field.type}}" id="{{field.id}}" name="{{field.name}}">
-          <label for="{{field.id}}">{{field.label}}</label>
-        </div>
-        {% endfor %}
-      </div>
-    </fieldset>
-    {% endfor %}
-    <!-- <fieldset>
-      <legend class="legend-question required">Where are you interested in volunteering? <span class="additional-info">(Select all that apply)</span></legend>
-      <div class="inline-block valign-middle push-r">
-        <input type="checkbox" id="the-hub" name="the-hub">
-        <label for="the-hub">The Hub</label>
-      </div>
-      <div class="inline-block valign-middle">
-        <input type="checkbox" id="rebound" name="rebound">
-        <label for="rebound">Rebound</label>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend class="legend-question required">Are you a student seeking volunteer hours?</legend>
-      <div class="inline-block valign-middle push-r">
-        <input type="radio" id="student-yes" name="student">
-        <label for="student-yes">Yes</label>
-      </div>
-      <div class="inline-block valign-middle">
-        <input type="radio" id="student-no" name="student">
-        <label for="student-no">No</label>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend class="legend-question required">Where are you interested in volunteering? <span class="additional-info">(Select all that apply)</span></legend>
-      <div class="inline-block valign-middle push-r">
-        <input type="checkbox" id="the-hub" name="the-hub">
-        <label for="the-hub">The Hub</label>
-      </div>
-      <div class="inline-block valign-middle">
-        <input type="checkbox" id="rebound" name="rebound">
-        <label for="rebound">Rebound</label>
-      </div>
-    </fieldset>
-    <fieldset>
-      <Legend>Which jobs are you interested in? <span class="additional-info">(Select all that apply)</span></Legend>
-      <div class="grid island-1-2">
-        <div class="unit [ xs-1 m-1-2 ] island-1-2">
-          <p class="bold mega">The Hub</p>
-          {% for hubJobs in site.data.hub-jobs %}
-          <div class="push-1-2">
-            <input type="{{hubJobs.type}}" id="{{hubJobs.id}}" name="{{hubJobs.name}}">
-            <label for="{{hubJobs.id}}">{{hubJobs.label}}</label>
-          </div>
-          {% endfor %}
-        </div>
-        <div class="unit [ xs-1 m-1-2 ] island-1-2">
-          <p class="bold mega">Rebound</p>
-          {% for rebJobs in site.data.rebound-jobs %}
-          <div class="push-1-2">
-            <input type="{{rebJobs.type}}" id="{{rebJobs.id}}" name="{{rebJobs.name}}">
-            <label for="{{rebJobs.id}}">{{rebJobs.label}}</label>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </fieldset>
-    <fieldset>
-      <Legend>When are you available to work? <span class="additional-info">(Select all that apply)</span></Legend>
-      <div class="grid island-1-2">
-        {% for availability in site.data.vol-availability %}
-          <div class="unit [ xs-1 s-1-2 m-1-3 ] push island-1-2">
-            <p class="bold mega push-1-2">{{availability.day}}</p>
-            <div class="push-1-2">
-              <input type="checkbox" id="{{availability.shift1id}}" name="{{availability.shift1name}}">
-              <label for="{{availability.shift1for}}">{{availability.shift1}}</label>
-            </div>
-            <div {% if availability.shift3 %}class="push-1-2"{% endif %}>
-              <input type="checkbox" id="{{availability.shift2id}}" name="{{availability.shift2name}}">
-              <label for="{{availability.shift2for}}">{{availability.shift2}}</label>
-            </div>
-            {% if availability.shift3 %}
-              <div>
-                <input type="checkbox" id="{{availability.shift3id}}" name="{{availability.shift3name}}">
-                <label for="{{availability.shift3for}}">{{availability.shift3}}</label>
-              </div>
-            {% endif %}
-          </div>
-        {% endfor %}
-      </div>
-    </fieldset> -->
-    <fieldset>
-      <Legend>Describe any related experience or qualifications.</Legend>
-      <textarea id="qualifications" name="qualifications"></textarea>
-    </fieldset>
-    <div>
-      <button type="submit">Submit</button>
-    </div>
-  </form>
+<div class="pad-b-2">
+  {% include form.html %}
 </div>

@@ -1,0 +1,65 @@
+- legend: Your Donation
+  fieldLayout: basic
+  fields:
+  - label: $10.00
+    type: radio
+    id: 10-dollars
+    name: donation
+  - label: $25.00
+    type: radio
+    id: 25-dollars
+    name: donation
+  - label: $50.00
+    type: radio
+    id: 50-dollars
+    name: donation
+  - label: $100.00
+    type: radio
+    id: 100-dollars
+    name: donation
+  - label: Custom Amount
+    type: number
+    id: custom-amount
+    name: custom-amount
+    inputClass: dollar-input
+    placeholder: '0.00'
+    minValue: 0
+- legend: Personal Information
+  fieldLayout: basic
+  fields:
+  - label: Full Name
+    type: text
+    id: full-name
+    name: full-name
+  - label: Email Address
+    type: email
+    id: email
+    name: email
+  - label: Address Line
+    type: text
+    id: address
+    name: address
+  # - label: Address Line 2
+  #   type: text
+  #   id: address-2
+  #   name: address-2
+  - label: City
+    type: text
+    id: city
+    name: city
+  - label: Province
+    type: text
+    id: province
+    name: province
+  - label: Postal Code
+    type: text
+    id: postal-code
+    name: postal-code
+  - label: Country
+    type: text
+    id: country
+    name: country
+  - label: Phone
+    type: tel
+    id: phone
+    name: phone

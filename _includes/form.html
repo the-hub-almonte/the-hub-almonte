@@ -1,0 +1,45 @@
+<div id="{{page.formID}}" class="form-wrapper pad-t-b-2 push-2 bg-lg">
+  <form class="max-length" method="post" action="//formspree.io/robi0653@algonquinlive.com">
+    <h2 class="gutter">{{page.formTitle}}</h2>
+    {% for fieldset in site.data.[page.formData] %}
+      <fieldset>
+        <legend class="legend-question giga gutter required push-1-4 block">{{fieldset.legend}}</legend>
+        {% if fieldset.additionalInfo %}
+          <p class="additional-info gutter push-0">({{fieldset.additionalInfo}})</p>
+        {% endif %}
+        <div class="grid island-1-2">
+          {% if fieldset.fieldLayout == 'checklists' %}
+            {% for groups in fieldset.group %}
+              <div class="unit [ xs-{{groups.groupXSSize}} {% if groups.groupSSize %}S-{{groups.groupSSize}}{% endif %} {% if groups.groupMSize %}m-{{groups.groupMSize}}{% endif %} {% if groups.groupLSize %}L-{{groups.groupLSize}}{% endif %} ] island-1-2">
+                <p class="bold mega">{{groups.groupTitle}}</p>
+                {% for field in groups.fields %}
+                <div class="push-1-2">
+                  <input {% if field.inputClass %}class="{{field.inputClass}}"{% endif %} type="checkbox" id="{{field.id}}" name="{{field.name}}" {% if field.placeholder %}placeholder="{{field.placeholder}}"{% endif %}>
+                  <label {% if field.labelClass %}class="{{field.labelClass}}"{% endif %} for="{{field.id}}">{{field.label}}</label>
+                </div>
+                {% endfor %}
+              </div>
+            {% endfor %}
+          {% elsif fieldset.fieldLayout == 'textarea' %}
+            <div class="unit [ xs-1 ] island-1-2">
+              {% for field in fieldset.fields %}
+                <textarea {% if field.inputClass %}class="{{field.inputClass}}"{% endif %} id="{{field.id}}" name="{{field.name}}"></textarea>
+                <label class="hidden{% if field.labelClass %} {{field.labelClass}}{% endif %}" for="{{field.id}}">{{field.label}}</label>
+              {% endfor %}
+            </div>
+          {% else %}
+            {% for field in fieldset.fields %}
+            <div class="unit [ xs-1 m-1-2 ] island-1-2">
+              <input {% if field.inputClass %}class="{{field.inputClass}}"{% endif %} type="{{field.type}}" id="{{field.id}}" name="{{field.name}}" {% if field.minValue %}min="{{field.minValue}}"{% endif %} {% if field.placeholder %}placeholder="{{field.placeholder}}"{% endif %}>
+              <label {% if field.labelClass %}class="{{field.labelClass}}"{% endif %} for="{{field.id}}">{{field.label}}</label>
+            </div>
+            {% endfor %}
+          {% endif %}
+        </div>
+      </fieldset>
+    {% endfor %}
+    <div class="gutter">
+      <button class="mega" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
