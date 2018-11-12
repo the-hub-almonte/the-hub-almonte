@@ -134,9 +134,14 @@
 
 @media only screen and (min-width: 38em) {
 
-  .nav-dark-items .nav .nav-items a:not(.btn),
-  .sticky .nav .nav-items a:not(.btn) {
+  .nav .nav-items a:not(.btn),
+  .sticky .nav .nav-items a:not(.btn),
+  .sticky.nav-light-items .nav .nav-items a:not(.btn) {
     color: var(--color-secondary);
+  }
+
+  .nav-light-items .nav .nav-items a:not(.btn) {
+    color: #fff;
   }
 
   .nav .nav-items li {
@@ -200,7 +205,7 @@
   /* .nav .logo {
     width: 12.5rem;
   } */
-  
+
   .nav .current::after,
   .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {

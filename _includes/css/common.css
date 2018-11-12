@@ -141,7 +141,8 @@ input.dollar-input {
 /* ---------- Main > Header ---------- */
 
 .hero {
-  min-height: 95vh;
+  height: 95vh;
+  max-height: 750px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -150,6 +151,14 @@ input.dollar-input {
   box-shadow: var(--shadow-primary);
   position: relative;
   z-index: 1;
+}
+
+.hero-news {
+  max-height: 450px;
+}
+
+.hero-news.gens-3 {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("{{site.baseurl}}/images/news/3-gens.jpg") center / cover no-repeat;
 }
 
 .header-basic {

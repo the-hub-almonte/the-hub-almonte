@@ -1,14 +1,13 @@
 ---
 layout: news-article
 title: Three generations at The Hub!
+byline: This year Gwen Riel joined the Hub/Rebound volunteer team.
 meta: Gwen is not just any volunteer. She is the mother of the Hub Staff Supervisor Tammy Riel-Carson and the grandmother of Molly Carson who works in the store some Saturdays. This is a first for the Hub!
 source:
 category: news
 prevImage: 3-gens.jpg
+heroImage: gens-3
 ---
-
-## This year Gwen Riel joined the Hub/Rebound volunteer team.
-
 Gwen is not just any volunteer. She is the mother of the Hub Staff Supervisor Tammy Riel-Carson and the grandmother of Molly Carson who works in the store some Saturdays. This is a first for the Hub. We have never had three generations from the same family working at the Hub at the same time. We have had mother-daughter teams before, and currently have three: Julia Thomas and her daughter Paddy Vargas, Catherine Sykes and her daughter Julie McGrath, and Wendy and Chelsea Powell. Three generations? Well, no, we haven’t had that before.
 
 The Riel family has been in Almonte for 30 years. Tammy grew up in the town, finished her schooling and left, only to return to raise her own family here. Molly is born and bred in Almonte.

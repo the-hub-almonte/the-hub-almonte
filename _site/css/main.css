@@ -4110,7 +4110,8 @@ input.dollar-input {
 /* ---------- Main > Header ---------- */
 
 .hero {
-  min-height: 95vh;
+  height: 95vh;
+  max-height: 750px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -4119,6 +4120,14 @@ input.dollar-input {
   box-shadow: var(--shadow-primary);
   position: relative;
   z-index: 1;
+}
+
+.hero-news {
+  max-height: 450px;
+}
+
+.hero-news.gens-3 {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/images/news/3-gens.jpg") center / cover no-repeat;
 }
 
 .header-basic {
@@ -4388,9 +4397,14 @@ address.icon-label {
 
 @media only screen and (min-width: 38em) {
 
-  .nav-dark-items .nav .nav-items a:not(.btn),
-  .sticky .nav .nav-items a:not(.btn) {
+  .nav .nav-items a:not(.btn),
+  .sticky .nav .nav-items a:not(.btn),
+  .sticky.nav-light-items .nav .nav-items a:not(.btn) {
     color: var(--color-secondary);
+  }
+
+  .nav-light-items .nav .nav-items a:not(.btn) {
+    color: #fff;
   }
 
   .nav .nav-items li {
@@ -4454,7 +4468,7 @@ address.icon-label {
   /* .nav .logo {
     width: 12.5rem;
   } */
-  
+
   .nav .current::after,
   .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {

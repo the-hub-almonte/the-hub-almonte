@@ -1,0 +1,11 @@
+<header class="hero hero-news {{page.heroImage}}">
+  <div class="wrapper gutter">
+    <h1>{{page.title}}</h1>
+    {% if page.byline %}
+      <p class="giga text-fff">{{page.byline}}</p>
+      {% endif %}
+    {% if page.heroBtn %}
+      <a id="content-start" class="btn giga" href="{{site.baseurl}}/{{page.heroBtnLink}}">{{page.heroBtnText}}</a>
+    {% endif %}
+  </div>
+</header>

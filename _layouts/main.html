@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign pages=site.data.page-content[page.pageNumber] %}
-<header class="masthead sticky {% if pages.hero == false %}nav-dark-items{% endif %}">
+<header class="masthead sticky {% if pages.hero == true %}nav-light-items{% endif %}{% if page.heroImage %}nav-light-items{% endif %}">
   {% include nav.html navClass='nav wrapper gutter pad-t-1-2 pad-b-1-2' ulClass='list-group push-0' ulInner='nav-items list-group push-0' aLogo='inline-block' aInner='block line-hover' liHours='hidden' %}
   <a class="tog-nav m-0" href="#nav-footer">
     <span class="tog tog-top"></span>
