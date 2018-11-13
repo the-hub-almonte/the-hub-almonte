@@ -1,0 +1,12 @@
+- logo: logo-hub.svg
+  title: The Hub
+  shortDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  longDesc: Long ipsum dolor sit amet, consectetur adipiscing elit. Long ipsum dolor sit amet, consectetur adipiscing elit.
+  link: the-hub
+  reversed: true
+- logo: logo-rebound.svg
+  title: Rebound
+  shortDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  longDesc: Long ipsum dolor sit amet, consectetur adipiscing elit. Long ipsum dolor sit amet, consectetur adipiscing elit.
+  link: rebound
+  reversed: false

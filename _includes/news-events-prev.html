@@ -1,0 +1,51 @@
+<div class="wrapper">
+  <div class="grid grid-middle">
+    <div class="unit [ xs-1 m-1-2 ]">
+      <h2 class="gutter push-0">Recent News & Events</h2>
+    </div>
+    <div class="unit [ xs-1 m-1-2 ] news-view-all gutter">
+      <a href="{{site.baseurl}}/news-events/">
+        <div class="inline-block valign-top">
+          <span class="valign-middle inline-block bold mega">View all News & Events</span>
+        </div>
+        <i class="icon i-1">
+          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+        </i>
+      </a>
+    </div>
+  </div>
+  <ul class="grid list-group island-1-2">
+    {% for news in site.categories.news limit:1 %}
+      <li class="unit [ xs-1 m-1-2 ]">
+        <a href="{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
+          <div class="unit [ xs-1 s-1-2 m-1 l-1-2 ] island-1-2">
+            <div class="embed embed-1by1">
+              <img class="embed-item" src="{{site.baseurl}}/images/news/{{news.prevImage}}" alt="">
+            </div>
+          </div>
+          <div class="unit [ xs-1 s-1-2 m-1 l-1-2 ] island-1-2 unit-content-distribute">
+            <h3 class="giga push-1-2 text-secondary">{{news.title}}</h3>
+            <p class="content-fill text-secondary push-0">{{news.meta}}</p>
+            <span class="hyperlink">Read more...</span>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+    {% for news in site.categories.events limit:1 %}
+      <li class="unit [ xs-1 m-1-2 ]">
+        <a href="{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
+          <div class="unit [ xs-1 s-1-2 m-1 l-1-2 ] island-1-2">
+            <div class="embed embed-1by1">
+              <img class="embed-item" src="{{site.baseurl}}/images/news/{{news.prevImage}}" alt="">
+            </div>
+          </div>
+          <div class="unit [ xs-1 s-1-2 m-1 l-1-2 ] island-1-2 unit-content-distribute">
+            <h3 class="giga push-1-2 text-secondary">{{news.title}}</h3>
+            <p class="content-fill text-secondary push-0">{{news.meta}}</p>
+            <span class="hyperlink">Read more...</span>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,113 @@
+.slide-1 .slide-img {
+  background: url('https://placehold.it/400x400/') center / cover no-repeat;
+}
+.slide-2 .slide-img {
+  background: url('https://placehold.it/500x500/') center / cover no-repeat;
+}
+
+.slide-img {
+  background-color: var(--color-primary);
+}
+
+.what-we-give .slide-banner {
+  background: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("{{site.baseurl}}/images/hero-home.jpg") center / cover no-repeat;
+  color: #fff;
+}
+
+@media only screen and (max-width: 37.9999em) {
+
+  .slide-img {
+    padding-top: 56.25%;
+  }
+
+  .slide-inverted {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .slide {
+    display: flex;
+    align-content: stretch;
+    height: 85vh;
+    position: relative;
+    /* max-height: 700px; */
+  }
+
+  .slide-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .slide-unit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 100%;
+    position: absolute;
+  }
+/*
+  .slide-banner .slide-unit {
+    width: 50%;
+  } */
+
+  .slide-content-wrap {
+    max-width: 30em;
+  }
+
+  .slide-content {
+    left: 0;
+    top: 0;
+    clip-path: polygon(
+      0 0,
+      81.8181818182% 0,
+      100% 100%,
+      0 100%
+    );
+    z-index: 1;
+    padding: 0 7rem 0 0;
+  }
+
+  .slide-img {
+    left: 45%;
+    top: 0;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      18.18181818% 100%
+    );
+  }
+
+  .slide-reverse .slide-content {
+    left: 45%;
+    clip-path: polygon(
+      18.18181818% 0,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+    padding: 0 0 0 7rem;
+  }
+
+  .slide-reverse .slide-img {
+    left: 0;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      81.8181818182% 100%,
+      0 100%
+    );
+  }
+
+  .slide-banner .slide-content {
+    width: 50%;
+    position: static;
+    clip-path: none;
+    padding: 0;
+  }
+
+}

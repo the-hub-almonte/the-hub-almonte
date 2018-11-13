@@ -28,6 +28,12 @@
   align-items: center;
 }
 
+.grid-h-center {
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+
 .grid-stretch {
   -webkit-align-items: stretch;
   -ms-align-items: stretch;

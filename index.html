@@ -32,41 +32,5 @@ pageNumber: 0
   </div>
 </section>
 <section id="news-preview" class="news-preview pad-t-b-2 bg-lg" tabindex="0">
-  <div class="wrapper">
-    <h2 class="gutter push-0">News & Events</h2>
-    <ul class="grid list-group island-1-2">
-      {% for news in site.categories.news limit:1 %}
-        <li class="unit [ xs-1 m-1-2 ]">
-          <a href="{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
-            <div class="unit [ xs-1 s-1-2 m-1 l-1-2 ] island-1-2">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="{{site.baseurl}}/images/news/{{news.prevImage}}" alt="">
-              </div>
-            </div>
-            <div class="unit [ xs-1 s-1-2 m-1 l-1-2 ] island-1-2 unit-content-distribute">
-              <h3 class="giga push-1-2 text-000">{{news.title}}</h3>
-              <p class="content-fill text-000 push-0">{{news.meta}}</p>
-              <span class="hyperlink">Read more...</span>
-            </div>
-          </a>
-        </li>
-      {% endfor %}
-      {% for news in site.categories.events limit:1 %}
-        <li class="unit [ xs-1 m-1-2 ]">
-          <a href="{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
-            <div class="unit [ xs-1 s-1-2 m-1 l-1-2 ] island-1-2">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="{{site.baseurl}}/images/news/{{news.prevImage}}" alt="">
-              </div>
-            </div>
-            <div class="unit [ xs-1 s-1-2 m-1 l-1-2 ] island-1-2 unit-content-distribute">
-              <h3 class="giga push-1-2 text-000">{{news.title}}</h3>
-              <p class="content-fill text-000 push-0">{{news.meta}}</p>
-              <span class="hyperlink">Read more...</span>
-            </div>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+  {% include news-events-prev.html %}
 </section>

@@ -39,10 +39,6 @@
     type: text
     id: address
     name: address
-  # - label: Address Line 2
-  #   type: text
-  #   id: address-2
-  #   name: address-2
   - label: City
     type: text
     id: city

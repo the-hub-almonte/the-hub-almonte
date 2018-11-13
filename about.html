@@ -1,0 +1,151 @@
+---
+layout: main
+title: About
+pageClass: home
+pageNumber: 1
+---
+<div id="about-subnav-bar" class="about-subnav-bar [ xs-0 m-1 ] text-center">
+  <div class="wrapper gutter">
+    {% include about-subnav.html olClass='push-0 list-group-inline pad-t-1-4 pad-b-1-4' aClass="inline-block island-1-2 line-hover" %}
+  </div>
+</div>
+<section id="history-hub" tabindex="0">
+  <div id="slide-1" class="slide slide-reverse slide-1">
+    <div class="slide-unit slide-content">
+      <div class="slide-content-wrap gutter pad-t-b-2">
+        <h2>History Slide 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae rutrum eros, ac elementum nisl. Morbi ut rhoncus nisi. Phasellus aliquam nulla id placerat porta.</p>
+      </div>
+    </div>
+    <div class="slide-unit slide-img">
+    </div>
+  </div>
+  <div id="slide-2" class="slide slide-2">
+    <div class="slide-unit slide-content">
+      <div class="slide-content-wrap gutter pad-t-b-2">
+        <h2>History Slide 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae rutrum eros, ac elementum nisl. Morbi ut rhoncus nisi. Phasellus aliquam nulla id placerat porta.</p>
+      </div>
+    </div>
+    <div class="slide-unit slide-img">
+    </div>
+  </div>
+</section>
+<section id="our-services" class="our-services" tabindex="0">
+  <div class="bg-lg pad-t-b-2">
+    <div class="wrapper pad-t-b-2">
+      <h2 class="text-center gutter">Our Services</h2>
+      <div class="grid grid-h-center island-1-2">
+        {% for services in site.data.services %}
+          <a class="unit [ xs-1 m-1-2 l-1-3 ] island-1-2 unit-content-distribute smooth-scroll" href="#{{services.link}}">
+            <div class="bg-fff gutter pad-t-b-2 unit-content-distribute content-fill bg-lg-lighter-hov">
+              <div class="logo-wrap content-fill push">
+                <img class="logo" src="{{site.baseurl}}/images/{{services.logo}}" alt="">
+              </div>
+              <h3 class="text-secondary push-1-2">{{services.title}}</h3>
+              <p class="push-0 text-secondary">{{services.shortDesc}}</p>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% for serviceSlides in site.data.services %}
+    <div id="{{serviceSlides.link}}" class="slide {% if serviceSlides.reversed == true %}slide-reverse{% endif %}">
+      <div class="slide-unit slide-content">
+        <div class="slide-content-wrap gutter pad-t-b-2">
+          <h2>{{serviceSlides.title}}</h2>
+          <p>{{serviceSlides.longDesc}}</p>
+        </div>
+      </div>
+      <div class="slide-unit slide-img">
+      </div>
+    </div>
+  {% endfor %}
+</section>
+<section id="what-we-give" class="what-we-give" tabindex="0">
+  <div class="slide slide-banner slide-reverse">
+    <div class="slide-unit slide-content">
+      <div class="slide-content-wrap gutter pad-t-b-2">
+        <h2>Each year we donate over $50,000 to local organizations</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae rutrum eros, ac elementum nisl. Morbi ut rhoncus nisi. Phasellus aliquam nulla id placerat porta.</p>
+      </div>
+    </div>
+  </div>
+  <div class="pad-t-b-2">
+    <div class="wrapper">
+      <h2 class="text-center gutter">2017 Donations</h2>
+      <div class="grid island-1-2 donation-grid">
+        <div class="unit [ xs-1 m-1-2 ] island-1-2">
+          <div class="grid">
+            <div class="unit [ xs-1-2 ] bold giga">
+              <p class="push-0">Organization</p>
+            </div>
+            <div class="unit [ xs-1-2 ] bold giga text-right">
+              <p class="push-0">Donation</p>
+            </div>
+          </div>
+        </div>
+        <div class="unit [ xs-0 m-1-2 ] island-1-2">
+          <div class="grid">
+            <div class="unit [ xs-1-2 ] bold giga">
+              <p class="push-0">Organization</p>
+            </div>
+            <div class="unit [ xs-1-2 ] bold giga text-right">
+              <p class="push-0">Donation</p>
+            </div>
+          </div>
+        </div>
+        {% for donations in site.data.donations %}
+          <div class="unit [ xs-1 m-1-2 ] island-1-2">
+            <div class="grid">
+              <div class="unit [ xs-2-3 ]">
+                <p class="push-0">{{donations.donor}}</p>
+              </div>
+              <div class="unit [ xs-1-3 ] bold text-right don-amount">
+                <p class="push-0">{{donations.amount}}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="donations-total gutter">
+        <div class="grid pad-t-1-2 pad-b-1-2">
+          <div class="unit [ xs-1 m-1-2 ] unit-push-m-1-2 pad-t-1-2 pad-b-1-2">
+            <div class="grid">
+              <div class="unit [ xs-1-2 ] bold giga">
+                <p class="push-0 text-upper ">Grand Total</p>
+              </div>
+              <div class="unit [ xs-1-2 ] bold giga text-right">
+                <p class="push-0">$57,504.83</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="board-of-directors" tabindex="0">
+  <div id="board-slide" class="slide slide-inverted slide-reverse board-slide">
+    <div class="slide-unit slide-content bg-lg">
+      <div class="slide-content-wrap gutter pad-t-b-2">
+        <h2 class="push-1-2">Board of Directors</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae rutrum eros, ac elementum nisl. Morbi ut rhoncus nisi. Phasellus aliquam nulla id placerat porta.</p>
+        <h3 class="push-1-2">2018 Board of Directors</h3>
+        {% for board in site.data.board-members %}
+          <div class="grid">
+            <div class="unit [ xs-1-2 ] bold milli">
+              <p class="push-0 text-upper ">{{board.position}}</p>
+            </div>
+            <div class="unit [ xs-1-2 ] milli text-right">
+              <p class="push-0">{{board.member}}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="slide-unit slide-img">
+    </div>
+  </div>
+</section>

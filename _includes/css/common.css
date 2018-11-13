@@ -42,6 +42,7 @@ a {
   text-decoration: none;
   transition:
     background-color var(--transition-primary),
+    border-color var(--transition-primary),
     color var(--transition-primary);
 }
 
@@ -124,6 +125,10 @@ input.dollar-input {
   background-color: var(--color-primary);
 }
 
+.bg-fff {
+  background-color: #fff;
+}
+
 .bg-lg,
 .bg-lg-hov:hover {
   background-color: var(--color-lg);
@@ -134,8 +139,12 @@ input.dollar-input {
   background-color: var(--color-lg-lighter);
 }
 
-.text-000 {
-  color: #000;
+.bg-lg-lighter-hov {
+  transition: background-color var(--transition-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
 }
 
 /* ---------- Main > Header ---------- */

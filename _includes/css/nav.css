@@ -62,6 +62,7 @@
   width: 100%;
 }
 
+.about-subnav-bar .line-hover::after,
 .nav .line-hover::after {
   bottom: .25rem;
   display: none;
@@ -69,7 +70,9 @@
 
 .nav .current::after,
 .nav .line-hover:hover::after,
-.nav .line-hover:focus::after {
+.nav .line-hover:focus::after,
+.about-subnav-bar .line-hover:focus::after,
+.about-subnav-bar .line-hover:hover::after {
   width: calc(100% - 2.6rem);
 }
 
@@ -101,11 +104,11 @@
     padding-top: 3.590625rem;
   }
 
-  .nav .nav-items li:first-child {
+  .nav .nav-items > li:first-child {
     padding-top: 1.3rem;
   }
 
-  .nav .nav-items li:last-child {
+  .nav .nav-items > li:last-child {
     padding: 1.3rem 1.3rem 2.6rem;
   }
 
@@ -130,6 +133,33 @@
     color: var(--color-secondary);
   }
 
+  /* ---------- SubNav ---------- */
+
+  .subnav {
+    max-height: 0;
+    overflow: hidden;
+    transition:
+      max-height var(--transition-primary);
+  }
+
+  .subnav.open {
+    max-height: 255px;
+  }
+
+  .nav .nav-items .subnav a:not(.btn) {
+    padding: 1.3rem;
+    display: block;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-bottom: 1px solid var(--color-secondary);
+  }
+
+  .nav .nav-items .subnav a:not(.btn):hover {
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    border-color: var(--color-primary);
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -144,7 +174,7 @@
     color: #fff;
   }
 
-  .nav .nav-items li {
+  .nav .nav-items > li {
     display: inline-block;
   }
 
@@ -152,7 +182,7 @@
     padding: .7rem;
   }
 
-  .nav .nav-items li:last-child {
+  .nav .nav-items > li:last-child {
     padding: 0 0 0 .7rem;
   }
 
@@ -173,15 +203,82 @@
     flex-grow: 2;
   }
 
+  .about-subnav-bar .line-hover::after,
   .nav .line-hover::after {
     display: block;
   }
 
+  .about-subnav-bar .line-hover:focus::after,
+  .about-subnav-bar .line-hover:hover::after,
+  .subnav:hover ~ .line-hover::after,
   .nav .current::after,
   .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {
     width: calc(100% - 1.4rem);
     background-color: var(--color-primary);
+  }
+
+  /* ---------- SubNav ---------- */
+
+  .subnav-label:hover + .subnav ol,
+  .subnav:hover ol {
+    max-height: 160px;
+  }
+
+  .subnav {
+    position: absolute;
+    text-align: left;
+    top: 3.4619318182rem;
+    padding-top: .7rem;
+  }
+
+  .subnav ol {
+    max-height: 0;
+    overflow: hidden;
+    box-shadow: var(--shadow-primary);
+    background-color: #fff;
+    transition:
+      max-height var(--transition-primary);
+  }
+
+  .subnav li:first-child {
+    border-top: 2px solid var(--color-primary);
+  }
+
+  .nav .nav-items .subnav a:not(.btn) {
+    color: var(--color-secondary);
+    display: block;
+    padding: .35rem .7rem;
+  }
+
+  .nav .nav-items .subnav a:not(.btn):hover {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+
+  /* ---------- SubNavBar ---------- */
+
+  .about-subnav-bar {
+    background-color: var(--color-lg);
+  }
+
+  .about-subnav-bar .line-hover,
+  .about-subnav-bar .line-hover:hover {
+    color: var(--color-secondary);
+  }
+
+  .about-subnav-bar.sticky {
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 4.16rem;
+    z-index: 10;
+    box-shadow: var(--shadow-primary);
+  }
+
+  .masthead.sticky.no-shadow {
+    box-shadow: none;
   }
 
   @media only screen and (max-width: 45em) {
@@ -206,10 +303,33 @@
     width: 12.5rem;
   } */
 
+  .about-subnav-bar .line-hover:focus::after,
+  .about-subnav-bar .line-hover:hover::after,
+  .subnav:hover ~ .line-hover::after,
   .nav .current::after,
   .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {
     width: calc(100% - 1.5rem);
+  }
+
+  /* ---------- SubNav ---------- */
+
+  .subnav-label:hover + .subnav ol,
+  .subnav:hover ol {
+    max-height: 160px;
+  }
+
+  .subnav {
+    top: 3.625rem;
+    padding-top: .75rem;
+  }
+
+  .nav .nav-items .subnav a:not(.btn) {
+    padding: .375rem .75rem;
+  }
+
+  .about-subnav-bar.sticky {
+    top: 4.3rem;
   }
 
 }

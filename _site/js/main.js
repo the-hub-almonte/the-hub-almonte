@@ -23,7 +23,7 @@ $('.tog-nav').on('click', function (e) {
 // Smooth Scroll
 
 $(document).ready(function(){
-  $(".smooth-scroll").on('click', function(event) {
+  $(".smooth-scroll, .smooth-scroll a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
@@ -67,3 +67,40 @@ $('.cat-selector').change(function () {
 //     $('.categories-wrap').toggleClass('cat-events');
 //   }
 // });
+
+
+// SubNav
+
+var x = window.matchMedia("(max-width: 38em)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+function myFunction(x) {
+  if (x.matches) {
+    $('.subnav-label').on('click', function (e) {
+      e.preventDefault();
+      $('.subnav').toggleClass('open');
+    });
+  }
+}
+
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {subNavSticky()};
+
+// Get the navbar
+var aboutNavStick = document.getElementById("about-subnav-bar");
+
+// Get the offset position of the navbar
+var aboutNavSticky = aboutNavStick.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function subNavSticky() {
+  if (window.pageYOffset >= aboutNavSticky) {
+    aboutNavStick.classList.add("sticky")
+    $('.masthead').addClass('no-shadow');
+  } else {
+    aboutNavStick.classList.remove("sticky");
+    $('.masthead').removeClass('no-shadow');
+  }
+}

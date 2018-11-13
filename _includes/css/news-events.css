@@ -19,3 +19,16 @@
 .no-articles {
   padding-bottom: 7.5rem;
 }
+
+.news-img-wrap-float {
+  float: left;
+  margin: 0
+}
+
+@media only screen and (min-width: 38em) {
+
+  .news-view-all {
+    text-align: right;
+  }
+
+}

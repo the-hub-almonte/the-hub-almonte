@@ -9,3 +9,5 @@
 {% include css/nav.css %}
 {% include css/nav-tog.css %}
 {% include css/news-events.css %}
+{% include css/slides.css %}
+{% include css/about.css %}

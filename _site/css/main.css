@@ -1365,6 +1365,12 @@ a:focus, [tabindex="0"]:focus {
   align-items: center;
 }
 
+.grid-h-center {
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+
 .grid-stretch {
   -webkit-align-items: stretch;
   -ms-align-items: stretch;
@@ -4011,6 +4017,7 @@ a {
   text-decoration: none;
   transition:
     background-color var(--transition-primary),
+    border-color var(--transition-primary),
     color var(--transition-primary);
 }
 
@@ -4093,6 +4100,10 @@ input.dollar-input {
   background-color: var(--color-primary);
 }
 
+.bg-fff {
+  background-color: #fff;
+}
+
 .bg-lg,
 .bg-lg-hov:hover {
   background-color: var(--color-lg);
@@ -4103,8 +4114,12 @@ input.dollar-input {
   background-color: var(--color-lg-lighter);
 }
 
-.text-000 {
-  color: #000;
+.bg-lg-lighter-hov {
+  transition: background-color var(--transition-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
 }
 
 /* ---------- Main > Header ---------- */
@@ -4325,6 +4340,7 @@ address.icon-label {
   width: 100%;
 }
 
+.about-subnav-bar .line-hover::after,
 .nav .line-hover::after {
   bottom: .25rem;
   display: none;
@@ -4332,7 +4348,9 @@ address.icon-label {
 
 .nav .current::after,
 .nav .line-hover:hover::after,
-.nav .line-hover:focus::after {
+.nav .line-hover:focus::after,
+.about-subnav-bar .line-hover:focus::after,
+.about-subnav-bar .line-hover:hover::after {
   width: calc(100% - 2.6rem);
 }
 
@@ -4364,11 +4382,11 @@ address.icon-label {
     padding-top: 3.590625rem;
   }
 
-  .nav .nav-items li:first-child {
+  .nav .nav-items > li:first-child {
     padding-top: 1.3rem;
   }
 
-  .nav .nav-items li:last-child {
+  .nav .nav-items > li:last-child {
     padding: 1.3rem 1.3rem 2.6rem;
   }
 
@@ -4393,6 +4411,33 @@ address.icon-label {
     color: var(--color-secondary);
   }
 
+  /* ---------- SubNav ---------- */
+
+  .subnav {
+    max-height: 0;
+    overflow: hidden;
+    transition:
+      max-height var(--transition-primary);
+  }
+
+  .subnav.open {
+    max-height: 255px;
+  }
+
+  .nav .nav-items .subnav a:not(.btn) {
+    padding: 1.3rem;
+    display: block;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-bottom: 1px solid var(--color-secondary);
+  }
+
+  .nav .nav-items .subnav a:not(.btn):hover {
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    border-color: var(--color-primary);
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -4407,7 +4452,7 @@ address.icon-label {
     color: #fff;
   }
 
-  .nav .nav-items li {
+  .nav .nav-items > li {
     display: inline-block;
   }
 
@@ -4415,7 +4460,7 @@ address.icon-label {
     padding: .7rem;
   }
 
-  .nav .nav-items li:last-child {
+  .nav .nav-items > li:last-child {
     padding: 0 0 0 .7rem;
   }
 
@@ -4436,15 +4481,82 @@ address.icon-label {
     flex-grow: 2;
   }
 
+  .about-subnav-bar .line-hover::after,
   .nav .line-hover::after {
     display: block;
   }
 
+  .about-subnav-bar .line-hover:focus::after,
+  .about-subnav-bar .line-hover:hover::after,
+  .subnav:hover ~ .line-hover::after,
   .nav .current::after,
   .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {
     width: calc(100% - 1.4rem);
     background-color: var(--color-primary);
+  }
+
+  /* ---------- SubNav ---------- */
+
+  .subnav-label:hover + .subnav ol,
+  .subnav:hover ol {
+    max-height: 160px;
+  }
+
+  .subnav {
+    position: absolute;
+    text-align: left;
+    top: 3.4619318182rem;
+    padding-top: .7rem;
+  }
+
+  .subnav ol {
+    max-height: 0;
+    overflow: hidden;
+    box-shadow: var(--shadow-primary);
+    background-color: #fff;
+    transition:
+      max-height var(--transition-primary);
+  }
+
+  .subnav li:first-child {
+    border-top: 2px solid var(--color-primary);
+  }
+
+  .nav .nav-items .subnav a:not(.btn) {
+    color: var(--color-secondary);
+    display: block;
+    padding: .35rem .7rem;
+  }
+
+  .nav .nav-items .subnav a:not(.btn):hover {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+
+  /* ---------- SubNavBar ---------- */
+
+  .about-subnav-bar {
+    background-color: var(--color-lg);
+  }
+
+  .about-subnav-bar .line-hover,
+  .about-subnav-bar .line-hover:hover {
+    color: var(--color-secondary);
+  }
+
+  .about-subnav-bar.sticky {
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 4.16rem;
+    z-index: 10;
+    box-shadow: var(--shadow-primary);
+  }
+
+  .masthead.sticky.no-shadow {
+    box-shadow: none;
   }
 
   @media only screen and (max-width: 45em) {
@@ -4469,10 +4581,33 @@ address.icon-label {
     width: 12.5rem;
   } */
 
+  .about-subnav-bar .line-hover:focus::after,
+  .about-subnav-bar .line-hover:hover::after,
+  .subnav:hover ~ .line-hover::after,
   .nav .current::after,
   .nav .line-hover:focus::after,
   .nav .line-hover:hover::after {
     width: calc(100% - 1.5rem);
+  }
+
+  /* ---------- SubNav ---------- */
+
+  .subnav-label:hover + .subnav ol,
+  .subnav:hover ol {
+    max-height: 160px;
+  }
+
+  .subnav {
+    top: 3.625rem;
+    padding-top: .75rem;
+  }
+
+  .nav .nav-items .subnav a:not(.btn) {
+    padding: .375rem .75rem;
+  }
+
+  .about-subnav-bar.sticky {
+    top: 4.3rem;
   }
 
 }
@@ -4546,5 +4681,178 @@ address.icon-label {
 
 .no-articles {
   padding-bottom: 7.5rem;
+}
+
+.news-img-wrap-float {
+  float: left;
+  margin: 0
+}
+
+@media only screen and (min-width: 38em) {
+
+  .news-view-all {
+    text-align: right;
+  }
+
+}
+
+.slide-1 .slide-img {
+  background: url('https://placehold.it/400x400/') center / cover no-repeat;
+}
+.slide-2 .slide-img {
+  background: url('https://placehold.it/500x500/') center / cover no-repeat;
+}
+
+.slide-img {
+  background-color: var(--color-primary);
+}
+
+.what-we-give .slide-banner {
+  background: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/images/hero-home.jpg") center / cover no-repeat;
+  color: #fff;
+}
+
+@media only screen and (max-width: 37.9999em) {
+
+  .slide-img {
+    padding-top: 56.25%;
+  }
+
+  .slide-inverted {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .slide {
+    display: flex;
+    align-content: stretch;
+    height: 85vh;
+    position: relative;
+    /* max-height: 700px; */
+  }
+
+  .slide-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .slide-unit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 100%;
+    position: absolute;
+  }
+/*
+  .slide-banner .slide-unit {
+    width: 50%;
+  } */
+
+  .slide-content-wrap {
+    max-width: 30em;
+  }
+
+  .slide-content {
+    left: 0;
+    top: 0;
+    clip-path: polygon(
+      0 0,
+      81.8181818182% 0,
+      100% 100%,
+      0 100%
+    );
+    z-index: 1;
+    padding: 0 7rem 0 0;
+  }
+
+  .slide-img {
+    left: 45%;
+    top: 0;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      18.18181818% 100%
+    );
+  }
+
+  .slide-reverse .slide-content {
+    left: 45%;
+    clip-path: polygon(
+      18.18181818% 0,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+    padding: 0 0 0 7rem;
+  }
+
+  .slide-reverse .slide-img {
+    left: 0;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      81.8181818182% 100%,
+      0 100%
+    );
+  }
+
+  .slide-banner .slide-content {
+    width: 50%;
+    position: static;
+    clip-path: none;
+    padding: 0;
+  }
+
+}
+
+.our-services .logo {
+  width: 100%;
+  max-width: 12rem;
+}
+
+.our-services .logo-wrap {
+  display: flex;;
+  align-items: center;
+}
+
+.donations-total > .grid {
+  border-top: 2px solid var(--color-primary);
+}
+
+@media only screen and (min-width: 38em) {
+
+  .donation-grid .unit:nth-child(odd) .unit:last-child {
+    padding-right: .7rem;
+  }
+
+  .donations-total .unit .unit:first-child {
+    padding-left: 1.4rem;
+  }
+
+  .donation-grid .unit:nth-child(even) .unit:first-child {
+    padding-left: .7rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .donation-grid .unit:nth-child(odd) .unit:last-child {
+    padding-right: .75rem;
+  }
+
+  .donations-total .unit .unit:first-child {
+    padding-left: 1.5rem;
+  }
+
+  .donation-grid .unit:nth-child(even) .unit:first-child {
+    padding-left: .75rem;
+  }
+
 }
 

@@ -1,0 +1,45 @@
+.our-services .logo {
+  width: 100%;
+  max-width: 12rem;
+}
+
+.our-services .logo-wrap {
+  display: flex;;
+  align-items: center;
+}
+
+.donations-total > .grid {
+  border-top: 2px solid var(--color-primary);
+}
+
+@media only screen and (min-width: 38em) {
+
+  .donation-grid .unit:nth-child(odd) .unit:last-child {
+    padding-right: .7rem;
+  }
+
+  .donations-total .unit .unit:first-child {
+    padding-left: 1.4rem;
+  }
+
+  .donation-grid .unit:nth-child(even) .unit:first-child {
+    padding-left: .7rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .donation-grid .unit:nth-child(odd) .unit:last-child {
+    padding-right: .75rem;
+  }
+
+  .donations-total .unit .unit:first-child {
+    padding-left: 1.5rem;
+  }
+
+  .donation-grid .unit:nth-child(even) .unit:first-child {
+    padding-left: .75rem;
+  }
+
+}
