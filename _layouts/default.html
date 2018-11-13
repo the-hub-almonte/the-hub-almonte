@@ -19,5 +19,11 @@
   {{content}}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="{{site.baseurl}}/js/main.js"></script>
+  {% if page.url contains 'news' %}
+    <script src="{{site.baseurl}}/js/news.js"></script>
+  {% endif %}
+  {% if page.url contains 'about' %}
+    <script src="{{site.baseurl}}/js/about.js"></script>
+  {% endif %}
 </body>
 </html>

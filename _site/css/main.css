@@ -4694,6 +4694,11 @@ address.icon-label {
     text-align: right;
   }
 
+  .news-categories.sticky div {
+    position: fixed;
+    top: 5rem;
+  }
+
 }
 
 .slide-1 .slide-img {

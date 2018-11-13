@@ -27,7 +27,7 @@
           <a class="{{include.aInner}} {% if page.url contains 'volunteer' %}current{% endif %}" href="{{site.baseurl}}/volunteer/">Volunteer</a>
         </li>
         <li class="{{include.liInner}}">
-          <a class="{{include.aInner}} {% if page.url contains 'news' %}current{% endif %}" href="{{site.baseurl}}/news-events/">News & Events</a>
+          <a class="{{include.aInner}} {% if page.url contains 'news' %}current{% endif %}{% if page.url contains 'events' %}current{% endif %}" href="{{site.baseurl}}/news-events/">News & Events</a>
         </li>
         <li class="{{include.liInner}} {{include.liHours}}">
           <a class="{{include.aInner}}" href="{{site.baseurl}}/#hours">Store Hours</a>

@@ -31,4 +31,9 @@
     text-align: right;
   }
 
+  .news-categories.sticky div {
+    position: fixed;
+    top: 5rem;
+  }
+
 }

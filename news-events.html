@@ -46,16 +46,18 @@ pageNumber: 3
         <p>Unfortunately there are no articles to display based on the categories selected. Please select a category to view articles.</p>
       </div>
     </div>
-    <aside class="unit [ xs-0 m-1-4 ] gutter">
-      <p class="bold peta font-alt">Categories</p>
-      <ul class="list-group">
-        {% for cats in site.data.blog-categories %}
-          <li class="push-1-2">
-            <input class="cat-selector" type="checkbox" id="{{cats.id}}" name="{{cats.name}}" {% if cats.checked == true %}checked{% endif %}>
-            <label for="{{cats.id}}">{{cats.category}}</label>
-          </li>
-        {% endfor %}
-      </ul>
+    <aside id="news-categories" class="unit [ xs-0 m-1-4 ] gutter news-categories relative">
+      <div>
+        <p class="bold peta font-alt">Categories</p>
+        <ul class="list-group">
+          {% for cats in site.data.blog-categories %}
+            <li class="push-1-2">
+              <input class="cat-selector" type="checkbox" id="{{cats.id}}" name="{{cats.name}}" {% if cats.checked == true %}checked{% endif %}>
+              <label for="{{cats.id}}">{{cats.category}}</label>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </aside>
   </div>
 </div>
