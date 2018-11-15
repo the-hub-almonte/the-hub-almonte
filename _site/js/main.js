@@ -81,5 +81,8 @@ function myFunction(x) {
       e.preventDefault();
       $('.subnav').toggleClass('open');
     });
+    $('.nav .subnav a').on('click', function () {
+      $('.masthead, .subnav').toggleClass('open');
+    });
   }
 }
