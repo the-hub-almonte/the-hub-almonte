@@ -125,7 +125,9 @@ pageNumber: 1
       <div class="slide-unit slide-content">
         <div class="slide-content-wrap gutter pad-t-b-2">
           <h2>{{serviceSlides.title}}</h2>
-          <p>{{serviceSlides.longDesc}}</p>
+          {% for desc in serviceSlides.longDesc %}
+            <p>{{desc}}</p>
+          {% endfor %}
         </div>
       </div>
       <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}/images/about/{{serviceSlides.bgImg}}')">

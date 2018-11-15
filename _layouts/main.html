@@ -14,7 +14,7 @@ layout: default
     {% if pages.hero == true %}
       {% include hero.html %}
     {% elsif pages.hero == false %}
-      <header class="header-basic">
+      <header class="header-basic {% if pages.byline == true %}pad-b-2{% endif %}">
         <div class="max-length gutter">
           <h1 class="">{{pages.h1Text}}</h1>
           {% if pages.byline == true %}
@@ -22,6 +22,9 @@ layout: default
           {% endif %}
         </div>
       </header>
+      {% if page.url contains 'donate' %}
+        <div class="gutter max-length pad-b"><hr class="push-2" style="border-color: var(--color-primary);"></div>
+      {% endif %}
     {% endif %}
   {{content}}
   {% if pages.sponsorBar == true %}

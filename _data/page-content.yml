@@ -39,8 +39,8 @@
 - title: Donate
   hero: false
   h1Text: Donate
-  byline: false
-  bylineText: Hub & Rebound’s volunteers play an integral role in every aspect of the organization.
+  byline: true
+  bylineText: The Hub & Rebound rely on the generous support of the community to continue operation. Thank you for your generosity and taking the time to donate to The Hub.
   heroBtn: false
   heroBtnLink:
   heroBtnText:
