@@ -1,18 +1,23 @@
 - title: Home
   hero: true
+  heroBG: hero-home.jpg
   h1Text: Giving back to the community since 1974.
   bylineText: The Hub’s goal has always been to service the greater Almonte community and be there when they need us most.
   heroBtn: true
   heroBtnLink: about/
   heroBtnText: Learn More
+  sponsorBar: true
 - title: About
   hero: true
+  heroBG: hero-2.jpg
   h1Text: About The Hub & Rebound
   byline: true
   bylineText: The Hub & Rebound have a rich history serving the community. Learn how countless volunteers have selflessy given their time to help us grow into what we are today.
   heroBtn: true
-  heroBtnLink: '#history'
+  heroBtnLink: 'about/#history-hub'
   heroBtnText: Learn More
+  heroBtnClass: smooth-scroll
+  sponsorBar: true
 - title: Volunteer
   hero: false
   h1Text: Help us give back to the community!
@@ -21,6 +26,7 @@
   heroBtn: false
   heroBtnLink:
   heroBtnText:
+  sponsorBar:
 - title: News & Events
   hero: false
   h1Text: News & Events
@@ -29,6 +35,7 @@
   heroBtn: false
   heroBtnLink:
   heroBtnText:
+  sponsorBar:
 - title: Donate
   hero: false
   h1Text: Donate
@@ -37,3 +44,4 @@
   heroBtn: false
   heroBtnLink:
   heroBtnText:
+  sponsorBar:

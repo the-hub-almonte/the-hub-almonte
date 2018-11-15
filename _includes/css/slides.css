@@ -7,6 +7,7 @@
 
 .slide-img {
   background-color: var(--color-primary);
+  background: url('https://placehold.it/500x500/') center / cover no-repeat;
 }
 
 .what-we-give .slide-banner {
@@ -17,7 +18,7 @@
 @media only screen and (max-width: 37.9999em) {
 
   .slide-img {
-    padding-top: 56.25%;
+    padding-top: 75%;
   }
 
   .slide-inverted {

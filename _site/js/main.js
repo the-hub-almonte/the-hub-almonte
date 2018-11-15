@@ -5,10 +5,10 @@ $('.masthead').removeClass('sticky')
 $(function() {
    $(window).scroll(function () {
       if ($(this).scrollTop() > 50) {
-        $('.masthead').addClass('sticky')
+        $('.masthead, body').addClass('sticky')
       }
       if ($(this).scrollTop() < 50) {
-        $('.masthead').removeClass('sticky')
+        $('.masthead, body').removeClass('sticky')
       }
    });
 });

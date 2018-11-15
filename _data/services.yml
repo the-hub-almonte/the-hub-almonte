@@ -4,9 +4,18 @@
   longDesc: Long ipsum dolor sit amet, consectetur adipiscing elit. Long ipsum dolor sit amet, consectetur adipiscing elit.
   link: the-hub
   reversed: true
+  bgImg: the-hub.jpg
 - logo: logo-rebound.svg
   title: Rebound
   shortDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   longDesc: Long ipsum dolor sit amet, consectetur adipiscing elit. Long ipsum dolor sit amet, consectetur adipiscing elit.
   link: rebound
   reversed: false
+  bgImg: rebound.jpg
+- logo: hub-hospice-logo.png
+  title: Hub Hospice
+  shortDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  longDesc: Long ipsum dolor sit amet, consectetur adipiscing elit. Long ipsum dolor sit amet, consectetur adipiscing elit.
+  link: rebound
+  reversed: true
+  bgImg: hub-hospice.jpg

@@ -1,9 +1,10 @@
-<header class="hero {{include.heroSize}}">
+<header class="hero {{include.heroSize}}" style="background-image: url('{{site.baseurl}}/images/{{pages.heroBG}}')">
+  <div class="hero-overlay"></div>
   <div class="wrapper gutter">
     <h1>{{pages.h1Text}}</h1>
     <p class="giga text-fff">{{pages.bylineText}}</p>
     {% if pages.heroBtn == true %}
-      <a id="content-start" class="btn giga" href="{{site.baseurl}}/{{pages.heroBtnLink}}">{{pages.heroBtnText}}</a>
+      <a id="content-start" class="btn giga {{pages.heroBtnClass}}" href="{{site.baseurl}}/{{pages.heroBtnLink}}">{{pages.heroBtnText}}</a>
     {% endif %}
   </div>
 </header>

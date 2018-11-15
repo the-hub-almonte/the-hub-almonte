@@ -24,6 +24,9 @@ layout: default
       </header>
     {% endif %}
   {{content}}
+  {% if pages.sponsorBar == true %}
+    {% include sponsor-bar.html sponsorClass='hidden' %}
+  {% endif %}
 </main>
 <footer class="footer pad-t">
   <div class="grid grid-bottom wrapper island-1-2 push">
