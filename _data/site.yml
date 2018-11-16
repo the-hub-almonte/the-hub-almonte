@@ -1,9 +1,15 @@
 tel: '+16132565225'
 telDisplay: (613) 256-5225
 email: info@thehubalmonte.com
-hubAddressLine1: 14 Industrial Dr
-hubAddressLine2: 'Almonte, ON K0A 1A0'
-hubMapLink: 'https://goo.gl/maps/2viaCeAw5n32'
-reboundAddressLine1: 14 Industrial Dr
-reboundAddressLine2: 'Almonte, ON K0A 1A0'
-reboundMapLink: 'https://goo.gl/maps/2viaCeAw5n32'
+hubContact:
+  tel: '+16132565225'
+  telDisplay: (613) 256-5225
+  addressLine1: 14 Industrial Dr
+  addressLine2: 'Almonte, ON K0A 1A0'
+  mapLink: 'https://goo.gl/maps/2viaCeAw5n32'
+reboundContact:
+  tel: '+16132565225'
+  telDisplay: (613) 256-5225
+  addressLine1: 14 Industrial Dr
+  addressLine2: 'Almonte, ON K0A 1A0'
+  mapLink: 'https://goo.gl/maps/2viaCeAw5n32'
