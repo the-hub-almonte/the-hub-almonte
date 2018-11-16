@@ -11,16 +11,16 @@
     </a>
   </li>
   <li class="{{include.liClass}}">
-    <a class="{{include.aClass}}" href="mailto:info@thehubalmonte.com">
-      <span class="icon-label push-r-1-2">info@thehubalmonte.com</span>
+    <a class="{{include.aClass}}" href="mailto:{{site.data.site.email}}">
+      <span class="icon-label push-r-1-2">{{site.data.site.email}}</span>
       <i class="icon i-3-4">
         <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#email" /></svg>
       </i>
     </a>
   </li>
   <li class="{{include.liClass}}">
-    <a class="{{include.aClass}} no-wrap" href="https://goo.gl/maps/2viaCeAw5n32" target="_blank">
-      <address class="icon-label push-r-1-2">14 Industrial Dr, Almonte, ON K0A 1A0</address>
+    <a class="{{include.aClass}} no-wrap" href="{{site.data.site.hubMapLink}}" target="_blank">
+      <address class="icon-label push-r-1-2">{{site.data.site.hubAddressLine1}}, {{site.data.site.hubAddressLine2}}</address>
       <i class="icon i-3-4">
         <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#location" /></svg>
       </i>
