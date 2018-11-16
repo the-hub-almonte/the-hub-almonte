@@ -96,7 +96,7 @@ collections:
                     name: "heroBtnLink"
                     widget: "string"
                   - label: "Button Text"
-                    name: "heroBtntext"
+                    name: "heroBtnText"
                     widget: "string"
               - label: "Banner Image"
                 name: "heroImg"
