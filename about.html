@@ -11,7 +11,7 @@ pageNumber: 1
 </div>
 <section id="history-hub" tabindex="0">
   {% for slides in site.data.slide %}
-    <div id="slide-{{slides.name}}" class="slide {% if slide.reverse == true %}slide-reverse{% endif %}">
+    <div id="slide-{{slides.name}}" class="slide {% if slides.reverse == true %}slide-reverse{% endif %}">
       <div class="slide-unit slide-content">
         <div class="slide-content-wrap gutter pad-t-b-2">
           {% if slides.title %}

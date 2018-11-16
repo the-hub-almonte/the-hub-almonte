@@ -11,8 +11,8 @@ layout: default
   </a>
 </header>
 <main id="main" tabindex="0">
-    {% if pages.hero == true %}
-      {% include hero.html %}
+    {% if site.data.pages.home.hero == true %}
+      {% include hero.html image=site.data.pages.home.banner.heroImg %}
     {% elsif pages.hero == false %}
       <header class="header-basic {% if pages.byline == true %}pad-b-2{% endif %}">
         <div class="max-length gutter">
