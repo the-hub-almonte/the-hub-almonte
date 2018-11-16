@@ -11,8 +11,8 @@ layout: default
   </a>
 </header>
 <main id="main" tabindex="0">
-    {% if site.data.pages.home.hero == true %}
-      {% include hero.html image=site.data.pages.home.banner.heroImg %}
+    {% if pages.hero == true %}
+      {% include hero.html %}
     {% elsif pages.hero == false %}
       <header class="header-basic {% if pages.byline == true %}pad-b-2{% endif %}">
         <div class="max-length gutter">
@@ -43,6 +43,9 @@ layout: default
       {% include contact-info.html ulClass='list-group push-0 milli' liClass='push-1-4' titleSize='mega' aClass='' %}
     </div>
   </div>
+  <div class="icon-list-wrap">
+    {% include social-media-list.html ulClass='push-0 wrapper island'%}
+    </div>
   <div class="footer-disclaimer pad-t-b-2">
     {% include charitable-status.html wrapClass='wrapper gutter' titleClass='bold mega push-1-2' pClass="push-0" %}
   </div>

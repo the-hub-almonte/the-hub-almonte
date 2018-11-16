@@ -30,6 +30,15 @@ address.icon-label {
   display: inline-block;
 }
 
+.footer .icon-list-wrap {
+  text-align: center;
+  background-color: #2f2f2f;
+}
+
+.icon-list li:last-child {
+  margin: 0;
+}
+
 .footer-disclaimer {
   background-color: #222;
   color: #ddd;
@@ -42,13 +51,17 @@ address.icon-label {
 
 @media only screen and (max-width: 37.999em) {
 
-  .footer li,
+  .footer li:not(.push-r),
   .footer .unit:first-child {
     margin-bottom: 1.3rem;
   }
 
   .footer .btn-wrap {
     margin-bottom: 2.6rem;
+  }
+
+  .footer .icon-list-title {
+    display: none;
   }
 
 }
@@ -60,7 +73,8 @@ address.icon-label {
   }
 
 
-  .footer .unit:last-child {
+  .footer .unit:last-child,
+  .footer .icon-list-wrap {
     text-align: right;
   }
 

@@ -1,0 +1,15 @@
+<ul class="icon-list list-group-inline {{include.ulClass}}">
+  <li class="push-r icon-list-title">
+    <p class="milli push-0">Follow The Hub & Rebound on social media!</p>
+  </li>
+  {% for mediaIcons in site.data.social-media %}
+    <li class="push-r">
+      <a class="inline-block" href="{{mediaIcons.link}}">
+        <i class="icon i-1">
+          <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#{{mediaIcons.iconRef}}" /></svg>
+        </i>
+        <span class="icon-label hidden">{{mediaIcons.label}}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

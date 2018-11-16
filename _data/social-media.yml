@@ -1,0 +1,6 @@
+- label: "YouTube"
+  link: "https://www.youtube.com/channel/UCL5Uk95Y8NyZxzHIh1031-w"
+  iconRef: "youtube"
+- label: "Facebook"
+  link: "https://www.facebook.com/TheHubAlmonte/"
+  iconRef: "facebook"
