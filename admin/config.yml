@@ -12,6 +12,9 @@ collections:
         name: "site"
         file: "_data/site.yml"
         fields:
-          - label: "Tel"
+          - label: "Telephone Number Data"
             name: "tel"
+            widget: "string"
+          - label: "Telephone Number Display"
+            name: "telDisplay"
             widget: "string"
