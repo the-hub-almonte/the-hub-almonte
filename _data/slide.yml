@@ -1,0 +1,7 @@
+- name: "neighbourhood-club"
+  reverse: true
+  title: "Club"
+  content:
+    - The Hub is rooted in homegrown origins. In 1972, Neighbourhood Club member Mary Dugdale began to collect and give away clothing to anyone who was in need.
+    - More content
+  image: 5th-anniv-group.jpg

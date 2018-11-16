@@ -10,96 +10,22 @@ pageNumber: 1
   </div>
 </div>
 <section id="history-hub" tabindex="0">
-  <div id="slide-1" class="slide slide-reverse slide-1">
-    <div class="slide-unit slide-content">
-      <div class="slide-content-wrap gutter pad-t-b-2">
-        <!-- <h2>History Slide 1</h2> -->
-        <p class="giga">The Hub is rooted in homegrown origins. In 1972, Neighbourhood Club member Mary Dugdale began to collect and give away clothing to anyone who was in need.</p>
+  {% for slides in site.data.slide %}
+    <div id="slide-{{slides.name}}" class="slide {% if slide.reverse == true %}slide-reverse{% endif %}">
+      <div class="slide-unit slide-content">
+        <div class="slide-content-wrap gutter pad-t-b-2">
+          {% if slides.title %}
+            <h2>{{slides.title}}</h2>
+          {% endif %}
+          {% for content in slides.content %}
+            <p class="giga">{{slides.content}}</p>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}/images/about/{{slides.image}}')">
       </div>
     </div>
-    <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}/images/about/5th-anniv-group.jpg')">
-    </div>
-  </div>
-  <div id="slide-2" class="slide slide-2">
-    <div class="slide-unit slide-content">
-      <div class="slide-content-wrap gutter pad-t-b-2">
-        <!-- <h2>History Slide 2</h2> -->
-        <p class="giga">In 1974, the CHEO Auxiliary began to look more closely into the needs of the Almonte community. The Neighbourhood Club and the Auxiliary merged together to form The Almonte Community Co-ordinators (ACC).</p>
-      </div>
-    </div>
-    <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}/images/about/founders-tea.jpg')">
-    </div>
-  </div>
-  <div id="slide-3" class="slide slide-reverse slide-3">
-    <div class="slide-unit slide-content">
-      <div class="slide-content-wrap gutter pad-t-b-2">
-        <!-- <h2>History Slide 1</h2> -->
-        <p class="giga">The ACC was founded by women for women and their families. In May of 1974, The ACC opened up The Hub, bringing with it a new force for social change in Almonte.</p>
-      </div>
-    </div>
-    <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}/images/about/20th-anniversary-founders-tea.jpg')">
-    </div>
-  </div>
-  <div id="slide-4" class="slide slide-4">
-    <div class="slide-unit slide-content">
-      <div class="slide-content-wrap gutter pad-t-b-2">
-        <!-- <h2>History Slide 2</h2> -->
-        <p class="giga">The Hub and its sister store Rebound were created as second-hand stores which give their profits back into the community. Our main priority is to be a voice for the women and the most vulnerable in Almonte.</p>
-      </div>
-    </div>
-    <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}/images/about/rebound.jpg')">
-    </div>
-  </div>
-  <div id="slide-5" class="slide slide-reverse slide-5">
-    <div class="slide-unit slide-content">
-      <div class="slide-content-wrap gutter pad-t-b-2">
-        <!-- <h2>History Slide 1</h2> -->
-        <p class="giga">The Hub has a very long history in downtown Almonte. It opened its doors at 66 Mill Street, and remained there until a devastating fire in 1997. In 1998, the Royal Bank of Canada sold us the The Hub’s current address, 118 Mill Street, a beautiful historic building which was once The Orpheum Theatre, for $1.00.</p>
-      </div>
-    </div>
-    <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}/images/about/historical-image-the-hub.jpg')">
-    </div>
-  </div>
-  <div id="slide-6" class="slide slide-6">
-    <div class="slide-unit slide-content">
-      <div class="slide-content-wrap gutter pad-t-b-2">
-        <!-- <h2>History Slide 2</h2> -->
-        <p class="giga">We have been proudly honoured numerous times by our community, for everything from our millions of dollars in donations, supporting more than 100 projects, programs, and causes, diverting an estimated 350 tonnes of usable items from landfills, and using over 500,000 volunteer hours from over 500 people to benefit Almonte.</p>
-      </div>
-    </div>
-    <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}/images/about/storefront-94.jpg')">
-    </div>
-  </div>
-  <div id="slide-7" class="slide slide-reverse slide-7">
-    <div class="slide-unit slide-content">
-      <div class="slide-content-wrap gutter pad-t-b-2">
-        <!-- <h2>History Slide 1</h2> -->
-        <p class="giga">We have managed to make headlines and always stay relevant in the Almonte news for our hard work. The strength of our organization has always been our members. Plenty of men and children have lent their helping hands, but women have always been the heart, soul, and face of The Hub.</p>
-      </div>
-    </div>
-    <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}/images/about/9th-birthday-clowns.jpg')">
-    </div>
-  </div>
-  <div id="slide-8" class="slide slide-8">
-    <div class="slide-unit slide-content">
-      <div class="slide-content-wrap gutter pad-t-b-2">
-        <!-- <h2>History Slide 2</h2> -->
-        <p class="giga">Currently we are renovating our 118 Mill Street location so it can perform double-duty with offices for social services delivery on an upper mezzanine, and 30% more retail display area on the main floor. We’re also adding communal and sorting areas, upgrading an accessible public bathroom, and ensuring a more barrier-free environment.</p>
-      </div>
-    </div>
-    <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}/images/about/7th-anniversary.jpg')">
-    </div>
-  </div>
-  <div id="slide-9" class="slide slide-reverse slide-9">
-    <div class="slide-unit slide-content">
-      <div class="slide-content-wrap gutter pad-t-b-2">
-        <!-- <h2>History Slide 1</h2> -->
-        <p class="giga">Currently our goals for the end of 2018 is to reopen at 118 Mill Street by the end of this year! We are accepting cheque and money donations for our building fund to help make this project a reality.</p>
-      </div>
-    </div>
-    <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}/images/about/the-hub.jpg')">
-    </div>
-  </div>
+  {% endfor %}
 </section>
 <section id="our-services" class="our-services" tabindex="0">
   <div class="bg-lg pad-t-b-2">

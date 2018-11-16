@@ -1,4 +1,3 @@
-baseurl: /the-hub-almonte
 exclude: ['README.md']
 permalink: pretty
 port: 4003

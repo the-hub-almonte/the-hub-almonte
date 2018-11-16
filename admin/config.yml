@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: arobillard/the-hub-almonte
+
+media_folder: "images/uploads"
+
+collections:
+  - name: "website-settings"
+    label: "Website Setings"
+    files:
+      - label: "Website Settings"
+        name: "site"
+        file: "_data/site.yml"
+        fields:
+          - label: "Tel"
+            name: "tel"
+            widget: "string"
