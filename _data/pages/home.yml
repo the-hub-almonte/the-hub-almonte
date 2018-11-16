@@ -4,7 +4,7 @@ banner:
   bannerButton:
     heroBtn: true
     heroBtnLink: about/
-    heroBtntext: Learn More
+    heroBtnText: Learn More
     heroBtnStyle: basic
   bylineText: >-
     The Hub’s goal has always been to service the greater Almonte community and
