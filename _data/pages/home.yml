@@ -1,11 +1,11 @@
-title: "Home"
+title: Home
+hero: true
 banner:
-  hero: true
-  heroBG: "hero-home.jpg"
-  h1Text: "Giving back to the community since 1974."
-  bylineText: "The Hub’s goal has always been to service the greater Almonte community and be there when they need us most."
   bannerButton:
     heroBtn: true
-    heroBtnLink: "about/"
-    heroBtnText: "Learn More"
+    heroBtnLink: about/
+  bylineText: >-
+    The Hub’s goal has always been to service the greater Almonte community and
+    be there when they need us most.
+  h1Text: Giving back to the community since 1974.
 sponsorBar: true
