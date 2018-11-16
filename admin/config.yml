@@ -3,6 +3,7 @@ backend:
   repo: arobillard/the-hub-almonte
 
 media_folder: "images/uploads"
+display_url: https://your-site.com
 
 collections:
   - name: "contact-information"
