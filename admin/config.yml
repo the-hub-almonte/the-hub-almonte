@@ -84,7 +84,7 @@ collections:
                 name: "bylineText"
                 widget: "string"
               - label: "Banner Button"
-                name: "banner-button"
+                name: "bannerButton"
                 widget: "object"
                 fields:
                   - label: "Include button in banner?"
