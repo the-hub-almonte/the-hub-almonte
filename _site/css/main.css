@@ -4772,6 +4772,31 @@ input.dollar-input {
   background-color: var(--color-primary);
 }
 
+.bg-primary.slide-unit {
+  color: #fff;
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-secondary.slide-unit {
+  color: #fff;
+}
+
+.bg-secondary.slide-unit a:not(.btn),
+.bg-primary.slide-unit a:not(.btn) {
+  color: #fff;
+}
+
+.bg-primary.slide-unit a:not(.btn):hover {
+  color: var(--color-secondary);
+}
+
+.bg-secondary.slide-unit a:not(.btn):hover {
+  color: var(--color-primary);
+}
+
 .bg-fff {
   background-color: #fff;
 }

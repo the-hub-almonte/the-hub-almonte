@@ -160,6 +160,14 @@ collections:
                     name: "reverse"
                     widget: "boolean"
                     hint: "If selected, the image will appear on the left and the text will be on the right."
+                  - label: "Slide Text Background Colour"
+                    name: "slideBGColor"
+                    widget: "select"
+                    default: { label: "White", value: "bg-fff" }
+                    options:
+                          - { label: "White", value: "bg-fff" }
+                          - { label: "Brand Turquoise", value: "bg-primary" }
+                          - { label: "Brand Dark Grey", value: "bg-secondary" }
                   - label: "Slide Text Content"
                     name: "content"
                     widget: "markdown"

@@ -13,7 +13,7 @@ pageName: about
 <section id="history-hub" tabindex="0">
   {% for slides in site.data.pages.about.history-slides.edit-history-slides %}
     <div id="slide-{{slides.name}}" class="slide {% if slides.reverse == true %}slide-reverse{% endif %}">
-      <div class="slide-unit slide-content">
+      <div class="slide-unit slide-content {{slides.slideBGColor}}">
         <div class="slide-content-wrap gutter pad-t-b-2">
           <div class="giga">{{slides.content | markdownify }}</div>
         </div>
