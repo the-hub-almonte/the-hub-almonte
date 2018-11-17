@@ -8,9 +8,7 @@ pageNumber: 0
   <div class="grid grid-middle wrapper island-1-2">
     <div class="unit [ xs-1 m-2-3 ] unit-push-m-1-3 island-1-2">
       <div class="max-length">
-        {{site.data.pages.home.announcements.message}}
-        <!-- <h2 class="push-0">Enter to win this month's contest!</h2
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae rutrum eros, ac elementum nisl. Morbi ut rhoncus nisi. Phasellus aliquam nulla id placerat porta.</p> -->
+        {{site.data.pages.home.announcements.message | markdownify }}
         {% if site.data.pages.home.announcements.announcementButton.announcementBtn == true %}
           <a class="btn {{site.data.pages.home.announcements.announcementButton.announcementBtnStyle}}" href="{{site.data.pages.home.announcements.announcementButton.announcementBtnLink}}">{{site.data.pages.home.announcements.announcementButton.announcementBtnText}}</a>
         {% endif %}
