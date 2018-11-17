@@ -120,98 +120,114 @@ our-services:
     link: rebound
     logo: /images/uploads/logo-rebound.svg
     longDesc: >-
-      REBOUND was established by the Hub to provide a convenient drop-off centre for large home furnishings, small appliances, computers and electronics.
+      REBOUND was established by the Hub to provide a convenient drop-off centre
+      for large home furnishings, small appliances, computers and electronics.
 
 
-      Since its inception in 2004, Rebound has diverted over 350 tonnes from local landfills by operating a practical used furniture and home décor store.
+      Since its inception in 2004, Rebound has diverted over 350 tonnes from
+      local landfills by operating a practical used furniture and home décor
+      store.
 
 
-      Open six days a week, Rebound is your destination for buying or donating large household items.
+      Open six days a week, Rebound is your destination for buying or donating
+      large household items.
     reverse: false
     shortDesc: >-
-      Rebound is a large item drop off center that helps encourage recycling good and reducing waste.
+      Rebound is a large item drop off center that helps encourage recycling
+      good and reducing waste.
     title: Rebound
   - bgImg: /images/uploads/hub-hospice.jpg
     link: hub-hospice
     logo: /images/uploads/hub-hospice-logo.png
     longDesc: >-
-      Through supportive programs directed by the client, Hub Hospice staff and volunteers focus on compassionate listening, companionship, emotional support, and the sharing of information and resources. In-home visiting volunteers also provide an opportunity for families and caregivers to rest or undertake activities outside the home. All services offered by Hub Hospice are confidential and free of charge. Visit the <a href="https://www.hubhospice.com/" target="_blank">Hub Hospice website</a> to learn more.
+      Through supportive programs directed by the client, Hub Hospice staff and
+      volunteers focus on compassionate listening, companionship, emotional
+      support, and the sharing of information and resources. In-home visiting
+      volunteers also provide an opportunity for families and caregivers to rest
+      or undertake activities outside the home. All services offered by Hub
+      Hospice are confidential and free of charge. Visit the <a
+      href="https://www.hubhospice.com/" target="_blank">Hub Hospice website</a>
+      to learn more.
     reverse: true
     shortDesc: >-
-      Hub Hospice Palliative Care provides home hospice palliative care services to those in need.
+      Hub Hospice Palliative Care provides home hospice palliative care services
+      to those in need.
     title: Hub Hospice
 what-we-give:
-  bannerTitle: "Each year we donate over $50,000 to local organizations"
-  bannerText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae rutrum eros, ac elementum nisl. Morbi ut rhoncus nisi. Phasellus aliquam nulla id placerat porta."
   bannerImg: /images/uploads/hero-home.jpg
-  donationsTitle: "2017 Donations"
+  bannerText: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae
+    rutrum eros, ac elementum nisl. Morbi ut rhoncus nisi. Phasellus aliquam
+    nulla id placerat porta.
+  bannerTitle: 'Each year we donate over $50,000 to local organizations'
   donations:
-    - donor: United Way Lanark County
-      amount: $6,000.00
-    - donor: Mississippi Mills Youth Center
-      amount: $6,900.00
-    - donor: Lanark County Food Bank
-      amount: $6,600.00
-    - donor: Lanark County Interval House
-      amount: $6,500.00
-    - donor: Hub Hospice-Palliative Care
-      amount: $6,600.00
-    - donor: Helping Hand Fund
-      amount: $1,093.00
-    - donor: Gas Cards
-      amount: $1,400.00
-    - donor: Almonte Celtfest
-      amount: $1,000.00
-    - donor: Almonte District High School
-      amount: $1,000.00
-    - donor: Almonte Legion
-      amount: $500.00
-    - donor: Almonte Lions Club
-      amount: $500.00
-    - donor: N. Lanark Community Health Angel Tree
-      amount: $300.00
-    - donor: Mills Community Support Angel Tree
-      amount: $300.00
-    - donor: Art Camp 2017
-      amount: $200.00
-    - donor: Augusta St. Park -Mills Community Support
-      amount: $300.00
-    - donor: Big Brothers Big Sisters
-      amount: $250.00
-    - donor: Community Living Lanark County
-      amount: $300.00
-    - donor: Folkus Concert
-      amount: $200.00
-    - donor: Lanark County OPP Angel Tree
-      amount: $300.00
-    - donor: Lanark County Therapeutic Riding
-      amount: $1,800.00
-    - donor: LAWS
-      amount: $200.00
-    - donor: Light Up the Night
-      amount: $300.00
-    - donor: Mills Community Support Corporation
-      amount: $1,500.00
-    - donor: Mississippi Mills Public Library
-      amount: $4,500.00
-    - donor: Mississippi Valley Textile Museum
-      amount: $1,500.00
-    - donor: Music and Memories
-      amount: $800.00
-    - donor: Naismith Memorial Public School
-      amount: $200.00
-    - donor: CHEO- new mental health
-      amount: $200.00
-    - donor: North Lanark Highland Games
-      amount: $200.00
-    - donor: Notre Dame Catholic High School
-      amount: $1,500.00
-    - donor: P. Burnstein Bursary
-      amount: $1,000.00
-    - donor: T.R. Leger School
-      amount: $200.00
-    - donor: Shade Sails for Mark’s Lookout
-      amount: $1,761.38
-    - donor: Union Hall Community Center
-      amount: $400.00
+    - amount: 250
+      donor: United Way Lanark County
+    - amount: '$6,900.00'
+      donor: Mississippi Mills Youth Center
+    - amount: '$6,600.00'
+      donor: Lanark County Food Bank
+    - amount: '$6,500.00'
+      donor: Lanark County Interval House
+    - amount: '$6,600.00'
+      donor: Hub Hospice-Palliative Care
+    - amount: '$1,093.00'
+      donor: Helping Hand Fund
+    - amount: '$1,400.00'
+      donor: Gas Cards
+    - amount: '$1,000.00'
+      donor: Almonte Celtfest
+    - amount: '$1,000.00'
+      donor: Almonte District High School
+    - amount: $500.00
+      donor: Almonte Legion
+    - amount: $500.00
+      donor: Almonte Lions Club
+    - amount: $300.00
+      donor: N. Lanark Community Health Angel Tree
+    - amount: $300.00
+      donor: Mills Community Support Angel Tree
+    - amount: $200.00
+      donor: Art Camp 2017
+    - amount: $300.00
+      donor: Augusta St. Park -Mills Community Support
+    - amount: $250.00
+      donor: Big Brothers Big Sisters
+    - amount: $300.00
+      donor: Community Living Lanark County
+    - amount: $200.00
+      donor: Folkus Concert
+    - amount: $300.00
+      donor: Lanark County OPP Angel Tree
+    - amount: '$1,800.00'
+      donor: Lanark County Therapeutic Riding
+    - amount: $200.00
+      donor: LAWS
+    - amount: $300.00
+      donor: Light Up the Night
+    - amount: '$1,500.00'
+      donor: Mills Community Support Corporation
+    - amount: '$4,500.00'
+      donor: Mississippi Mills Public Library
+    - amount: '$1,500.00'
+      donor: Mississippi Valley Textile Museum
+    - amount: $800.00
+      donor: Music and Memories
+    - amount: $200.00
+      donor: Naismith Memorial Public School
+    - amount: $200.00
+      donor: CHEO- new mental health
+    - amount: $200.00
+      donor: North Lanark Highland Games
+    - amount: '$1,500.00'
+      donor: Notre Dame Catholic High School
+    - amount: '$1,000.00'
+      donor: P. Burnstein Bursary
+    - amount: $200.00
+      donor: T.R. Leger School
+    - amount: '$1,761.38'
+      donor: Shade Sails for Mark’s Lookout
+    - amount: $400.00
+      donor: Union Hall Community Center
+  donationsTitle: 2017 Donations
 sponsorBar: true
