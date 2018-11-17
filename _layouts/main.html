@@ -14,11 +14,11 @@ layout: default
     {% if site.data.pages.[page.pageName].hero == true %}
       {% include hero.html %}
     {% elsif site.data.pages.[page.pageName].hero == false %}
-      <header class="header-basic {% if site.data.pages.[page.pageName].banner.byline == true %}pad-b-2{% endif %}">
+      <header class="header-basic {% if site.data.pages.[page.pageName].byline == true %}pad-b-2{% endif %}">
         <div class="max-length gutter">
-          <h1 class="">{{site.data.pages.[page.pageName].banner.h1Text}}</h1>
+          <h1 class="">{{site.data.pages.[page.pageName].h1Text}}</h1>
           {% if site.data.pages.[page.pageName].bylineText %}
-            <p class="byline mega">{{site.data.pages.[page.pageName].banner.bylineText}}</p>
+            <p class="byline mega">{{site.data.pages.[page.pageName].bylineText}}</p>
           {% endif %}
         </div>
       </header>

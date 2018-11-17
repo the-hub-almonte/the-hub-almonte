@@ -1076,7 +1076,7 @@ button[disabled] {
 .btn-white, .btn--white {
   background-color: #fff;
   border-color: #fff;
-  color: #000;
+  color: var(--color-secondary);
 }
 
 .btn-white:focus,

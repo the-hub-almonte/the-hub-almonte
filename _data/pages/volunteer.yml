@@ -1,12 +1,12 @@
 title: Volunteer
+bylineText: >-
+  Hub & Rebound’s volunteers play an integral role in every aspect of the organization.
+h1Text: Help us give back to the community!
 hero: false
 banner:
   bannerButton:
     heroBtn: false
     heroBtnLink: about/
     heroBtnText: Learn More
-  bylineText: >-
-    Hub & Rebound’s volunteers play an integral role in every aspect of the organization.
-  h1Text: Help us give back to the community!
   heroImg:
 sponsorBar: false
