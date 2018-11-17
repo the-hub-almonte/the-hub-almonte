@@ -11,4 +11,13 @@ banner:
     what we are today.
   h1Text: About The Hub & Rebound
   heroImg: /images/uploads/hero-2.jpg
+history-slides:
+  edit-history-slides:
+    - content: >-
+        The Hub is rooted in homegrown origins. In 1972, Neighbourhood Club
+        member Mary Dugdale began to collect and give away clothing to anyone
+        who was in need.
+      image: /images/uploads/5th-anniv-group.jpg
+      name: neighbourhood-club
+      reverse: true
 sponsorBar: true
