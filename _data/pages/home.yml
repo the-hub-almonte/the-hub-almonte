@@ -7,7 +7,7 @@ hero: true
 banner:
   bannerButton:
     heroBtn: true
-    heroBtnLink: about/
+    heroBtnLink: /about/
     heroBtnText: Learn More
   heroImg: /images/uploads/hero-home.jpg
 sponsorBar: true
