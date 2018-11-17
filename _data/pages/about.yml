@@ -20,4 +20,77 @@ history-slides:
       image: /images/uploads/5th-anniv-group.jpg
       name: neighbourhood-club
       reverse: true
+    - content:
+        - >-
+          In 1974, the CHEO Auxiliary began to look more closely into the needs of
+          the Almonte community. The Neighbourhood Club and the Auxiliary merged
+          together to form The Almonte Community Co-ordinators (ACC).
+      image: /images/uploads/founders-tea.jpg
+      name: acc
+      reverse: false
+    - content:
+        - >-
+          The ACC was founded by women for women and their families. In May of
+          1974, The ACC opened up The Hub, bringing with it a new force for social
+          change in Almonte.
+      image: /images/uploads/20th-anniversary-founders-tea.jpg
+      name: hub-open
+      reverse: true
+    - content:
+        - >-
+          The Hub and its sister store Rebound were created as second-hand stores
+          which give their profits back into the community. Our main priority is
+          to be a voice for the women and the most vulnerable in Almonte.
+      image: /images/uploads/rebound.jpg
+      name: hub-rebound
+      reverse: false
+    - content:
+        - >-
+          The Hub has a very long history in downtown Almonte. It opened its doors
+          at 66 Mill Street, and remained there until a devastating fire in 1997.
+          In 1998, the Royal Bank of Canada sold us the The Hub’s current address,
+          118 Mill Street, a beautiful historic building which was once The
+          Orpheum Theatre, for $1.00.
+      image: /images/uploads/historical-image-the-hub.jpg
+      name: fire
+      reverse: true
+    - content:
+        - >-
+          We have been proudly honoured numerous times by our community, for
+          everything from our millions of dollars in donations, supporting more
+          than 100 projects, programs, and causes, diverting an estimated 350
+          tonnes of usable items from landfills, and using over 500,000 volunteer
+          hours from over 500 people to benefit Almonte.
+      image: /images/uploads/storefront-94.jpg
+      name: impact
+      reverse: false
+    - content:
+        - >-
+          We have managed to make headlines and always stay relevant in the
+          Almonte news for our hard work. The strength of our organization has
+          always been our members. Plenty of men and children have lent their
+          helping hands, but women have always been the heart, soul, and face of
+          The Hub.
+      image: /images/uploads/9th-birthday-clowns.jpg
+      name: birthday-clowns
+      reverse: true
+    - content:
+        - >-
+          Currently we are renovating our 118 Mill Street location so it can
+          perform double-duty with offices for social services delivery on an
+          upper mezzanine, and 30% more retail display area on the main floor.
+          We’re also adding communal and sorting areas, upgrading an accessible
+          public bathroom, and ensuring a more barrier-free environment.
+      image: /images/uploads/7th-anniversary.jpg
+      name: renovations
+      reverse: false
+    - content:
+        - >-
+          Currently our goals for the end of 2018 is to reopen at 118 Mill Street
+          by the end of this year! We are accepting cheque and money donations for
+          our building fund to help make this project a reality.
+      image: /images/uploads/the-hub.jpg
+      name: goals
+      reverse: true
+
 sponsorBar: true

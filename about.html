@@ -11,16 +11,11 @@ pageName: about
   </div>
 </div>
 <section id="history-hub" tabindex="0">
-  {% for slides in site.data.slide.edit-history-slides %}
+  {% for slides in site.data.pages.about.history-slides.edit-history-slides %}
     <div id="slide-{{slides.name}}" class="slide {% if slides.reverse == true %}slide-reverse{% endif %}">
       <div class="slide-unit slide-content">
         <div class="slide-content-wrap gutter pad-t-b-2">
-          {% if slides.title %}
-            <h2>{{slides.title}}</h2>
-          {% endif %}
-          {% for content in slides.content %}
-            <p class="giga">{{slides.content}}</p>
-          {% endfor %}
+          <div class="giga">{{slides.content | markdownify }}</div>
         </div>
       </div>
       <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}{{slides.image}}')">
