@@ -86,4 +86,31 @@ history-slides:
       image: /images/uploads/the-hub.jpg
       name: goals
       reverse: true
+our-services:
+  - bgImg: /images/uploads/the-hub.jpg
+    link: the-hub
+    logo: /images/uploads/ontario-logo.jpg
+    longDesc: >-
+      ## The Hub
+
+
+      Located in the heart of Almonte, The Hub is a not-for-profit retail store
+      run by the Almonte Community Co-ordinators. Focused on supporting the
+      community of Mississippi Mills since its inception in 1974, the Hub
+      accepts donations of gently used family fashions, accessories, housewares,
+      books, games and toys. These items are resold at the Hub, allowing the
+      organization to support local charities.
+
+
+      Annually, over $50,000 is donated towards hospice care, scholarships,
+      health needs, sport teams, special events, Christmas baskets, Interval
+      House, the Lanark County Food Bank and so much more.
+
+
+      The Hub is operated by volunteers, and opens six days a week.
+    reverse: true
+    shortDesc: >-
+      The Hub is a not-for-profit retail store run by the Almonte Community
+      Co-ordinators.
+    title: The Hubg
 sponsorBar: true
