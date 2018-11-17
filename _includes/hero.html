@@ -1,10 +1,10 @@
-<header class="hero" style="background-image: url('{{site.baseurl}}{{include.heroImg}}')">
+<header class="hero" style="background-image: url('{{site.baseurl}}{{site.data.pages.[page.pageName].banner.heroImg}}')">
   <div class="hero-overlay"></div>
   <div class="wrapper gutter">
-    <h1>{{include.h1Text}}</h1>
-    <p class="giga text-fff">{{include.bylineText}}</p>
-    {% if include.heroBtn == true %}
-      <a id="content-start" class="btn giga {{include.heroBtnClass}}" href="{{site.baseurl}}/{{include.heroBtnLink}}">{{include.heroBtnText}}</a>
+    <h1>{{site.data.pages.[page.pageName].banner.h1Text}}</h1>
+    <p class="giga text-fff">{{site.data.pages.[page.pageName].banner.bylineText}}</p>
+    {% if site.data.pages.[page.pageName].banner.bannerButton.heroBtn == true %}
+      <a id="content-start" class="btn giga {{site.data.pages.[page.pageName].banner.bannerButton.heroBtnStyle}}" href="{{site.baseurl}}/{{site.data.pages.[page.pageName].banner.bannerButton.heroBtnLink}}">{{site.data.pages.[page.pageName].banner.bannerButton.heroBtnText}}</a>
     {% endif %}
   </div>
 </header>

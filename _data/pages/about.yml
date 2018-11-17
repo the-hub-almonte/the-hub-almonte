@@ -1,0 +1,13 @@
+title: About
+hero: true
+banner:
+  bannerButton:
+    heroBtn: true
+    heroBtnLink: "#history-hub"
+    heroBtnText: Learn More
+    heroBtnStyle: smooth-scroll
+  bylineText: >-
+    The Hub & Rebound have a rich history serving the community. Learn how countless volunteers have selflessy given their time to help us grow into what we are today.
+  h1Text: About The Hub & Rebound
+  heroImg: /images/uploads/hero-2.jpg
+sponsorBar: true
