@@ -219,7 +219,7 @@ input.dollar-input {
 
 .header-basic {
   text-align: center;
-  padding-top: 5.2rem;
+  padding-top: 7.8rem;
 }
 
 .hours-block .stretch-rows {
@@ -267,7 +267,7 @@ input.dollar-input {
   /* ---------- Main > Header ---------- */
 
   .header-basic {
-    padding-top: 5.6rem;
+    padding-top: 8.4rem;
   }
 
   .dollar-input + label::after {
@@ -291,7 +291,7 @@ input.dollar-input {
   /* ---------- Main > Header ---------- */
 
   .header-basic {
-    padding-top: 6rem;
+    padding-top: 9rem;
   }
 
   .dollar-input + label::after {

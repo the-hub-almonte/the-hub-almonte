@@ -1,13 +1,13 @@
 title: Home
+bylineText: >-
+  The Hub’s goal has always been to service the greater Almonte community and
+  be there when they need us most.
+h1Text: Giving back to the community since 2018.
 hero: true
 banner:
   bannerButton:
     heroBtn: true
     heroBtnLink: about/
     heroBtnText: Learn More
-  bylineText: >-
-    The Hub’s goal has always been to service the greater Almonte community and
-    be there when they need us most.
-  h1Text: Giving back to the community since 2018.
   heroImg: /images/uploads/hero-home.jpg
 sponsorBar: true

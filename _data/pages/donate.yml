@@ -1,0 +1,12 @@
+title: Donate
+hero: false
+banner:
+  bannerButton:
+    heroBtn: false
+    heroBtnLink:
+    heroBtnText:
+  bylineText: >-
+    The Hub & Rebound rely on the generous support of the community to continue operation. Thank you for your generosity and taking the time to donate to The Hub.
+  h1Text: Donate
+  heroImg:
+sponsorBar: false
