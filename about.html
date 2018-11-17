@@ -28,11 +28,11 @@ pageName: about
     <div class="wrapper pad-t-b-2">
       <h2 class="text-center gutter">Our Services</h2>
       <div class="grid grid-h-center island-1-2">
-        {% for services in site.data.services %}
+        {% for services in site.data.pages.about.our-services %}
           <a class="unit [ xs-1 m-1-2 l-1-3 ] island-1-2 unit-content-distribute smooth-scroll" href="#{{services.link}}">
             <div class="bg-fff gutter pad-t-b-2 unit-content-distribute content-fill bg-lg-lighter-hov">
               <div class="logo-wrap content-fill push">
-                <img class="logo" src="{{site.baseurl}}/images/{{services.logo}}" alt="">
+                <img class="logo" src="{{site.baseurl}}{{services.logo}}" alt="">
               </div>
               <h3 class="text-secondary push-1-2">{{services.title}}</h3>
               <p class="push-0 text-secondary">{{services.shortDesc}}</p>
@@ -42,17 +42,17 @@ pageName: about
       </div>
     </div>
   </div>
-  {% for serviceSlides in site.data.services %}
-    <div id="{{serviceSlides.link}}" class="slide {% if serviceSlides.reversed == true %}slide-reverse{% endif %}">
+  {% for serviceSlides in site.data.pages.about.our-services %}
+    <div id="{{serviceSlides.link}}" class="slide {% if serviceSlides.reverse == true %}slide-reverse{% endif %}">
       <div class="slide-unit slide-content">
         <div class="slide-content-wrap gutter pad-t-b-2">
           <h2>{{serviceSlides.title}}</h2>
-          {% for desc in serviceSlides.longDesc %}
-            <p>{{desc}}</p>
-          {% endfor %}
+          <div class="service-slide-content">
+            {{serviceSlides.longDesc | markdownify}}
+          </div>
         </div>
       </div>
-      <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}/images/about/{{serviceSlides.bgImg}}')">
+      <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}{{serviceSlides.bgImg}}')">
       </div>
     </div>
   {% endfor %}

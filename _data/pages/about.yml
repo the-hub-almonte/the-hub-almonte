@@ -95,11 +95,8 @@ history-slides:
 our-services:
   - bgImg: /images/uploads/the-hub.jpg
     link: the-hub
-    logo: /images/uploads/ontario-logo.jpg
+    logo: /images/uploads/logo-hub.svg
     longDesc: >-
-      ## The Hub
-
-
       Located in the heart of Almonte, The Hub is a not-for-profit retail store
       run by the Almonte Community Co-ordinators. Focused on supporting the
       community of Mississippi Mills since its inception in 1974, the Hub
@@ -118,5 +115,29 @@ our-services:
     shortDesc: >-
       The Hub is a not-for-profit retail store run by the Almonte Community
       Co-ordinators.
-    title: The Hubg
+    title: The Hub
+  - bgImg: /images/uploads/rebound.jpg
+    link: rebound
+    logo: /images/uploads/logo-rebound.svg
+    longDesc: >-
+      REBOUND was established by the Hub to provide a convenient drop-off centre for large home furnishings, small appliances, computers and electronics.
+
+
+      Since its inception in 2004, Rebound has diverted over 350 tonnes from local landfills by operating a practical used furniture and home décor store.
+
+
+      Open six days a week, Rebound is your destination for buying or donating large household items.
+    reverse: false
+    shortDesc: >-
+      Rebound is a large item drop off center that helps encourage recycling good and reducing waste.
+    title: Rebound
+  - bgImg: /images/uploads/hub-hospice.jpg
+    link: hub-hospice
+    logo: /images/uploads/hub-hospice-logo.png
+    longDesc: >-
+      Through supportive programs directed by the client, Hub Hospice staff and volunteers focus on compassionate listening, companionship, emotional support, and the sharing of information and resources. In-home visiting volunteers also provide an opportunity for families and caregivers to rest or undertake activities outside the home. All services offered by Hub Hospice are confidential and free of charge. Visit the <a href="https://www.hubhospice.com/" target="_blank">Hub Hospice website</a> to learn more.
+    reverse: true
+    shortDesc: >-
+      Hub Hospice Palliative Care provides home hospice palliative care services to those in need.
+    title: Hub Hospice
 sponsorBar: true
