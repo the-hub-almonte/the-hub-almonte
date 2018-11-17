@@ -6,7 +6,7 @@
     - Annually, over $50,000 is donated towards hospice care, scholarships, health needs, sport teams, special events, Christmas baskets, Interval House, the Lanark County Food Bank and so much more.
     - The Hub is operated by volunteers, and opens six days a week.
   link: the-hub
-  reversed: true
+  reverse: true
   bgImg: the-hub.jpg
 - logo: logo-rebound.svg
   title: Rebound
@@ -16,7 +16,7 @@
     - Since its inception in 2004, Rebound has diverted over 350 tonnes from local landfills by operating a practical used furniture and home décor store.
     - Open six days a week, Rebound is your destination for buying or donating large household items.
   link: rebound
-  reversed: false
+  reverse: false
   bgImg: rebound.jpg
 - logo: hub-hospice-logo.png
   title: Hub Hospice
@@ -24,5 +24,5 @@
   longDesc:
     - 'Through supportive programs directed by the client, Hub Hospice staff and volunteers focus on compassionate listening, companionship, emotional support, and the sharing of information and resources. In-home visiting volunteers also provide an opportunity for families and caregivers to rest or undertake activities outside the home. All services offered by Hub Hospice are confidential and free of charge. Visit the <a href="https://www.hubhospice.com/" target="_blank">Hub Hospice website</a> to learn more.'
   link: hubhospice
-  reversed: true
+  reverse: true
   bgImg: hub-hospice.jpg

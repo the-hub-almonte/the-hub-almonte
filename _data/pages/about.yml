@@ -36,6 +36,7 @@ history-slides:
       image: /images/uploads/20th-anniversary-founders-tea.jpg
       name: hub-open
       reverse: true
+      slideBGColor: bg-fff
     - content: >-
         The Hub and its sister store Rebound were created as second-hand stores
         which give their profits back into the community. Our main priority is
@@ -43,6 +44,7 @@ history-slides:
       image: /images/uploads/rebound.jpg
       name: hub-rebound
       reverse: false
+      slideBGColor: bg-fff
     - content: >-
         The Hub has a very long history in downtown Almonte. It opened its doors
         at 66 Mill Street, and remained there until a devastating fire in 1997.
@@ -52,6 +54,7 @@ history-slides:
       image: /images/uploads/historical-image-the-hub.jpg
       name: fire
       reverse: true
+      slideBGColor: bg-fff
     - content: >-
         We have been proudly honoured numerous times by our community, for
         everything from our millions of dollars in donations, supporting more
@@ -61,6 +64,7 @@ history-slides:
       image: /images/uploads/storefront-94.jpg
       name: impact
       reverse: false
+      slideBGColor: bg-fff
     - content: >-
         We have managed to make headlines and always stay relevant in the
         Almonte news for our hard work. The strength of our organization has
@@ -70,6 +74,7 @@ history-slides:
       image: /images/uploads/9th-birthday-clowns.jpg
       name: birthday-clowns
       reverse: true
+      slideBGColor: bg-fff
     - content: >-
         Currently we are renovating our 118 Mill Street location so it can
         perform double-duty with offices for social services delivery on an
@@ -79,6 +84,7 @@ history-slides:
       image: /images/uploads/7th-anniversary.jpg
       name: renovations
       reverse: false
+      slideBGColor: bg-fff
     - content: >-
         Currently our goals for the end of 2018 is to reopen at 118 Mill Street
         by the end of this year! We are accepting cheque and money donations for
