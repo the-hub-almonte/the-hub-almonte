@@ -4495,7 +4495,10 @@ address.icon-label {
 }
 
 .what-we-give .slide-banner {
-  background: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/images/hero-home.jpg") center / cover no-repeat;
+  /* background: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/images/hero-home.jpg") center / cover no-repeat; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
 }
 
@@ -4848,6 +4851,10 @@ input.dollar-input {
   height: 100%;
   background-color: rgba(0, 0, 0, .5);
   z-index: -1;
+}
+
+.slide .hero-overlay {
+  z-index: auto;
 }
 
 .hero-news {

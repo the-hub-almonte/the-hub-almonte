@@ -11,7 +11,10 @@
 }
 
 .what-we-give .slide-banner {
-  background: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("{{site.baseurl}}/images/hero-home.jpg") center / cover no-repeat;
+  /* background: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("{{site.baseurl}}/images/hero-home.jpg") center / cover no-repeat; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
 }
 

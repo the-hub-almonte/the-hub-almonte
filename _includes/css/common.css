@@ -205,6 +205,10 @@ input.dollar-input {
   z-index: -1;
 }
 
+.slide .hero-overlay {
+  z-index: auto;
+}
+
 .hero-news {
   max-height: 450px;
 }
