@@ -10,4 +10,11 @@ banner:
     heroBtnLink: /about/
     heroBtnText: Learn More
   heroImg: /images/uploads/hero-home.jpg
+announcements:
+  activateAnnouncements: true
+  announcementButton:
+    announcementBtn: true
+    announcementBtnLink: /about/
+    announcementBtnText: Learn More
+  announcementImg: /images/uploads/contest-prev.jpg
 sponsorBar: true

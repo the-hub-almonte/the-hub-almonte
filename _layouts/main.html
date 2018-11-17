@@ -14,7 +14,7 @@ layout: default
     {% if site.data.pages.[page.pageName].hero == true %}
       {% include hero.html %}
     {% elsif site.data.pages.[page.pageName].hero == false %}
-      <header class="header-basic {% if site.data.pages.[page.pageName].byline == true %}pad-b-2{% endif %}">
+      <header class="header-basic pad-b-2">
         <div class="max-length gutter">
           <h1 class="">{{site.data.pages.[page.pageName].h1Text}}</h1>
           {% if site.data.pages.[page.pageName].bylineText %}
