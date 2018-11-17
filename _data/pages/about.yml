@@ -20,36 +20,35 @@ history-slides:
       image: /images/uploads/5th-anniv-group.jpg
       name: neighbourhood-club
       reverse: true
-      slideBGColor: bg-secondary
+      slideBGColor: bg-fff
     - content: >-
-        In 1974, the CHEO Auxiliary began to look more closely into the needs
-        of the Almonte community. The Neighbourhood Club and the Auxiliary
-        merged together to form The Almonte Community Co-ordinators (ACC).
+        In 1974, the CHEO Auxiliary began to look more closely into the needs of
+        the Almonte community. The Neighbourhood Club and the Auxiliary merged
+        together to form The Almonte Community Co-ordinators (ACC).
       image: /images/uploads/founders-tea.jpg
       name: acc
       reverse: false
-      slideBGColor: bg-primary
+      slideBGColor: bg-fff
     - content: >-
         The ACC was founded by women for women and their families. In May of
-        1974, The ACC opened up The Hub, bringing with it a new force for
-        social change in Almonte.
+        1974, The ACC opened up The Hub, bringing with it a new force for social
+        change in Almonte.
       image: /images/uploads/20th-anniversary-founders-tea.jpg
       name: hub-open
       reverse: true
     - content: >-
-        The Hub and its sister store Rebound were created as second-hand
-        stores which give their profits back into the community. Our main
-        priority is to be a voice for the women and the most vulnerable in
-        Almonte.
+        The Hub and its sister store Rebound were created as second-hand stores
+        which give their profits back into the community. Our main priority is
+        to be a voice for the women and the most vulnerable in Almonte.
       image: /images/uploads/rebound.jpg
       name: hub-rebound
       reverse: false
     - content: >-
-        The Hub has a very long history in downtown Almonte. It opened its
-        doors at 66 Mill Street, and remained there until a devastating fire
-        in 1997. In 1998, the Royal Bank of Canada sold us the The Hub’s
-        current address, 118 Mill Street, a beautiful historic building which
-        was once The Orpheum Theatre, for $1.00.
+        The Hub has a very long history in downtown Almonte. It opened its doors
+        at 66 Mill Street, and remained there until a devastating fire in 1997.
+        In 1998, the Royal Bank of Canada sold us the The Hub’s current address,
+        118 Mill Street, a beautiful historic building which was once The
+        Orpheum Theatre, for $1.00.
       image: /images/uploads/historical-image-the-hub.jpg
       name: fire
       reverse: true
@@ -57,8 +56,8 @@ history-slides:
         We have been proudly honoured numerous times by our community, for
         everything from our millions of dollars in donations, supporting more
         than 100 projects, programs, and causes, diverting an estimated 350
-        tonnes of usable items from landfills, and using over 500,000
-        volunteer hours from over 500 people to benefit Almonte.
+        tonnes of usable items from landfills, and using over 500,000 volunteer
+        hours from over 500 people to benefit Almonte.
       image: /images/uploads/storefront-94.jpg
       name: impact
       reverse: false
@@ -81,9 +80,9 @@ history-slides:
       name: renovations
       reverse: false
     - content: >-
-        Currently our goals for the end of 2018 is to reopen at 118 Mill
-        Street by the end of this year! We are accepting cheque and money
-        donations for our building fund to help make this project a reality.
+        Currently our goals for the end of 2018 is to reopen at 118 Mill Street
+        by the end of this year! We are accepting cheque and money donations for
+        our building fund to help make this project a reality.
       image: /images/uploads/the-hub.jpg
       name: goals
       reverse: true
