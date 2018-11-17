@@ -147,3 +147,28 @@ collections:
             name: "sponsorBar"
             widget: "boolean"
             hint: "Turn on to include list of sponsors at bottom of page above footer."
+  - label: "History Slides"
+    name: "history-slides"
+    files:
+      - label: "History Slides"
+        name: "history-slides"
+        file: _data/slide.yml
+        fields:
+          - label: "Edit History Slides"
+            name: "edit-history-slides"
+            widget: "list"
+            fields:
+              - label: "Slide Name"
+                name: "name"
+                widget: "string"
+                hint: "No capitals, replace spaces with a dash (-)."
+              - label: "Reverse position of Image and Text?"
+                name: "reverse"
+                widget: "boolean"
+                hint: "If selected, the image will appear on the left and the text will be on the right."
+              - label: "Slide Text Content"
+                name: "content"
+                widget: "markdown"
+              - label: "Slide Image"
+                name: "image"
+                widget: "image"

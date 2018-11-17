@@ -11,14 +11,14 @@ layout: default
   </a>
 </header>
 <main id="main" tabindex="0">
-    {% if pages.hero == true %}
+    {% if site.data.pages.[page.pageName].hero == true %}
       {% include hero.html %}
-    {% elsif pages.hero == false %}
+    {% elsif site.data.pages.[page.pageName].hero == false %}
       <header class="header-basic {% if pages.byline == true %}pad-b-2{% endif %}">
         <div class="max-length gutter">
           <h1 class="">{{pages.h1Text}}</h1>
-          {% if pages.byline == true %}
-            <p class="byline mega">{{pages.bylineText}}</p>
+          {% if site.data.pages.[page.pageName].bylineText %}
+            <p class="byline mega">{{site.data.pages.[page.pageName].bylineText}}</p>
           {% endif %}
         </div>
       </header>
@@ -26,10 +26,10 @@ layout: default
         <div class="gutter max-length pad-b"><hr class="push-2" style="border-color: var(--color-primary);"></div>
       {% endif %}
     {% endif %}
-  {{content}}
-  {% if pages.sponsorBar == true %}
-    {% include sponsor-bar.html sponsorClass='hidden' %}
-  {% endif %}
+    {{content}}
+    {% if site.data.pages.[page.pageName].sponsorBar == true %}
+      {% include sponsor-bar.html sponsorClass='hidden' %}
+    {% endif %}
 </main>
 <footer class="footer pad-t">
   <div class="grid grid-bottom wrapper island-1-2 push">

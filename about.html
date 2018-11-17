@@ -11,7 +11,7 @@ pageName: about
   </div>
 </div>
 <section id="history-hub" tabindex="0">
-  {% for slides in site.data.slide %}
+  {% for slides in site.data.slide.edit-history-slides %}
     <div id="slide-{{slides.name}}" class="slide {% if slides.reverse == true %}slide-reverse{% endif %}">
       <div class="slide-unit slide-content">
         <div class="slide-content-wrap gutter pad-t-b-2">
@@ -23,7 +23,7 @@ pageName: about
           {% endfor %}
         </div>
       </div>
-      <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}/images/about/{{slides.image}}')">
+      <div class="slide-unit slide-img" style="background-image: url('{{site.baseurl}}{{slides.image}}')">
       </div>
     </div>
   {% endfor %}
