@@ -421,7 +421,6 @@ collections:
       - label: "Store Hours"
         name: "hours"
         file: "_data/store-hours.yml"
-        widget: "list"
         fields:
           - label: "Store Hours"
             name: "hours"
@@ -488,3 +487,24 @@ collections:
                   - label: "Sunday Closing Time"
                     name: "sunClose"
                     widget: "string"
+  - name: "sponsors"
+    label: "Sponsors"
+    files:
+      - label: "Sponsors"
+        name: "sponsors"
+        file: "_data/sponsor-list.yml"
+        fields:
+          - label: "Sponsors"
+            name: "sponsors"
+            widget: "list"
+            fields:
+              - label: "Sponsor Name"
+                name: "title"
+                widget: "string"
+              - label: "Sponsor Logo"
+                name: "logo"
+                widget: "image"
+              - label: "Logo Alt Tag"
+                name: "logoAlt"
+                widget: "string"
+                hint: "Short description saying who the logo belongs to for accessibility."

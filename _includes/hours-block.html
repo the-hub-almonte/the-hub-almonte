@@ -16,31 +16,31 @@
   <div class="stretch-rows pad-t-1-2">
     <div class="row">
       <p class="stretch bold push-1-2">Monday:</p>
-      <time datetime="13:00-16:00">{% if hours.monOpen %}{{hours.monOpen}} - {% endif %}{{hours.monClose}}</time>
+      <time datetime="13:00-16:00">{% if hours.weeklyHours.monOpen %}{{hours.weeklyHours.monOpen}} - {% endif %}{{hours.weeklyHours.monClose}}</time>
     </div>
     <div class="row">
       <p class="stretch bold push-1-2">Tuesday:</p>
-      <time datetime="09:00-16:00">{% if hours.tuesOpen %}{{hours.tuesOpen}} - {% endif %}{{hours.tuesClose}}</time>
+      <time datetime="09:00-16:00">{% if hours.weeklyHours.tuesOpen %}{{hours.weeklyHours.tuesOpen}} - {% endif %}{{hours.weeklyHours.tuesClose}}</time>
     </div>
     <div class="row">
       <p class="stretch bold push-1-2">Wednesday:</p>
-      <time datetime="09:00-16:00">{% if hours.wedOpen %}{{hours.wedOpen}} - {% endif %}{{hours.wedClose}}</time>
+      <time datetime="09:00-16:00">{% if hours.weeklyHours.wedOpen %}{{hours.weeklyHours.wedOpen}} - {% endif %}{{hours.weeklyHours.wedClose}}</time>
     </div>
     <div class="row">
       <p class="stretch bold push-1-2">Thursday:</p>
-      <time datetime="09:00-20:00">{% if hours.thursOpen %}{{hours.thursOpen}} - {% endif %}{{hours.thursClose}}</time>
+      <time datetime="09:00-20:00">{% if hours.weeklyHours.thursOpen %}{{hours.weeklyHours.thursOpen}} - {% endif %}{{hours.weeklyHours.thursClose}}</time>
     </div>
     <div class="row">
       <p class="stretch bold push-1-2">Friday:</p>
-      <time datetime="09:00-16:00">{% if hours.friOpen %}{{hours.friOpen}} - {% endif %}{{hours.friClose}}</time>
+      <time datetime="09:00-16:00">{% if hours.weeklyHours.friOpen %}{{hours.weeklyHours.friOpen}} - {% endif %}{{hours.weeklyHours.friClose}}</time>
     </div>
     <div class="row">
       <p class="stretch bold push-1-2">Saturday:</p>
-      <time datetime="09:00-16:00">{% if hours.satOpen %}{{hours.satOpen}} - {% endif %}{{hours.satClose}}</time>
+      <time datetime="09:00-16:00">{% if hours.weeklyHours.satOpen %}{{hours.weeklyHours.satOpen}} - {% endif %}{{hours.weeklyHours.satClose}}</time>
     </div>
     <div class="row">
       <p class="stretch bold push-1-2">Sunday:</p>
-      <p class="push-1-2">{% if hours.sunOpen %}{{hours.sunOpen}} - {% endif %}{{hours.sunClose}}</p>
+      <p class="push-1-2">{% if hours.weeklyHours.sunOpen %}{{hours.weeklyHours.sunOpen}} - {% endif %}{{hours.weeklyHours.sunClose}}</p>
     </div>
   </div>
 </div>

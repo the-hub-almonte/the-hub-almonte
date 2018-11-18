@@ -27,7 +27,7 @@ pageNumber: 0
   <div class="wrapper">
     <h2 class='gutter push-0'>Store Hours & Locations</h2>
     <div class="grid grid-stretch island-1-2">
-      {% for hours in site.data.store-hours %}
+      {% for hours in site.data.store-hours.hours %}
         <div class="unit [ xs-1 m-1-2 ] island-1-2 unit-content-distribute">
           {% include hours-block.html %}
         </div>
