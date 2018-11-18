@@ -285,6 +285,50 @@ collections:
               - label: "Banner Image"
                 name: "heroImg"
                 widget: "image"
+          - label: "Volunteer Form"
+            name: "volunteerForm"
+            widget: "list"
+            fields:
+              - label: "Section Title"
+                name: "legend"
+                widget: "string"
+              - label: "Section Title Additional Info"
+                name: "additionalInfo"
+                widget: "string"
+              - label: "Section Layout"
+                name: "fieldlayout"
+                widget: "select"
+                options:
+                  - { label: "Basic", value: "basic" }
+                  - { label: "Checklist", value: "checklists" }
+                  - { label: "Large Text Area", value: "textarea" }
+              - label: "Form Fields"
+                name: "fields"
+                widget: "list"
+                fields:
+                  - label: "Label"
+                    name: "label"
+                    widget: "string"
+                  - label: "Type"
+                    name: "type"
+                    widget: "select"
+                    options:
+                      - { label: "Text Input", value: "text" }
+                      - { label: "Number Input", value: "number" }
+                      - { label: "Email Input", value: "email" }
+                      - { label: "Phone Input", value: "tel" }
+                      - { label: "Password Input", value: "password" }
+                      - { label: "Website Input", value: "url" }
+                      - { label: "Checkboxes", value: "checkbox" }
+                      - { label: "Radio Button Select", value: "radio" }
+                  - label: "ID"
+                    name: "id"
+                    widget: "string"
+                    hint: "Must unique for each form field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                    hint: "If you have a group of Radio Select inputs, they must all have the same Name in order to only allow one to be selected. In all other cases, the names should be unique for each field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
           - label: "Include sponsor bar?"
             name: "sponsorBar"
             widget: "boolean"

@@ -12,7 +12,7 @@ banner:
 volunteerForm:
   - legend: Personal Information
     additionalInfo: Select all that apply
-    fieldlayout:
+    fieldlayout: basic
     fields:
     - label: Full Name
       type: text
@@ -31,6 +31,7 @@ volunteerForm:
       id: phone
       name: phone
   - legend: Are you a student seeking volunteer hours?
+    fieldlayout: basic
     fields:
       - label: 'Yes'
         type: radio
@@ -42,6 +43,7 @@ volunteerForm:
         name: student
   - legend: Where are you interested in volunteering?
     additionalInfo: Select all that apply
+    fieldlayout: basic
     fields:
       - label: The Hub
         type: checkbox
