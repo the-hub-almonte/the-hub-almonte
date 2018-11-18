@@ -1,40 +1,41 @@
-- storeName: The Hub
-  storeLogo: images/logo-hub.svg
-  addressLink: https://goo.gl/maps/sByyfsxP7w82
-  storeAddress1: 14 Industrial Dr
-  storeAddress2: Almonte, ON K0A 1A0
-  monOpen: 10am
-  monClose: 5pm
-  tuesOpen: 9am
-  tuesClose: 4pm
-  wedOpen: 9am
-  wedClose: 4pm
-  thursOpen: 9am
-  thursClose: 8pm
-  friOpen: 9am
-  friClose: 4pm
-  satOpen: 9am
-  satClose: 4pm
-  sunOpen:
-  sunClose: Closed
-  bgColor: lg
-- storeName: Rebound
-  storeLogo: images/logo-rebound.svg
-  addressLink: https://goo.gl/maps/sByyfsxP7w82
-  storeAddress1: 14 Industrial Dr
-  storeAddress2: Almonte, ON K0A 1A0
-  monOpen: 1pm
-  monClose: 4pm
-  tuesOpen: 9am
-  tuesClose: 4pm
-  wedOpen: 9am
-  wedClose: 4pm
-  thursOpen: 9am
-  thursClose: 8pm
-  friOpen: 9am
-  friClose: 4pm
-  satOpen: 9am
-  satClose: 4pm
-  sunOpen:
-  sunClose: Closed
-  bgColor: lg-lighter
+hours:
+  - storeName: The Hub
+    storeLogo: images/logo-hub.svg
+    addressLink: https://goo.gl/maps/sByyfsxP7w82
+    storeAddress1: 14 Industrial Dr
+    storeAddress2: Almonte, ON K0A 1A0
+    monOpen: 10am
+    monClose: 5pm
+    tuesOpen: 9am
+    tuesClose: 4pm
+    wedOpen: 9am
+    wedClose: 4pm
+    thursOpen: 9am
+    thursClose: 8pm
+    friOpen: 9am
+    friClose: 4pm
+    satOpen: 9am
+    satClose: 4pm
+    sunOpen:
+    sunClose: Closed
+    bgColor: lg
+  - storeName: Rebound
+    storeLogo: images/logo-rebound.svg
+    addressLink: https://goo.gl/maps/sByyfsxP7w82
+    storeAddress1: 14 Industrial Dr
+    storeAddress2: Almonte, ON K0A 1A0
+    monOpen: 1pm
+    monClose: 4pm
+    tuesOpen: 9am
+    tuesClose: 4pm
+    wedOpen: 9am
+    wedClose: 4pm
+    thursOpen: 9am
+    thursClose: 8pm
+    friOpen: 9am
+    friClose: 4pm
+    satOpen: 9am
+    satClose: 4pm
+    sunOpen:
+    sunClose: Closed
+    bgColor: lg-lighter
