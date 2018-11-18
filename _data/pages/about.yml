@@ -231,4 +231,32 @@ what-we-give:
     - amount: $400.00
       donor: Union Hall Community Center
   donationsTitle: 2017 Donations
+board:
+  boardAbout: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae rutrum eros, ac elementum nisl. Morbi ut rhoncus nisi. Phasellus aliquam nulla id placerat porta."
+  boardTitle: "2018 Board of Directors"
+  boardMembers:
+    - position: President
+      member: Eloise Caverson
+    - position: First Vice-President
+      member: Janet Duncan
+    - position: Second Vice-President
+      member: Donna Smith
+    - position: Secretary
+      member: Gail Murphy
+    - position: Treasurer
+      member: Mary Ellen Petrunewich
+    - position: Volunteer Coordinator
+      member: Barbara Carroll
+    - position: Director
+      member: Renate Kordos
+    - position: Director
+      member: Julia Thomas
+    - position: Director
+      member: Debbie Pilote
+    - position: Director
+      member: Nancy Hall
+    - position: Director
+      member: Paddy Vargas
+    - position: Director
+      member: Moira Wilkie
 sponsorBar: true
