@@ -5,6 +5,9 @@ backend:
 media_folder: "images/uploads"
 display_url: https://your-site.com
 
+editor:
+     preview: false
+
 collections:
   - label: "Pages"
     name: "pages"
