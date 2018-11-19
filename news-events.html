@@ -2,9 +2,9 @@
 layout: main
 pageClass: news-events
 title: News & Events
-pageNumber: 3
 pageName: news-events
 ---
+{% assign pages=site.data.pages.[page.pageName] %}
 <div class="wrapper">
   <div class="grid">
     <div class="unit [ xs-1 m-3-4 ] categories-wrap cat-news cat-events">

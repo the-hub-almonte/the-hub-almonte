@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-{% assign pages=site.data.page-content[page.pageNumber] %}
+{% assign pages=site.data.pages.[page.pageName] %}
 <header class="masthead sticky {% if pages.hero == true %}nav-light-items{% endif %}{% if page.heroImage %}nav-light-items{% endif %}">
-  {% include nav.html navClass='nav wrapper gutter pad-t-1-2 pad-b-1-2' ulClass='list-group push-0' ulInner='nav-items list-group push-0' aLogo='inline-block' aInner='block line-hover' liHours='hidden' %}
+  {% include nav.html navClass='nav wrapper pad-t-1-2 pad-b-1-2' ulClass='list-group push-0' ulInner='nav-items list-group push-0' aLogo='inline-block' aInner='block line-hover' liHours='hidden' %}
   <a class="tog-nav m-0" href="#nav-footer">
     <span class="tog tog-top"></span>
     <span class="tog tog-middle"></span>
@@ -11,14 +11,14 @@ layout: default
   </a>
 </header>
 <main id="main" tabindex="0">
-    {% if site.data.pages.[page.pageName].hero == true %}
+    {% if pages.hero == true %}
       {% include hero.html %}
-    {% elsif site.data.pages.[page.pageName].hero == false %}
+    {% elsif pages.hero == false %}
       <header class="header-basic pad-b-2">
         <div class="max-length gutter">
-          <h1 class="">{{site.data.pages.[page.pageName].h1Text}}</h1>
-          {% if site.data.pages.[page.pageName].bylineText %}
-            <p class="byline mega">{{site.data.pages.[page.pageName].bylineText}}</p>
+          <h1 class="">{{pages.h1Text}}</h1>
+          {% if pages.bylineText %}
+            <p class="byline mega">{{pages.bylineText}}</p>
           {% endif %}
         </div>
       </header>
@@ -27,7 +27,7 @@ layout: default
       {% endif %}
     {% endif %}
     {{content}}
-    {% if site.data.pages.[page.pageName].sponsorBar == true %}
+    {% if pages.sponsorBar == true %}
       {% include sponsor-bar.html sponsorClass='hidden' %}
     {% endif %}
 </main>

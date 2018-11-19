@@ -2,22 +2,14 @@
 layout: main
 pageClass: volunteer
 title: Volunteer
-pageNumber: 2
 pageName: volunteer
 formTitle: Volunteer Application
 formData: volunteer-form
 formID: volunteer-form
 ---
+{% assign pages=site.data.pages.[page.pageName] %}
 <div class="max-length island push-2">
-  <p class="bold">Hub & Rebound’s volunteers play an integral role in every aspect of the organization.</p>
-  <p>Each volunteer’s participation, effort, and enthusiasm holds the key to our success. We aim to provide our donors and shoppers with positive experiences.</p>
-  <p>As a volunteer at the Hub & Rebound, you have occasion to learn about retail store operations. Students or adults looking to strengthen skills and gain valuable hands-on experience find volunteering at the stores invaluable. Youth, adults, and seniors looking for camaraderie and an opportunity to drive positive change in our community are always welcome.</p>
-  <p>Join the Hub & Rebound’s volunteer team today!</p>
-  <p class="push-2">Fill out our <a class="smooth-scroll" href="#volunteer-form">Volunteer Application</a> form below. Our Volunteer Coordinator will get in touch with you shortly!</p>
-  <p class="bold giga">Learn about the impact some of our fantastic volunteers have made in the past:</p>
-  <div class="embed embed-16by9">
-    <iframe class="embed-item" src="https://www.youtube.com/embed/nmEGrSPTd4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
+  {{pages.bodyContent | markdownify }}
 </div>
 <div class="pad-b-2">
   {% include form.html %}

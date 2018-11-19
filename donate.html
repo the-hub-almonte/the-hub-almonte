@@ -2,12 +2,12 @@
 layout: main
 pageClass: donate
 title: Donate
-pageNumber: 4
 pageName: donate
 formTitle: Donate Online
 formData: donate-form
 formID: donate-form
 ---
+{% assign pages=site.data.pages.[page.pageName] %}
 <div class="max-length gutter push-2">
   <h2 class="push-0">Donate Online</h2>
   <p class="push-2">To donate online, fill in the <a class="smooth-scroll" href="#donate-form">form below</a>.</p>

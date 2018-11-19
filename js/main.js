@@ -86,3 +86,7 @@ function myFunction(x) {
     });
   }
 }
+// 
+// $('.print-button-footer').on('click', function () {
+//   window.print();
+// });
