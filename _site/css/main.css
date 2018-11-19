@@ -4683,7 +4683,8 @@ h1, h2, h3, h4, h5, h6, .font-alt {
   font-family: var(--font-secondary);
 }
 
-h1 {
+h1,
+strong {
   color: var(--color-primary);
 }
 

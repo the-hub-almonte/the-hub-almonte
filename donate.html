@@ -8,15 +8,7 @@ formData: donate-form
 formID: donate-form
 ---
 {% assign pages=site.data.pages.[page.pageName] %}
-<div class="max-length gutter push-2">
-  <h2 class="push-0">Donate Online</h2>
-  <p class="push-2">To donate online, fill in the <a class="smooth-scroll" href="#donate-form">form below</a>.</p>
-  <h2 class="push-0">Prefer not to donate online?</h2>
-  <p class="push-1-2">We accept cheques or money orders too. Please make cheques out to:</p>
-  <strong class="block text-primary push">Almonte Community Coordinators</strong>
-  <p class="push-1-2">Then mail them to:</p>
-  <address class="bold text-primary push-2">The Hub, Box 538, Almonte, Ontario K0A 1A0</address>
-  <h2 class="push-0">Donation Receipts</h2>
-  <p class="push-2">Upon completing your donation you should shortly receive by email a receipt suitable for tax purposes. If your receipt doesn’t arrive please email <a href="mailto:info@thehubalmonte.com">info@thehubalmonte.com</a>.</p>
+<div class="max-length gutter push-2 smooth-scroll">
+  {{pages.bodyContent | markdownify}}
 </div>
 {% include form.html %}

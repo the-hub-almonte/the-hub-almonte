@@ -23,9 +23,9 @@ $('.tog-nav').on('click', function (e) {
 // Smooth Scroll
 
 $(document).ready(function(){
-  $(".smooth-scroll, .smooth-scroll a").on('click', function(event) {
+  $("a").on('click', function(event) {
     if (this.hash !== "") {
-      event.preventDefault();
+      // event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
         scrollTop: $(hash).offset().top
@@ -86,7 +86,7 @@ function myFunction(x) {
     });
   }
 }
-// 
+//
 // $('.print-button-footer').on('click', function () {
 //   window.print();
 // });
