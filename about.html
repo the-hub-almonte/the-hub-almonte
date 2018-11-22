@@ -64,14 +64,14 @@ pageName: about
     <div class="hero-overlay"></div>
     <div class="slide-unit slide-content">
       <div class="slide-content-wrap gutter pad-t-b-2">
-        <h2>{{pages.what-we-give.bannerTitle}}</h2>
-        <p>{{pages.what-we-give.bannerText}}</p>
+        {{pages.what-we-give.bannerText | markdownify }}
       </div>
     </div>
   </div>
   <div class="pad-t-b-2">
     <div class="wrapper">
       <h2 class="text-center gutter">{{pages.what-we-give.donationsTitle}}</h2>
+      <p class="text-center gutter max-length">{{pages.what-we-give.donationsByline}}</p>
       <div class="grid island-1-2 donation-grid">
         <div class="unit [ xs-1 m-1-2 ] island-1-2">
           <div class="grid">

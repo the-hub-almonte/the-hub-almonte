@@ -198,12 +198,9 @@ collections:
             name: "what-we-give"
             widget: "object"
             fields:
-              - label: "Banner Title"
-                name: "bannerTitle"
-                widget: "string"
               - label: "Banner Text"
                 name: "bannerText"
-                widget: "string"
+                widget: "markdown"
               - label: "Banner Image"
                 name: "bannerImg"
                 widget: "image"
