@@ -43,7 +43,13 @@ collections:
                     hint: "Turn on to include button in banner."
                   - label: "Button Link"
                     name: "heroBtnLink"
-                    widget: "string"
+                    widget: "select"
+                    options:
+                      - { label: "About Page", value: "about/" }
+                      - { label: "Volunteer Page", value: "volunteer/" }
+                      - { label: "News & Events Page", value: "news-events/" }
+                      - { label: "Donate Page", value: "donate/" }
+                    # widget: "string"
                   - label: "Button Text"
                     name: "heroBtnText"
                     widget: "string"

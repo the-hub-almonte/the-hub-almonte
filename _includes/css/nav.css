@@ -64,6 +64,7 @@
   width: 100%;
 }
 
+.about-subnav-bar a.current::after,
 .about-subnav-bar .line-hover::after,
 .nav .line-hover::after {
   bottom: .25rem;
@@ -73,6 +74,7 @@
 .nav .current::after,
 .nav .line-hover:hover::after,
 .nav .line-hover:focus::after,
+.about-subnav-bar a.current::after,
 .about-subnav-bar .line-hover:focus::after,
 .about-subnav-bar .line-hover:hover::after {
   width: calc(100% - 2.6rem);
@@ -166,6 +168,10 @@
 
 @media only screen and (min-width: 38em) {
 
+  .home-link {
+    display: none!important;
+  }
+
   .nav .nav-items a:not(.btn),
   .sticky .nav .nav-items a:not(.btn),
   .sticky.nav-light-items .nav .nav-items a:not(.btn) {
@@ -205,11 +211,13 @@
     flex-grow: 2;
   }
 
+  .about-subnav-bar a.current::after,
   .about-subnav-bar .line-hover::after,
   .nav .line-hover::after {
     display: block;
   }
 
+  .about-subnav-bar a.current::after,
   .about-subnav-bar .line-hover:focus::after,
   .about-subnav-bar .line-hover:hover::after,
   .subnav:hover ~ .line-hover::after,
@@ -219,6 +227,10 @@
     width: calc(100% - 1.4rem);
     background-color: var(--color-primary);
   }
+
+  /* .about-subnav-bar a.current::after {
+    background-color: var(--color-primary);
+  } */
 
   /* ---------- SubNav ---------- */
 
@@ -283,7 +295,7 @@
     box-shadow: none;
   }
 
-  @media only screen and (max-width: 45em) {
+  @media only screen and (max-width: 53em) {
 
     .nav .logo {
       width: 7.5rem;
@@ -292,6 +304,22 @@
     .nav .nav-items a {
       font-size: .8333rem;
       line-height: 1.4rem;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 45em) {
+
+    .nav .nav-items a:not(.btn) {
+      font-size: .75rem;
+      padding-left: .35rem;
+      padding-right: .35rem;
+    }
+
+    .nav .nav-items .btn {
+      padding-left: 1em;
+      padding-right: 1em;
     }
 
   }
@@ -305,6 +333,7 @@
     width: 12.5rem;
   } */
 
+  .about-subnav-bar a.current::after,
   .about-subnav-bar .line-hover:focus::after,
   .about-subnav-bar .line-hover:hover::after,
   .subnav:hover ~ .line-hover::after,

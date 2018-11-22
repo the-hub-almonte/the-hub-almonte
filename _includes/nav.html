@@ -17,6 +17,9 @@
     </li>
     <li class="{{include.liClass}}">
       <ul class="{{include.ulInner}}">
+        <li class="{{include.liInner}} home-link">
+          <a class="{{include.aInner}}" href="{{site.baseurl}}/">Home</a>
+        </li>
         <li class="{{include.liInner}}">
           <a class="{{include.aInner}} {% if page.url contains 'about' %}current{% endif %} subnav-label" href="{{site.baseurl}}/about/">About</a>
           <div class="subnav">
@@ -30,7 +33,7 @@
           <a class="{{include.aInner}} {% if page.url contains 'news' %}current{% endif %}{% if page.url contains 'events' %}current{% endif %}" href="{{site.baseurl}}/news-events/">News & Events</a>
         </li>
         <li class="{{include.liInner}} {{include.liHours}}">
-          <a class="{{include.aInner}}" href="{{site.baseurl}}/#hours">Store Hours</a>
+          <a class="{{include.aInner}} hours-link" href="{{site.baseurl}}/#hours">Store Hours</a>
         </li>
         <li class="{{include.liInner}} {{include.liBtn}}">
           <a class="{{include.aBtn}} btn" href="{{site.baseurl}}/donate/">Donate</a>

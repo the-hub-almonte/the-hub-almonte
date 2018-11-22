@@ -58,26 +58,6 @@ $('.cat-selector').change(function () {
   }
 });
 
-// && !$('.categories-wrap').hasClass('cat-')
-
-//
-// $('.cat-selector').on('click', function (e) {
-//   var catSelect = $(this).attr('href');
-//   e.preventDefault();
-//   if (catSelect == '#cat-all') {
-//     $('.categories-wrap').removeClass('cat-news');
-//     $('.categories-wrap').removeClass('cat-events');
-//     $('.categories-wrap').addClass('cat-all');
-//     console.log('clicked');
-//   } if (catSelect == '#cat-news') {
-//     $('.categories-wrap').removeClass('cat-all');
-//     $('.categories-wrap').toggleClass('cat-news');
-//   } if (catSelect == '#cat-events') {
-//     $('.categories-wrap').removeClass('cat-all');
-//     $('.categories-wrap').toggleClass('cat-events');
-//   }
-// });
-
 
 // SubNav
 
@@ -93,6 +73,9 @@ function myFunction(x) {
     });
     $('.nav .subnav a').on('click', function () {
       $('.masthead, .subnav').toggleClass('open');
+    });
+    $('.hours-link').on('click', function () {
+      $('.masthead').toggleClass('open');
     });
   }
 }

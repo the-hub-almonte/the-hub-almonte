@@ -4,7 +4,7 @@
     <h1>{{site.data.pages.[page.pageName].h1Text}}</h1>
     <p class="giga text-fff">{{site.data.pages.[page.pageName].bylineText}}</p>
     {% if site.data.pages.[page.pageName].banner.bannerButton.heroBtn == true %}
-      <a id="content-start" class="btn giga {{site.data.pages.[page.pageName].banner.bannerButton.heroBtnStyle}}" href="{{site.data.pages.[page.pageName].banner.bannerButton.heroBtnLink}}">{{site.data.pages.[page.pageName].banner.bannerButton.heroBtnText}}</a>
+      <a id="content-start" class="btn giga {{site.data.pages.[page.pageName].banner.bannerButton.heroBtnStyle}}" href="{{site.baseurl}}/{{site.data.pages.[page.pageName].banner.bannerButton.heroBtnLink}}">{{site.data.pages.[page.pageName].banner.bannerButton.heroBtnText}}</a>
     {% endif %}
   </div>
 </header>

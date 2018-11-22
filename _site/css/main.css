@@ -4121,6 +4121,7 @@ address.icon-label {
   width: 100%;
 }
 
+.about-subnav-bar a.current::after,
 .about-subnav-bar .line-hover::after,
 .nav .line-hover::after {
   bottom: .25rem;
@@ -4130,6 +4131,7 @@ address.icon-label {
 .nav .current::after,
 .nav .line-hover:hover::after,
 .nav .line-hover:focus::after,
+.about-subnav-bar a.current::after,
 .about-subnav-bar .line-hover:focus::after,
 .about-subnav-bar .line-hover:hover::after {
   width: calc(100% - 2.6rem);
@@ -4223,6 +4225,10 @@ address.icon-label {
 
 @media only screen and (min-width: 38em) {
 
+  .home-link {
+    display: none!important;
+  }
+
   .nav .nav-items a:not(.btn),
   .sticky .nav .nav-items a:not(.btn),
   .sticky.nav-light-items .nav .nav-items a:not(.btn) {
@@ -4262,11 +4268,13 @@ address.icon-label {
     flex-grow: 2;
   }
 
+  .about-subnav-bar a.current::after,
   .about-subnav-bar .line-hover::after,
   .nav .line-hover::after {
     display: block;
   }
 
+  .about-subnav-bar a.current::after,
   .about-subnav-bar .line-hover:focus::after,
   .about-subnav-bar .line-hover:hover::after,
   .subnav:hover ~ .line-hover::after,
@@ -4276,6 +4284,10 @@ address.icon-label {
     width: calc(100% - 1.4rem);
     background-color: var(--color-primary);
   }
+
+  /* .about-subnav-bar a.current::after {
+    background-color: var(--color-primary);
+  } */
 
   /* ---------- SubNav ---------- */
 
@@ -4340,7 +4352,7 @@ address.icon-label {
     box-shadow: none;
   }
 
-  @media only screen and (max-width: 45em) {
+  @media only screen and (max-width: 53em) {
 
     .nav .logo {
       width: 7.5rem;
@@ -4349,6 +4361,22 @@ address.icon-label {
     .nav .nav-items a {
       font-size: .8333rem;
       line-height: 1.4rem;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 45em) {
+
+    .nav .nav-items a:not(.btn) {
+      font-size: .75rem;
+      padding-left: .35rem;
+      padding-right: .35rem;
+    }
+
+    .nav .nav-items .btn {
+      padding-left: 1em;
+      padding-right: 1em;
     }
 
   }
@@ -4362,6 +4390,7 @@ address.icon-label {
     width: 12.5rem;
   } */
 
+  .about-subnav-bar a.current::after,
   .about-subnav-bar .line-hover:focus::after,
   .about-subnav-bar .line-hover:hover::after,
   .subnav:hover ~ .line-hover::after,
@@ -4941,6 +4970,12 @@ input.dollar-input {
   color: #fff;
 }
 
+.anchor {
+  position: relative;
+  top: -3.590625rem;
+}
+
+
 @media only screen and (min-width: 38em) {
 
   /* body.sticky {
@@ -4967,6 +5002,14 @@ input.dollar-input {
     display: inline-block;
   }
 
+  .anchor {
+    top: -4.1619318182rem;
+  }
+
+  .anchor-about {
+    top: -7.6244318182rem;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -4989,6 +5032,11 @@ input.dollar-input {
 
   .dollar-input + label::after {
     top: -1.75rem;
+  }
+
+
+  .anchor-about {
+    top: -8.1rem;
   }
 
 }

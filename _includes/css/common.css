@@ -276,6 +276,12 @@ input.dollar-input {
   color: #fff;
 }
 
+.anchor {
+  position: relative;
+  top: -3.590625rem;
+}
+
+
 @media only screen and (min-width: 38em) {
 
   /* body.sticky {
@@ -302,6 +308,14 @@ input.dollar-input {
     display: inline-block;
   }
 
+  .anchor {
+    top: -4.1619318182rem;
+  }
+
+  .anchor-about {
+    top: -7.6244318182rem;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -324,6 +338,11 @@ input.dollar-input {
 
   .dollar-input + label::after {
     top: -1.75rem;
+  }
+
+
+  .anchor-about {
+    top: -8.1rem;
   }
 
 }
