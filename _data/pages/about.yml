@@ -15,15 +15,12 @@ banner:
 history-slides:
   edit-history-slides:
     - content: >-
-        ## Title
-
-
         The Hub is rooted in homegrown origins. In 1972, Neighbourhood Club
         member Mary Dugdale began to collect and give away clothing to anyone
         who was in need.
       image: /images/uploads/5th-anniv-group.jpg
       name: neighbourhood-club
-      reverse: false
+      reverse: true
       slideBGColor: bg-secondary
     - content: >-
         In 1974, the CHEO Auxiliary began to look more closely into the needs of
