@@ -12,6 +12,13 @@
   border-top: 2px solid var(--color-primary);
 }
 
+.title-frame {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (min-width: 38em) {
 
   .donation-grid .unit:nth-child(odd) .unit:last-child {

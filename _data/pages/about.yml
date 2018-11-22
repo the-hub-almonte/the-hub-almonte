@@ -21,7 +21,7 @@ history-slides:
       image: /images/uploads/5th-anniv-group.jpg
       name: neighbourhood-club
       reverse: true
-      slideBGColor: bg-fff
+      slideBGColor: bg-secondary
     - content: >-
         In 1974, the CHEO Auxiliary began to look more closely into the needs of
         the Almonte community. The Neighbourhood Club and the Auxiliary merged
@@ -37,7 +37,7 @@ history-slides:
       image: /images/uploads/20th-anniversary-founders-tea.jpg
       name: hub-open
       reverse: true
-      slideBGColor: bg-fff
+      slideBGColor: bg-primary
     - content: >-
         The Hub and its sister store Rebound were created as second-hand stores
         which give their profits back into the community. Our main priority is
@@ -45,7 +45,7 @@ history-slides:
       image: /images/uploads/rebound.jpg
       name: hub-rebound
       reverse: false
-      slideBGColor: bg-fff
+      slideBGColor: bg-secondary
     - content: >-
         The Hub has a very long history in downtown Almonte. It opened its doors
         at 66 Mill Street, and remained there until a devastating fire in 1997.
@@ -65,7 +65,7 @@ history-slides:
       image: /images/uploads/storefront-94.jpg
       name: impact
       reverse: false
-      slideBGColor: bg-fff
+      slideBGColor: bg-primary
     - content: >-
         We have managed to make headlines and always stay relevant in the
         Almonte news for our hard work. The strength of our organization has
@@ -75,7 +75,7 @@ history-slides:
       image: /images/uploads/9th-birthday-clowns.jpg
       name: birthday-clowns
       reverse: true
-      slideBGColor: bg-fff
+      slideBGColor: bg-secondary
     - content: >-
         Currently we are renovating our 118 Mill Street location so it can
         perform double-duty with offices for social services delivery on an
@@ -93,6 +93,7 @@ history-slides:
       image: /images/uploads/the-hub.jpg
       name: goals
       reverse: true
+      slideBGColor: bg-primary
 our-services:
   - bgImg: /images/uploads/the-hub.jpg
     link: the-hub

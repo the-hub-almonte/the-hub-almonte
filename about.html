@@ -10,6 +10,9 @@ pageName: about
   </div>
 </div>
 <section id="history-hub" tabindex="0">
+  <div class="title-frame history-title bg-primary">
+    <h2 class="yotta text-fff">History of the Hub</h2>
+  </div>
   {% for slides in pages.history-slides.edit-history-slides %}
     <div id="slide-{{slides.name}}" class="slide {% if slides.reverse == true %}slide-reverse{% endif %}">
       <div class="slide-unit slide-content {{slides.slideBGColor}}">

@@ -179,6 +179,10 @@ input.dollar-input {
   color: var(--color-secondary);
 }
 
+.text-fff {
+  color: #fff;
+}
+
 /* ---------- Main > Header ---------- */
 
 .hero {
@@ -204,10 +208,6 @@ input.dollar-input {
   height: 100%;
   background-color: rgba(0, 0, 0, .5);
   z-index: -1;
-}
-
-.slide .hero-overlay {
-  z-index: auto;
 }
 
 .hero-news {
@@ -253,6 +253,29 @@ input.dollar-input {
   flex-grow: 2;
 }
 
+.to-top {
+  display: none;
+  transform: rotate(-90deg);
+  background-color: rgba(104, 191, 155, .5);
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 2rem;
+  opacity: 0;
+  z-index: 10000;
+  transition:
+    opacity var(--transition-primary);
+}
+
+.to-top.visible {
+  opacity: 1;
+}
+
+.to-top:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
 @media only screen and (min-width: 38em) {
 
   /* body.sticky {
@@ -273,6 +296,10 @@ input.dollar-input {
 
   .dollar-input + label::after {
     top: -1.65rem;
+  }
+
+  .to-top {
+    display: inline-block;
   }
 
 }

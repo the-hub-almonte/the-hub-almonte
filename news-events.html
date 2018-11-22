@@ -7,25 +7,8 @@ pageName: news-events
 {% assign pages=site.data.pages.[page.pageName] %}
 <div class="wrapper">
   <div class="grid">
-    <div class="unit [ xs-1 m-3-4 ] categories-wrap cat-news cat-events">
-      <div class="news push-2">
-        <h2 class="gutter">Recent News</h2>
-        {% for news in site.categories.news %}
-        <a href="{{news.url}}" class="grid grid-stretch bg-lg-hov island-1-2">
-          <div class="unit [ xs-1 s-1-2 m-1-3 l-1-4 ] island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="{{site.baseurl}}/images/news/{{news.prevImage}}" alt="">
-            </div>
-          </div>
-          <div class="unit [ xs-1 s-1-2 m-2-3 l-3-4 ] island-1-2 unit-content-distribute">
-            <h3 class="giga push-1-2 text-secondary">{{news.title}}</h3>
-            <p class="content-fill text-secondary push-0">{{news.meta}}</p>
-            <span class="hyperlink">Read more...</span>
-          </div>
-        </a>
-        {% endfor %}
-      </div>
-      <div class="events push-2">
+    <div class="unit [ xs-1 m-3-4 ] categories-wrap cat-all">
+      <section class="events push-2">
         <h2 class="gutter">Upcoming Events</h2>
         {% for news in site.categories.events %}
         <a href="{{news.url}}" class="grid grid-stretch bg-lg-hov island-1-2">
@@ -41,7 +24,24 @@ pageName: news-events
           </div>
         </a>
         {% endfor %}
-      </div>
+      </section>
+      <section class="news push-2">
+        <h2 class="gutter">Recent News</h2>
+        {% for news in site.categories.news %}
+        <a href="{{news.url}}" class="grid grid-stretch bg-lg-hov island-1-2">
+          <div class="unit [ xs-1 s-1-2 m-1-3 l-1-4 ] island-1-2">
+            <div class="embed embed-1by1">
+              <img class="embed-item" src="{{site.baseurl}}/images/news/{{news.prevImage}}" alt="">
+            </div>
+          </div>
+          <div class="unit [ xs-1 s-1-2 m-2-3 l-3-4 ] island-1-2 unit-content-distribute">
+            <h3 class="giga push-1-2 text-secondary">{{news.title}}</h3>
+            <p class="content-fill text-secondary push-0">{{news.meta}}</p>
+            <span class="hyperlink">Read more...</span>
+          </div>
+        </a>
+        {% endfor %}
+      </section>
       <div class="no-articles gutter">
         <h2>No articles to display...</h2>
         <p>Unfortunately there are no articles to display based on the categories selected. Please select a category to view articles.</p>

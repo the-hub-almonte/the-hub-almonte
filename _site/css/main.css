@@ -4446,15 +4446,21 @@ address.icon-label {
 .categories-wrap .events{
   display: none;
 }
-
-.categories-wrap.cat-news .news {
+.categories-wrap.cat-all .news,
+.categories-wrap.cat-all .events{
   display: block;
 }
 
-.categories-wrap.cat-events .events{
-  display: block;
+.categories-wrap.cat-news .news,
+.categories-wrap.cat-events .events {
+  display: block
 }
+/*
+.categories-wrap.cat-events .news{
+  display: none;
+} */
 
+.categories-wrap.cat-all .no-articles,
 .categories-wrap.cat-news .no-articles,
 .categories-wrap.cat-events .no-articles {
   display: none;
@@ -4482,6 +4488,11 @@ address.icon-label {
 
 }
 
+.slide {
+  position: relative;
+  z-index: 1;
+}
+
 .slide-1 .slide-img {
   background: url('https://placehold.it/400x400/') center / cover no-repeat;
 }
@@ -4494,12 +4505,12 @@ address.icon-label {
   background: url('https://placehold.it/500x500/') center / cover no-repeat;
 }
 
-.what-we-give .slide-banner {
-  /* background: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("/images/hero-home.jpg") center / cover no-repeat; */
+.slide-banner {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  position: relative;
 }
 
 @media only screen and (max-width: 37.9999em) {
@@ -4522,7 +4533,6 @@ address.icon-label {
     align-content: stretch;
     height: 85vh;
     position: relative;
-    /* max-height: 700px; */
   }
 
   .slide-reverse {
@@ -4612,6 +4622,13 @@ address.icon-label {
 
 .donations-total > .grid {
   border-top: 2px solid var(--color-primary);
+}
+
+.title-frame {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 38em) {
@@ -4827,6 +4844,10 @@ input.dollar-input {
   color: var(--color-secondary);
 }
 
+.text-fff {
+  color: #fff;
+}
+
 /* ---------- Main > Header ---------- */
 
 .hero {
@@ -4852,10 +4873,6 @@ input.dollar-input {
   height: 100%;
   background-color: rgba(0, 0, 0, .5);
   z-index: -1;
-}
-
-.slide .hero-overlay {
-  z-index: auto;
 }
 
 .hero-news {
@@ -4901,6 +4918,29 @@ input.dollar-input {
   flex-grow: 2;
 }
 
+.to-top {
+  display: none;
+  transform: rotate(-90deg);
+  background-color: rgba(104, 191, 155, .5);
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 2rem;
+  opacity: 0;
+  z-index: 10000;
+  transition:
+    opacity var(--transition-primary);
+}
+
+.to-top.visible {
+  opacity: 1;
+}
+
+.to-top:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
 @media only screen and (min-width: 38em) {
 
   /* body.sticky {
@@ -4921,6 +4961,10 @@ input.dollar-input {
 
   .dollar-input + label::after {
     top: -1.65rem;
+  }
+
+  .to-top {
+    display: inline-block;
   }
 
 }

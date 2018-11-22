@@ -2,15 +2,21 @@
 .categories-wrap .events{
   display: none;
 }
-
-.categories-wrap.cat-news .news {
+.categories-wrap.cat-all .news,
+.categories-wrap.cat-all .events{
   display: block;
 }
 
-.categories-wrap.cat-events .events{
-  display: block;
+.categories-wrap.cat-news .news,
+.categories-wrap.cat-events .events {
+  display: block
 }
+/*
+.categories-wrap.cat-events .news{
+  display: none;
+} */
 
+.categories-wrap.cat-all .no-articles,
 .categories-wrap.cat-news .no-articles,
 .categories-wrap.cat-events .no-articles {
   display: none;

@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign pages=site.data.pages.[page.pageName] %}
-<header class="masthead sticky {% if pages.hero == true %}nav-light-items{% endif %}{% if page.heroImage %}nav-light-items{% endif %}">
+<header class="masthead sticky gutter {% if pages.hero == true %}nav-light-items{% endif %}{% if page.heroImage %}nav-light-items{% endif %}">
   {% include nav.html navClass='nav wrapper pad-t-1-2 pad-b-1-2' ulClass='list-group push-0' ulInner='nav-items list-group push-0' aLogo='inline-block' aInner='block line-hover' liHours='hidden' %}
   <a class="tog-nav m-0" href="#nav-footer">
     <span class="tog tog-top"></span>
@@ -30,6 +30,11 @@ layout: default
     {% if pages.sponsorBar == true %}
       {% include sponsor-bar.html sponsorClass='hidden' %}
     {% endif %}
+    <a class="to-top visible island-1-2" href="#main">
+      <i class="icon i-1-1-2">
+        <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+      </i>
+    </a>
 </main>
 <footer class="footer pad-t">
   <div class="grid grid-bottom wrapper island-1-2 push">

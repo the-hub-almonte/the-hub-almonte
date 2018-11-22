@@ -1,3 +1,8 @@
+.slide {
+  position: relative;
+  z-index: 1;
+}
+
 .slide-1 .slide-img {
   background: url('https://placehold.it/400x400/') center / cover no-repeat;
 }
@@ -10,12 +15,12 @@
   background: url('https://placehold.it/500x500/') center / cover no-repeat;
 }
 
-.what-we-give .slide-banner {
-  /* background: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("{{site.baseurl}}/images/hero-home.jpg") center / cover no-repeat; */
+.slide-banner {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  position: relative;
 }
 
 @media only screen and (max-width: 37.9999em) {
@@ -38,7 +43,6 @@
     align-content: stretch;
     height: 85vh;
     position: relative;
-    /* max-height: 700px; */
   }
 
   .slide-reverse {
