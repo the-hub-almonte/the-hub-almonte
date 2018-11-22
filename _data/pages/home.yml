@@ -3,7 +3,7 @@ h1Text: Giving back to the community since 2018.
 bylineText: >-
   The Hub’s goal has always been to service the greater Almonte community and be
   there when they need us most.
-hero: false
+hero: true
 banner:
   bannerButton:
     heroBtn: true
