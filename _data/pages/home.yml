@@ -3,11 +3,11 @@ h1Text: Giving back to the community since 2018.
 bylineText: >-
   The Hub’s goal has always been to service the greater Almonte community and be
   there when they need us most.
-hero: true
+hero: false
 banner:
   bannerButton:
     heroBtn: true
-    heroBtnLink: https://arobillard.github.io/the-hub-almonte/about/
+    heroBtnLink: 'https://arobillard.github.io/the-hub-almonte/about/'
     heroBtnText: Learn More
   heroImg: /images/uploads/hero-home.jpg
 announcements:
@@ -21,5 +21,6 @@ announcements:
     ## Full dining room set available!
 
 
-    We recently received a full dining room set including table, four chairs, dishes, candle sticks, and more!
+    We recently received a full dining room set including table, four chairs,
+    dishes, candle sticks, and more!
 sponsorBar: true
