@@ -2,6 +2,8 @@
 
 $('.masthead, body').removeClass('sticky');
 $('.to-top').removeClass('visible');
+$('.footer .subnav a').attr('tabindex', -1);
+
 
 $(function() {
    $(window).scroll(function () {

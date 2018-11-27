@@ -1043,7 +1043,7 @@ button,
   background-color: var(--color-primary);
   border-radius: 50px;
   border: 3px solid var(--color-primary);
-  color: var(--color-secondary);
+  color: #fff;
   font: inherit;
   text-decoration: none;
   text-transform: none;
@@ -1066,7 +1066,7 @@ button:hover,
 .btn:hover {
   background-color: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
-  color: var(--color-secondary);
+  color: #fff;
 }
 
 button[disabled] {

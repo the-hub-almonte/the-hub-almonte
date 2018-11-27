@@ -1,7 +1,10 @@
 :root {
-  --color-primary: #68bf9b;
+  --color-primary: #8f102d;
+  --color-primary-light: #bd153b;
+  --color-primary-dark: #55091b;
+  /* --color-primary: #68bf9b;
   --color-primary-light: #8ae0bd;
-  --color-primary-dark: #52997c;
+  --color-primary-dark: #52997c; */
   --color-secondary: #333;
   --color-secondary-dark: #000;
   --color-accent: #8fcc3a;
@@ -40,6 +43,11 @@ strong {
   color: var(--color-primary);
 }
 
+.hero h1,
+.footer strong {
+  color: #fff;
+}
+
 a {
   color: var(--color-primary);
   text-decoration: none;
@@ -61,6 +69,10 @@ p a:focus,
 .hyperlink:hover,
 .hyperlink:focus {
   color: var(--color-primary-dark);
+}
+
+hr {
+  border-color: var(--color-primary);
 }
 
 address {
@@ -256,7 +268,7 @@ input.dollar-input {
 .to-top {
   display: none;
   transform: rotate(-90deg);
-  background-color: rgba(104, 191, 155, .5);
+  background-color: rgba(143, 16, 45, .7);
   color: #fff;
   position: fixed;
   bottom: 0;
@@ -264,14 +276,17 @@ input.dollar-input {
   opacity: 0;
   z-index: 10000;
   transition:
+    background-color var(--transition-primary),
     opacity var(--transition-primary);
+  border-radius: 0 7.5px 7.5px 0;
 }
 
 .to-top.visible {
   opacity: 1;
 }
 
-.to-top:hover {
+.to-top:hover,
+.to-top:focus {
   background-color: var(--color-primary);
   color: #fff;
 }

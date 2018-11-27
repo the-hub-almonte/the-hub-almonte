@@ -3,7 +3,7 @@ backend:
   repo: arobillard/the-hub-almonte
 
 media_folder: "images/uploads"
-display_url: https://your-site.com
+display_url: https://thehubalmonte.com
 
 editor:
      preview: false

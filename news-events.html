@@ -8,10 +8,10 @@ pageName: news-events
 <div class="wrapper">
   <div class="grid">
     <div class="unit [ xs-1 m-3-4 ] categories-wrap cat-all">
-      <section class="events push-2">
+      <section class="events push">
         <h2 class="gutter">Upcoming Events</h2>
         {% for news in site.categories.events %}
-        <a href="{{news.url}}" class="grid grid-stretch bg-lg-hov island-1-2">
+        <a href="{{site.baseurl}}/{{news.url}}" class="grid grid-stretch bg-lg-hov island-1-2">
           <div class="unit [ xs-1 s-1-2 m-1-3 l-1-4 ] island-1-2">
             <div class="embed embed-1by1">
               <img class="embed-item" src="{{site.baseurl}}/images/news/{{news.prevImage}}" alt="">
@@ -25,10 +25,13 @@ pageName: news-events
         </a>
         {% endfor %}
       </section>
+      <div class="push gutter">
+        <hr class="pad-t news-seperator">
+      </div>
       <section class="news push-2">
-        <h2 class="gutter">Recent News</h2>
+        <h2 class="gutter">News</h2>
         {% for news in site.categories.news %}
-        <a href="{{news.url}}" class="grid grid-stretch bg-lg-hov island-1-2">
+        <a href="{{site.baseurl}}/{{news.url}}" class="grid grid-stretch bg-lg-hov island-1-2">
           <div class="unit [ xs-1 s-1-2 m-1-3 l-1-4 ] island-1-2">
             <div class="embed embed-1by1">
               <img class="embed-item" src="{{site.baseurl}}/images/news/{{news.prevImage}}" alt="">

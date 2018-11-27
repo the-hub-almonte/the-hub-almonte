@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="grid grid-middle">
     <div class="unit [ xs-1 m-1-2 ]">
-      <h2 class="gutter push-0">Recent News & Events</h2>
+      <h2 class="gutter push-0">News & Events</h2>
     </div>
     <div class="unit [ xs-1 m-1-2 ] news-view-all gutter">
       <a href="{{site.baseurl}}/news-events/">
@@ -17,7 +17,7 @@
   <ul class="grid list-group island-1-2">
     {% for news in site.categories.news limit:1 %}
       <li class="unit [ xs-1 m-1-2 ]">
-        <a href="{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
+        <a href="{{site.baseurl}}/{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
           <div class="unit [ xs-1 s-1-2 m-1 l-1-2 ] island-1-2">
             <div class="embed embed-1by1">
               <img class="embed-item" src="{{site.baseurl}}/images/news/{{news.prevImage}}" alt="">
@@ -33,7 +33,7 @@
     {% endfor %}
     {% for news in site.categories.events limit:1 %}
       <li class="unit [ xs-1 m-1-2 ]">
-        <a href="{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
+        <a href="{{site.baseurl}}/{{news.url}}" class="grid grid-stretch bg-lg-lighter-hov">
           <div class="unit [ xs-1 s-1-2 m-1 l-1-2 ] island-1-2">
             <div class="embed embed-1by1">
               <img class="embed-item" src="{{site.baseurl}}/images/news/{{news.prevImage}}" alt="">

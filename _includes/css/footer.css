@@ -9,14 +9,20 @@
   width: 100%;
 }
 
+.footer a {
+  color: #fff;
+}
+
 .footer li a:not(.btn) {
   color: #fff;
   text-decoration: none;
 }
 
 .footer li a:not(.btn):hover,
-.footer li a:not(.btn):focus {
-  color: var(--color-primary);
+.footer li a:not(.btn):focus,
+.footer a:not(.btn):hover,
+.footer a:not(.btn):focus {
+  color: var(--color-primary-light);
 }
 
 .footer .btn-white:hover,

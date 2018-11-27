@@ -2,15 +2,15 @@
 layout: default
 ---
 {% assign pages=site.data.pages.[page.pageName] %}
-<header class="masthead sticky gutter {% if pages.hero == true %}nav-light-items{% endif %}{% if page.heroImage %}nav-light-items{% endif %}">
-  {% include nav.html navClass='nav wrapper pad-t-1-2 pad-b-1-2' ulClass='list-group push-0' ulInner='nav-items list-group push-0' aLogo='inline-block' aInner='block line-hover' %}
+<header class="masthead sticky {% if pages.hero == true %}nav-light-items{% endif %}{% if page.heroImage %}nav-light-items{% endif %}" role="banner">
+  {% include nav.html navClass='nav wrapper pad-t-1-2 pad-b-1-2 gutter' ulClass='list-group push-0' ulInner='nav-items list-group push-0' aLogo='inline-block' aInner='block line-hover' %}
   <a class="tog-nav m-0" href="#nav-footer">
     <span class="tog tog-top"></span>
     <span class="tog tog-middle"></span>
     <span class="tog tog-bottom"></span>
   </a>
 </header>
-<main id="main" tabindex="0">
+<main id="main" tabindex="0" role="main">
     {% if pages.hero == true %}
       {% include hero.html %}
     {% elsif pages.hero == false %}
@@ -23,7 +23,7 @@ layout: default
         </div>
       </header>
       {% if page.url contains 'donate' %}
-        <div class="gutter max-length pad-b"><hr class="push-2" style="border-color: var(--color-primary);"></div>
+        <div class="gutter max-length pad-b"><hr class="push-2"></div>
       {% endif %}
     {% endif %}
     {{content}}
@@ -36,14 +36,14 @@ layout: default
       </i>
     </a>
 </main>
-<footer class="footer pad-t">
+<footer class="footer pad-t" role="contentinfo">
   <div class="grid grid-bottom wrapper island-1-2 push">
     <div class="unit [ xs-1 m-1-2 ] island-1-2">
       {% include nav.html ulClass='list-group push-0 milli' aLogo='inline-block push-1-2' liInner='push-1-4' ulInner='list-group push-0' liBtn='hidden' aInner='' %}
     </div>
     <div class="unit [ xs-1 m-1-2 ] island-1-2">
       <div class="btn-wrap push-1-2">
-        <a class="btn mega" href="#">Donate</a>
+        <a class="btn mega" href="{{site.baseurl}}/donate/">Donate</a>
       </div>
       {% include contact-info.html ulClass='list-group push-0 milli' liClass='push-1-4' titleSize='mega' aClass='' %}
     </div>
