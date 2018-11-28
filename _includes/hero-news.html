@@ -1,11 +1,6 @@
-<header class="hero hero-news {{page.heroImage}} push-2">
+<header class="hero hero-news {{page.heroImage}} push-2" style="background-image: url('{{site.baseurl}}{{page.prevImage}}')">
+  <div class="hero-overlay"></div>
   <div class="wrapper gutter">
     <h1>{{page.title}}</h1>
-    <!-- {% if page.bylineLoc == header %}
-      <p class="giga text-fff">{{page.byline}}</p>
-      {% endif %} -->
-    {% if page.heroBtn %}
-      <a id="content-start" class="btn giga" href="{{site.baseurl}}/{{page.heroBtnLink}}">{{page.heroBtnText}}</a>
-    {% endif %}
   </div>
 </header>

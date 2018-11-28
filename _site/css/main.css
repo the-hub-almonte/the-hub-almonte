@@ -4510,6 +4510,12 @@ address.icon-label {
   margin: 0
 }
 
+.news-events-prev .embed {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media only screen and (min-width: 38em) {
 
   .news-view-all {
@@ -4667,6 +4673,8 @@ address.icon-label {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 38em) {
@@ -4915,10 +4923,6 @@ input.dollar-input {
 
 .hero-news {
   max-height: 450px;
-}
-
-.hero-news.gens-3 {
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("/images/news/3-gens.jpg") center / cover no-repeat;
 }
 
 .header-basic {

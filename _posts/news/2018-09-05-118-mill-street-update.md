@@ -4,7 +4,7 @@ title: 118 Mill Street Update
 meta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit lamet tolk amel yut…
 source:
 category: news
-prevImage: reno-front-sq.jpg
+banImage: /images/uploads/reno-front.jpg
 ---
 
 ### Good news! We have a building permit and our builders are at work on the inside of The Hub’s storefront at 118 Mill Street.

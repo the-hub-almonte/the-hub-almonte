@@ -1,18 +1,12 @@
 ---
 layout: main
 ---
-{% if page.heroImage %}
-  {% include hero-news.html heroClass='page.heroClass' %}
-{% else %}
-  <header class="header-basic">
-    <div class="max-length gutter">
-      <h1 class="">{{page.title}}</h1>
-      {% if page.byline %}
-        <p class="byline mega">{{page.byline}}</p>
-      {% endif %}
-    </div>
-  </header>
-{% endif %}
+<header class="hero hero-news push-2" style="background-image: url('{{site.baseurl}}{{page.banImage}}')">
+  <div class="hero-overlay"></div>
+  <div class="wrapper gutter">
+    <h1>{{page.title}}</h1>
+  </div>
+</header>
 <div class="pad-b-2">
   <div class="max-length gutter">
     <h2 class="text-center">{{page.byline}}</h2>

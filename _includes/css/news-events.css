@@ -31,6 +31,12 @@
   margin: 0
 }
 
+.news-events-prev .embed {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media only screen and (min-width: 38em) {
 
   .news-view-all {

@@ -5,7 +5,7 @@ title: News & Events
 pageName: news-events
 ---
 {% assign pages=site.data.pages.[page.pageName] %}
-<div class="wrapper">
+<div class="wrapper news-events-prev">
   <div class="grid">
     <div class="unit [ xs-1 m-3-4 ] categories-wrap cat-all">
       <section class="events push">
@@ -13,8 +13,7 @@ pageName: news-events
         {% for news in site.categories.events %}
         <a href="{{site.baseurl}}/{{news.url}}" class="grid grid-stretch bg-lg-hov island-1-2">
           <div class="unit [ xs-1 s-1-2 m-1-3 l-1-4 ] island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="{{site.baseurl}}/images/news/{{news.prevImage}}" alt="">
+            <div class="embed embed-1by1" style="background-image: url('{{site.baseurl}}{{news.banImage}}')">
             </div>
           </div>
           <div class="unit [ xs-1 s-1-2 m-2-3 l-3-4 ] island-1-2 unit-content-distribute">
@@ -33,8 +32,7 @@ pageName: news-events
         {% for news in site.categories.news %}
         <a href="{{site.baseurl}}/{{news.url}}" class="grid grid-stretch bg-lg-hov island-1-2">
           <div class="unit [ xs-1 s-1-2 m-1-3 l-1-4 ] island-1-2">
-            <div class="embed embed-1by1">
-              <img class="embed-item" src="{{site.baseurl}}/images/news/{{news.prevImage}}" alt="">
+            <div class="embed embed-1by1" style="background-image: url('{{site.baseurl}}{{news.banImage}}')">
             </div>
           </div>
           <div class="unit [ xs-1 s-1-2 m-2-3 l-3-4 ] island-1-2 unit-content-distribute">

@@ -214,10 +214,6 @@ input.dollar-input {
   max-height: 450px;
 }
 
-.hero-news.gens-3 {
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("{{site.baseurl}}/images/news/3-gens.jpg") center / cover no-repeat;
-}
-
 .header-basic {
   text-align: center;
   padding-top: 7.8rem;

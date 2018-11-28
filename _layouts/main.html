@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign pages=site.data.pages.[page.pageName] %}
-<header class="masthead sticky {% if pages.hero == true %}nav-light-items{% endif %}{% if page.heroImage %}nav-light-items{% endif %}" role="banner">
+<header class="masthead sticky {% if pages.hero == true %}nav-light-items{% endif %}{% if page.url contains 'news' %}nav-light-items{% endif %}{% if page.url contains 'events' %}nav-light-items{% endif %}" role="banner">
   {% include nav.html navClass='nav wrapper pad-t-1-2 pad-b-1-2 gutter' ulClass='list-group push-0' ulInner='nav-items list-group push-0' aLogo='inline-block' aInner='block line-hover' %}
   <a class="tog-nav m-0" href="#nav-footer">
     <span class="tog tog-top"></span>
