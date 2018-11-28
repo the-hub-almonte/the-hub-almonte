@@ -117,6 +117,7 @@ our-services:
     shortDesc: >-
       The Hub is a not-for-profit retail store run by the Almonte Community
       Co-ordinators.
+    slideBGColor: bg-secondary
     title: The Hub
   - bgImg: /images/uploads/rebound.jpg
     link: rebound
@@ -137,6 +138,7 @@ our-services:
     shortDesc: >-
       Rebound is a large item drop off center that helps encourage recycling
       good and reducing waste.
+    slideBGColor: bg-primary
     title: Rebound
   - bgImg: /images/uploads/hub-hospice.jpg
     link: hub-hospice
