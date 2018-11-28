@@ -15,14 +15,14 @@ pageName: volunteer
   <div id="volunteer-form" class="anchor"></div>
   <div class="form-wrapper pad-t-b-2 push-2 bg-lg">
     <form class="max-length" method="post" action="//formspree.io/robi0653@algonquinlive.com">
-      <h2 class="gutter">{{pages.formTitle}}</h2>
+      <h2 class="gutter">{{pages.volunteer-form.formTitle}}</h2>
       <fieldset>
-        <legend class="legend-question giga gutter required push-1-4 block">{{pages.personalInfo.legend}}</legend>
-        {% if pages.personalInfo.additionalInfo %}
-          <p class="additional-info gutter push-0">{{pages.personalInfo.additionalInfo}}</p>
+        <legend class="legend-question giga gutter required push-1-4 block">{{pages.volunteer-form.personalInfo.legend}}</legend>
+        {% if pages.volunteer-form.personalInfo.additionalInfo %}
+          <p class="additional-info gutter push-0">{{pages.volunteer-form.personalInfo.additionalInfo}}</p>
         {% endif %}
         <div class="grid island-1-2">
-          {% for field in pages.personalInfo.fields %}
+          {% for field in pages.volunteer-form.personalInfo.fields %}
           <div class="unit [ xs-1 m-1-2 ] island-1-2">
             <input {% if field.inputClass %}class="{{field.inputClass}}"{% endif %} type="{{field.type}}" id="{{field.id}}" name="{{field.name}}" {% if field.minValue %}min="{{field.minValue}}"{% endif %} {% if field.placeholder %}placeholder="{{field.placeholder}}"{% endif %}>
             <label {% if field.labelClass %}class="{{field.labelClass}}"{% endif %} for="{{field.id}}">{{field.label}}</label>
@@ -31,12 +31,12 @@ pageName: volunteer
         </div>
       </fieldset>
       <fieldset>
-        <legend class="legend-question giga gutter required push-1-4 block">{{pages.student.legend}}</legend>
-        {% if pages.student.additionalInfo %}
-          <p class="additional-info gutter push-0">{{pages.student.additionalInfo}}</p>
+        <legend class="legend-question giga gutter required push-1-4 block">{{pages.volunteer-form.student.legend}}</legend>
+        {% if pages.volunteer-form.student.additionalInfo %}
+          <p class="additional-info gutter push-0">{{pages.volunteer-form.student.additionalInfo}}</p>
         {% endif %}
         <div class="grid island-1-2">
-          {% for field in pages.student.fields %}
+          {% for field in pages.volunteer-form.student.fields %}
           <div class="unit [ xs-1 m-1-2 ] island-1-2">
             <input {% if field.inputClass %}class="{{field.inputClass}}"{% endif %} type="{{field.type}}" id="{{field.id}}" name="{{field.name}}" {% if field.minValue %}min="{{field.minValue}}"{% endif %} {% if field.placeholder %}placeholder="{{field.placeholder}}"{% endif %}>
             <label {% if field.labelClass %}class="{{field.labelClass}}"{% endif %} for="{{field.id}}">{{field.label}}</label>
@@ -45,12 +45,12 @@ pageName: volunteer
         </div>
       </fieldset>
       <fieldset>
-        <legend class="legend-question giga gutter required push-1-4 block">{{pages.service.legend}}</legend>
-        {% if pages.service.additionalInfo %}
-          <p class="additional-info gutter push-0">{{pages.service.additionalInfo}}</p>
+        <legend class="legend-question giga gutter required push-1-4 block">{{pages.volunteer-form.service.legend}}</legend>
+        {% if pages.volunteer-form.service.additionalInfo %}
+          <p class="additional-info gutter push-0">{{pages.volunteer-form.service.additionalInfo}}</p>
         {% endif %}
         <div class="grid island-1-2">
-          {% for field in pages.service.fields %}
+          {% for field in pages.volunteer-form.service.fields %}
           <div class="unit [ xs-1 m-1-2 ] island-1-2">
             <input {% if field.inputClass %}class="{{field.inputClass}}"{% endif %} type="{{field.type}}" id="{{field.id}}" name="{{field.name}}" {% if field.minValue %}min="{{field.minValue}}"{% endif %} {% if field.placeholder %}placeholder="{{field.placeholder}}"{% endif %}>
             <label {% if field.labelClass %}class="{{field.labelClass}}"{% endif %} for="{{field.id}}">{{field.label}}</label>
@@ -59,12 +59,12 @@ pageName: volunteer
         </div>
       </fieldset>
       <fieldset>
-        <legend class="legend-question giga gutter required push-1-4 block">{{pages.jobs.legend}}</legend>
-        {% if pages.jobs.additionalInfo %}
-          <p class="additional-info gutter push-0">{{pages.jobs.additionalInfo}}</p>
+        <legend class="legend-question giga gutter required push-1-4 block">{{pages.volunteer-form.jobs.legend}}</legend>
+        {% if pages.volunteer-form.jobs.additionalInfo %}
+          <p class="additional-info gutter push-0">{{pages.volunteer-form.jobs.additionalInfo}}</p>
         {% endif %}
         <div class="grid island-1-2">
-          {% for groups in pages.jobs.group %}
+          {% for groups in pages.volunteer-form.jobs.group %}
             <div class="unit [ xs-{{groups.groupXSSize}} {% if groups.groupSSize %}S-{{groups.groupSSize}}{% endif %} {% if groups.groupMSize %}m-{{groups.groupMSize}}{% endif %} {% if groups.groupLSize %}L-{{groups.groupLSize}}{% endif %} ] island-1-2">
               <p class="bold mega">{{groups.groupTitle}}</p>
               {% for field in groups.fields %}
@@ -78,12 +78,12 @@ pageName: volunteer
         </div>
       </fieldset>
       <fieldset>
-        <legend class="legend-question giga gutter required push-1-4 block">{{pages.availability.legend}}</legend>
-        {% if pages.availability.additionalInfo %}
-          <p class="additional-info gutter push-0">{{pages.availability.additionalInfo}}</p>
+        <legend class="legend-question giga gutter required push-1-4 block">{{pages.volunteer-form.availability.legend}}</legend>
+        {% if pages.volunteer-form.availability.additionalInfo %}
+          <p class="additional-info gutter push-0">{{pages.volunteer-form.availability.additionalInfo}}</p>
         {% endif %}
         <div class="grid island-1-2">
-          {% for groups in pages.availability.group %}
+          {% for groups in pages.volunteer-form.availability.group %}
             <div class="unit [ xs-{{groups.groupXSSize}} {% if groups.groupSSize %}S-{{groups.groupSSize}}{% endif %} {% if groups.groupMSize %}m-{{groups.groupMSize}}{% endif %} {% if groups.groupLSize %}L-{{groups.groupLSize}}{% endif %} ] island-1-2">
               <p class="bold mega">{{groups.groupTitle}}</p>
               {% for field in groups.fields %}
@@ -97,13 +97,13 @@ pageName: volunteer
         </div>
       </fieldset>
       <fieldset>
-        <legend class="legend-question giga gutter required push-1-4 block">{{pages.qualifications.legend}}</legend>
-        {% if pages.qualifications.additionalInfo %}
-          <p class="additional-info gutter push-0">{{pages.qualifications.additionalInfo}}</p>
+        <legend class="legend-question giga gutter required push-1-4 block">{{pages.volunteer-form.qualifications.legend}}</legend>
+        {% if pages.volunteer-form.qualifications.additionalInfo %}
+          <p class="additional-info gutter push-0">{{pages.volunteer-form.qualifications.additionalInfo}}</p>
         {% endif %}
         <div class="grid island-1-2">
           <div class="unit [ xs-1 ] island-1-2">
-            {% for field in pages.qualifications.fields %}
+            {% for field in pages.volunteer-form.qualifications.fields %}
               <textarea {% if field.inputClass %}class="{{field.inputClass}}"{% endif %} id="{{field.id}}" name="{{field.name}}"></textarea>
               <label class="hidden{% if field.labelClass %} {{field.labelClass}}{% endif %}" for="{{field.id}}">{{field.label}}</label>
             {% endfor %}
