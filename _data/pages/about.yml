@@ -12,6 +12,9 @@ banner:
     heroBtnStyle: smooth-scroll
     heroBtnText: Learn More
   heroImg: /images/uploads/hero-2.jpg
+historyTitleSlide:
+  title: "History of the Hub"
+  img:
 history-slides:
   edit-history-slides:
     - content: >-
