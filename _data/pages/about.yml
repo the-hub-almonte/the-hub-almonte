@@ -13,8 +13,8 @@ banner:
     heroBtnText: Learn More
   heroImg: /images/uploads/hero-2.jpg
 historyTitleSlide:
-  title: "History of the Hub"
-  img:
+  img: /images/uploads/historical-image-the-hub.jpg
+  title: History of the Hub
 history-slides:
   edit-history-slides:
     - content: >-
