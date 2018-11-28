@@ -3,14 +3,116 @@ layout: main
 pageClass: volunteer
 title: Volunteer
 pageName: volunteer
-formTitle: Volunteer Application
-formData: volunteer-form
-formID: volunteer-form
 ---
 {% assign pages=site.data.pages.[page.pageName] %}
 <div class="max-length island push-2">
   {{pages.bodyContent | markdownify }}
 </div>
-<div class="pad-b-2">
+<!-- <div class="pad-b-2">
   {% include form.html %}
+</div> -->
+<div class="pad-b-2">
+  <div id="volunteer-form" class="anchor"></div>
+  <div class="form-wrapper pad-t-b-2 push-2 bg-lg">
+    <form class="max-length" method="post" action="//formspree.io/robi0653@algonquinlive.com">
+      <h2 class="gutter">{{pages.formTitle}}</h2>
+      <fieldset>
+        <legend class="legend-question giga gutter required push-1-4 block">{{pages.personalInfo.legend}}</legend>
+        {% if pages.personalInfo.additionalInfo %}
+          <p class="additional-info gutter push-0">{{pages.personalInfo.additionalInfo}}</p>
+        {% endif %}
+        <div class="grid island-1-2">
+          {% for field in pages.personalInfo.fields %}
+          <div class="unit [ xs-1 m-1-2 ] island-1-2">
+            <input {% if field.inputClass %}class="{{field.inputClass}}"{% endif %} type="{{field.type}}" id="{{field.id}}" name="{{field.name}}" {% if field.minValue %}min="{{field.minValue}}"{% endif %} {% if field.placeholder %}placeholder="{{field.placeholder}}"{% endif %}>
+            <label {% if field.labelClass %}class="{{field.labelClass}}"{% endif %} for="{{field.id}}">{{field.label}}</label>
+          </div>
+          {% endfor %}
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="legend-question giga gutter required push-1-4 block">{{pages.student.legend}}</legend>
+        {% if pages.student.additionalInfo %}
+          <p class="additional-info gutter push-0">{{pages.student.additionalInfo}}</p>
+        {% endif %}
+        <div class="grid island-1-2">
+          {% for field in pages.student.fields %}
+          <div class="unit [ xs-1 m-1-2 ] island-1-2">
+            <input {% if field.inputClass %}class="{{field.inputClass}}"{% endif %} type="{{field.type}}" id="{{field.id}}" name="{{field.name}}" {% if field.minValue %}min="{{field.minValue}}"{% endif %} {% if field.placeholder %}placeholder="{{field.placeholder}}"{% endif %}>
+            <label {% if field.labelClass %}class="{{field.labelClass}}"{% endif %} for="{{field.id}}">{{field.label}}</label>
+          </div>
+          {% endfor %}
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="legend-question giga gutter required push-1-4 block">{{pages.service.legend}}</legend>
+        {% if pages.service.additionalInfo %}
+          <p class="additional-info gutter push-0">{{pages.service.additionalInfo}}</p>
+        {% endif %}
+        <div class="grid island-1-2">
+          {% for field in pages.service.fields %}
+          <div class="unit [ xs-1 m-1-2 ] island-1-2">
+            <input {% if field.inputClass %}class="{{field.inputClass}}"{% endif %} type="{{field.type}}" id="{{field.id}}" name="{{field.name}}" {% if field.minValue %}min="{{field.minValue}}"{% endif %} {% if field.placeholder %}placeholder="{{field.placeholder}}"{% endif %}>
+            <label {% if field.labelClass %}class="{{field.labelClass}}"{% endif %} for="{{field.id}}">{{field.label}}</label>
+          </div>
+          {% endfor %}
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="legend-question giga gutter required push-1-4 block">{{pages.jobs.legend}}</legend>
+        {% if pages.jobs.additionalInfo %}
+          <p class="additional-info gutter push-0">{{pages.jobs.additionalInfo}}</p>
+        {% endif %}
+        <div class="grid island-1-2">
+          {% for groups in pages.jobs.group %}
+            <div class="unit [ xs-{{groups.groupXSSize}} {% if groups.groupSSize %}S-{{groups.groupSSize}}{% endif %} {% if groups.groupMSize %}m-{{groups.groupMSize}}{% endif %} {% if groups.groupLSize %}L-{{groups.groupLSize}}{% endif %} ] island-1-2">
+              <p class="bold mega">{{groups.groupTitle}}</p>
+              {% for field in groups.fields %}
+              <div class="push-1-2">
+                <input {% if field.inputClass %}class="{{field.inputClass}}"{% endif %} type="checkbox" id="{{field.id}}" name="{{field.name}}" {% if field.placeholder %}placeholder="{{field.placeholder}}"{% endif %}>
+                <label {% if field.labelClass %}class="{{field.labelClass}}"{% endif %} for="{{field.id}}">{{field.label}}</label>
+              </div>
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="legend-question giga gutter required push-1-4 block">{{pages.availability.legend}}</legend>
+        {% if pages.availability.additionalInfo %}
+          <p class="additional-info gutter push-0">{{pages.availability.additionalInfo}}</p>
+        {% endif %}
+        <div class="grid island-1-2">
+          {% for groups in pages.availability.group %}
+            <div class="unit [ xs-{{groups.groupXSSize}} {% if groups.groupSSize %}S-{{groups.groupSSize}}{% endif %} {% if groups.groupMSize %}m-{{groups.groupMSize}}{% endif %} {% if groups.groupLSize %}L-{{groups.groupLSize}}{% endif %} ] island-1-2">
+              <p class="bold mega">{{groups.groupTitle}}</p>
+              {% for field in groups.fields %}
+              <div class="push-1-2">
+                <input {% if field.inputClass %}class="{{field.inputClass}}"{% endif %} type="checkbox" id="{{field.id}}" name="{{field.name}}" {% if field.placeholder %}placeholder="{{field.placeholder}}"{% endif %}>
+                <label {% if field.labelClass %}class="{{field.labelClass}}"{% endif %} for="{{field.id}}">{{field.label}}</label>
+              </div>
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="legend-question giga gutter required push-1-4 block">{{pages.qualifications.legend}}</legend>
+        {% if pages.qualifications.additionalInfo %}
+          <p class="additional-info gutter push-0">{{pages.qualifications.additionalInfo}}</p>
+        {% endif %}
+        <div class="grid island-1-2">
+          <div class="unit [ xs-1 ] island-1-2">
+            {% for field in pages.qualifications.fields %}
+              <textarea {% if field.inputClass %}class="{{field.inputClass}}"{% endif %} id="{{field.id}}" name="{{field.name}}"></textarea>
+              <label class="hidden{% if field.labelClass %} {{field.labelClass}}{% endif %}" for="{{field.id}}">{{field.label}}</label>
+            {% endfor %}
+          </div>
+        </div>
+      </fieldset>
+      <div class="gutter">
+        <button class="mega" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
 </div>

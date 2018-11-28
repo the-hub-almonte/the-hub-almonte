@@ -39,57 +39,198 @@ bodyContent: >-
   <div class="embed embed-16by9">
     <iframe class="embed-item" src="https://www.youtube.com/embed/nmEGrSPTd4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-volunteerForm:
-  - additionalInfo: Select all that apply
-    fieldlayout: basic
-    fields:
-      - id: full-name
-        label: Full Name
-        name: full-name
-        type: text
-      - id: email
-        label: Email Address
-        name: email
-        type: email
-      - id: address
-        label: Address
-        name: address
-        type: text
-      - id: phone
-        label: Phone
-        name: phone
-        type: tel
-    legend: Personal Information
-  - fieldlayout: basic
-    fields:
-      - id: student-yes
-        label: 'Yes'
-        name: student
-        type: radio
-      - id: student-no
-        label: 'No'
-        name: student
-        type: radio
-    legend: Are you a student seeking volunteer hours?
-  - additionalInfo: Select all that apply
-    fieldlayout: basic
-    fields:
-      - id: the-hub
-        label: The Hub
-        name: the-hub
-        type: checkbox
-      - id: rebound
-        label: Rebound
-        name: rebound
-        type: checkbox
-    legend: Where are you interested in volunteering?
-  - additionalInfo: Select all that apply
-    legend: Which jobs interest you the most?
-  - additionalInfo: Select all that apply
-    legend: When are you available to work?
-  - fields:
-      - id: qualifications
-        label: Qualifications
-        name: qualifications
-    legend: Describe any related experience or qualifications.
-sponsorBar: false
+formTitle: "Volunteer Application"
+personalInfo:
+  legend: Personal Information
+  additionalInfo: Select all that apply
+  fields:
+    - id: full-name
+      label: Full Name
+      name: full-name
+      type: text
+    - id: email
+      label: Email Address
+      name: email
+      type: email
+    - id: address
+      label: Address
+      name: address
+      type: text
+    - id: phone
+      label: Phone
+      name: phone
+      type: tel
+student:
+  legend: Are you a student seeking volunteer hours?
+  fields:
+    - id: student-yes
+      label: 'Yes'
+      name: student
+      type: radio
+    - id: student-no
+      label: 'No'
+      name: student
+      type: radio
+service:
+  legend: Where are you interested in volunteering?
+  additionalInfo: Select all that apply
+  fieldlayout: basic
+  fields:
+    - id: the-hub
+      label: The Hub
+      name: the-hub
+      type: checkbox
+    - id: rebound
+      label: Rebound
+      name: rebound
+      type: checkbox
+jobs:
+  legend: Which jobs interest you the most?
+  additionalInfo: Select all that apply
+  fieldLayout: checklists
+  group:
+    - groupTitle: The Hub
+      groupXSSize: 1
+      groupMSize: 1-2
+      fields:
+        - label: Cashier
+          type: checkbox
+          id: hub-cashier
+          name: hub-cashier
+        - label: Bagging Purchases at Cash
+          type: checkbox
+          id: hub-bagging
+          name: hub-bagging
+        - label: Hanging Up Clothing/Hanger Organization
+          type: checkbox
+          id: hub-hanging-org
+          name: hub-hanging-org
+        - label: Crafts/Notions/Seasonal
+          type: checkbox
+          id: hub-crafts-seasonal
+          name: hub-crafts-seasonal
+        - label: Toys
+          type: checkbox
+          id: hub-toys
+          name: hub-toys
+        - label: Books
+          type: checkbox
+          id: hub-books
+          name: hub-books
+        - label: Recycling
+          type: checkbox
+          id: hub-recycling
+          name: hub-recycling
+    - groupTitle: Rebound
+      groupXSSize: 1
+      groupMSize: 1-2
+      fields:
+        - label: Cashier
+          type: checkbox
+          id: reb-cashier
+          name: reb-cashier
+        - label: Loading & Unloading
+          type: checkbox
+          id: reb-loading
+          name: reb-loading
+        - label: Rearranging Furniture
+          type: checkbox
+          id: reb-rearrange
+          name: reb-rearrange
+        - label: Electronics
+          type: checkbox
+          id: reb-electronics
+          name: reb-electronics
+        - label: Appliance Testing
+          type: checkbox
+          id: reb-appliance-testing
+          name: reb-appliance-testing
+        - label: Cleaning
+          type: checkbox
+          id: reb-cleaning
+          name: reb-cleaning
+        - label: Recycling
+          type: checkbox
+          id: reb-recycling
+          name: reb-recycling
+availability:
+  legend: When are you available to work?
+  additionalInfo: Select all that apply
+  fieldLayout: checklists
+  group:
+    - groupTitle: Monday
+      groupXSSize: 1
+      groupSSize: 1-2
+      groupMSize: 1-3
+      fields:
+        - label: 9:00am - 12:30pm
+          id: monAM
+          name: monAM
+        - label: 12:30pm - 4:30pm
+          id: monPM
+          name: monPM
+    - groupTitle: Tuesday
+      groupXSSize: 1
+      groupSSize: 1-2
+      groupMSize: 1-3
+      fields:
+        - label: 9:00am - 12:30pm
+          id: tuesAM
+          name: tuesAM
+        - label: 12:30pm - 4:30pm
+          id: tuesPM
+          name: tuesPM
+    - groupTitle: Wednesday
+      groupXSSize: 1
+      groupSSize: 1-2
+      groupMSize: 1-3
+      fields:
+        - label: 9:00am - 12:30pm
+          id: wedAM
+          name: wedAM
+        - label: 12:30pm - 4:30pm
+          id: wedPM
+          name: wedPM
+    - groupTitle: Thursday
+      groupXSSize: 1
+      groupSSize: 1-2
+      groupMSize: 1-3
+      fields:
+        - label: 9:00am - 12:30pm
+          id: thursAM
+          name: thursAM
+        - label: 12:30pm - 4:30pm
+          id: thursPM
+          name: thursPM
+        - label: 5:30pm - 8:30pm
+          id: thursLate
+          name: thursLate
+    - groupTitle: Friday
+      groupXSSize: 1
+      groupSSize: 1-2
+      groupMSize: 1-3
+      fields:
+        - label: 9:00am - 12:30pm
+          id: friAM
+          name: friAM
+        - label: 12:30pm - 4:30pm
+          id: friPM
+          name: friPM
+    - groupTitle: Saturday
+      groupXSSize: 1
+      groupSSize: 1-2
+      groupMSize: 1-3
+      fields:
+        - label: 9:00am - 12:30pm
+          id: satAM
+          name: satAM
+        - label: 12:30pm - 4:30pm
+          id: satPM
+          name: satPM
+qualifications:
+  legend: Describe any related experience or qualifications.
+  fieldLayout: textarea
+  fields:
+    - label: Qualifications
+      id: qualifications
+      name: qualifications

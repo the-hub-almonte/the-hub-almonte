@@ -48,7 +48,7 @@ pageName: about
   </div>
   {% for serviceSlides in pages.our-services %}
     <div id="{{serviceSlides.link}}" class="slide {% if serviceSlides.reverse == true %}slide-reverse{% endif %}">
-      <div class="slide-unit slide-content">
+      <div class="slide-unit slide-content {{serviceSlides.slideBGColor}}">
         <div class="slide-content-wrap gutter pad-t-b-2">
           <h2>{{serviceSlides.title}}</h2>
           <div class="service-slide-content">
