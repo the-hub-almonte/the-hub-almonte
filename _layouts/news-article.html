@@ -9,7 +9,23 @@ layout: main
 </header>
 <div class="pad-b-2">
   <div class="max-length gutter">
-    <h2 class="text-center">{{page.byline}}</h2>
+    {% if page.category == 'events' %}
+      <div class="stretch-rows giga push">
+        <div class="row push-1-2">
+          <strong class="push-r-1-2">Date:</strong>
+          <span class="stretch">{{page.eventDate}}</span>
+        </div>
+        <div class="row push-1-2">
+          <strong class="push-r-1-2">Time:</strong>
+          <span class="stretch">{{page.eventTime}}</span>
+        </div>
+        <div class="row">
+          <strong class="push-r-1-2">Location:</strong>
+          <a class="stretch" href="{{page.eventLocationLink}}" target="_blank">{{page.eventLocation}}</a>
+        </div>
+      </div>
+    <h2>Event Details:</h2>
+    {% endif %}
     {{content}}
   </div>
 </div>
