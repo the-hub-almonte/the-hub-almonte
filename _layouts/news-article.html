@@ -1,16 +1,23 @@
 ---
 layout: main
 ---
+{% if banner == true %}
 <header class="hero hero-news push-2" style="background-image: url('{{site.baseurl}}{{page.banImage}}')">
   <div class="hero-overlay"></div>
   <div class="wrapper gutter">
     <h1>{{page.title}}</h1>
   </div>
 </header>
+{% else %}
+  <header class="pad-t-2 pad-b-2">
+    <h1>{{page.title}}</h1>
+  </header>
+{% endif %}
 <div class="pad-b-2">
   <div class="max-length gutter">
     {% if page.category == 'events' %}
-      <div class="stretch-rows giga push">
+      <h2>Event Description:</h2>
+      <div class="stretch-rows giga push-2">
         <div class="row push-1-2">
           <strong class="push-r-1-2">Date:</strong>
           <span class="stretch">{{page.eventDate}}</span>
@@ -24,7 +31,7 @@ layout: main
           <a class="stretch" href="{{page.eventLocationLink}}" target="_blank">{{page.eventLocation}}</a>
         </div>
       </div>
-    <h2>Event Details:</h2>
+      <h2>Event Description:</h2>
     {% endif %}
     {{content}}
   </div>
