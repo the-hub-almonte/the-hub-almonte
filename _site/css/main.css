@@ -4738,6 +4738,11 @@ address.icon-label {
   --shadow-primary: 0 3px 6px rgba(0, 0, 0, .15);
 }
 
+::selection {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
 html {
   font-family: var(--font-primary);
 }
