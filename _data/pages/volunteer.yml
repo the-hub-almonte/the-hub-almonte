@@ -88,7 +88,6 @@ volunteer-form:
   jobs:
     legend: Which jobs interest you the most?
     additionalInfo: Select all that apply
-    fieldLayout: checklists
     group:
       - groupTitle: The Hub
         groupXSSize: 1
@@ -167,9 +166,11 @@ volunteer-form:
           - label: 9:00am - 12:30pm
             id: monAM
             name: monAM
+            type: checkbox
           - label: 12:30pm - 4:30pm
             id: monPM
             name: monPM
+            type: checkbox
       - groupTitle: Tuesday
         groupXSSize: 1
         groupSSize: 1-2
@@ -178,9 +179,11 @@ volunteer-form:
           - label: 9:00am - 12:30pm
             id: tuesAM
             name: tuesAM
+            type: checkbox
           - label: 12:30pm - 4:30pm
             id: tuesPM
             name: tuesPM
+            type: checkbox
       - groupTitle: Wednesday
         groupXSSize: 1
         groupSSize: 1-2
@@ -189,9 +192,11 @@ volunteer-form:
           - label: 9:00am - 12:30pm
             id: wedAM
             name: wedAM
+            type: checkbox
           - label: 12:30pm - 4:30pm
             id: wedPM
             name: wedPM
+            type: checkbox
       - groupTitle: Thursday
         groupXSSize: 1
         groupSSize: 1-2
@@ -200,12 +205,15 @@ volunteer-form:
           - label: 9:00am - 12:30pm
             id: thursAM
             name: thursAM
+            type: checkbox
           - label: 12:30pm - 4:30pm
             id: thursPM
             name: thursPM
+            type: checkbox
           - label: 5:30pm - 8:30pm
             id: thursLate
             name: thursLate
+            type: checkbox
       - groupTitle: Friday
         groupXSSize: 1
         groupSSize: 1-2
@@ -214,9 +222,11 @@ volunteer-form:
           - label: 9:00am - 12:30pm
             id: friAM
             name: friAM
+            type: checkbox
           - label: 12:30pm - 4:30pm
             id: friPM
             name: friPM
+            type: checkbox
       - groupTitle: Saturday
         groupXSSize: 1
         groupSSize: 1-2
@@ -225,9 +235,11 @@ volunteer-form:
           - label: 9:00am - 12:30pm
             id: satAM
             name: satAM
+            type: checkbox
           - label: 12:30pm - 4:30pm
             id: satPM
             name: satPM
+            type: checkbox
   qualifications:
     legend: Describe any related experience or qualifications.
     fieldLayout: textarea

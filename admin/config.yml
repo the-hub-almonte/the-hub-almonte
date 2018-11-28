@@ -310,6 +310,295 @@ collections:
                   - label: "Section Title"
                     name: "legend"
                     widget: "string"
+                  - label: "Additional Information"
+                    name: "additionalInfo"
+                    widget: "string"
+                  - label: "Form Fields"
+                    name: "fields"
+                    widget: "list"
+                    fields:
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Type"
+                        name: "type"
+                        widget: "select"
+                        options:
+                          - { label: "Text Input", value: "text" }
+                          - { label: "Number Input", value: "number" }
+                          - { label: "Email Input", value: "email" }
+                          - { label: "Phone Input", value: "tel" }
+                          - { label: "Password Input", value: "password" }
+                          - { label: "Website Input", value: "url" }
+                          - { label: "Checkboxes", value: "checkbox" }
+                          - { label: "Radio Button Select", value: "radio" }
+                      - label: "ID"
+                        name: "id"
+                        widget: "string"
+                        hint: "Must unique for each form field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
+                      - label: "Name"
+                        name: "name"
+                        widget: "string"
+                        hint: "If you have a group of Radio Select inputs, they must all have the same Name in order to only allow one to be selected. In all other cases, the names should be unique for each field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
+              - label: "Student Information"
+                name: "student"
+                widget: "object"
+                fields:
+                  - label: "Section Title"
+                    name: "legend"
+                    widget: "string"
+                  - label: "Additional Information"
+                    name: "additionalInfo"
+                    widget: "string"
+                  - label: "Form Fields"
+                    name: "fields"
+                    widget: "list"
+                    fields:
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Type"
+                        name: "type"
+                        widget: "select"
+                        options:
+                          - { label: "Text Input", value: "text" }
+                          - { label: "Number Input", value: "number" }
+                          - { label: "Email Input", value: "email" }
+                          - { label: "Phone Input", value: "tel" }
+                          - { label: "Password Input", value: "password" }
+                          - { label: "Website Input", value: "url" }
+                          - { label: "Checkboxes", value: "checkbox" }
+                          - { label: "Radio Button Select", value: "radio" }
+                      - label: "ID"
+                        name: "id"
+                        widget: "string"
+                        hint: "Must unique for each form field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
+                      - label: "Name"
+                        name: "name"
+                        widget: "string"
+                        hint: "If you have a group of Radio Select inputs, they must all have the same Name in order to only allow one to be selected. In all other cases, the names should be unique for each field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
+              - label: "Volunteering locations"
+                name: "service"
+                widget: "object"
+                fields:
+                  - label: "Section Title"
+                    name: "legend"
+                    widget: "string"
+                  - label: "Additional Information"
+                    name: "additionalInfo"
+                    widget: "string"
+                  - label: "Form Fields"
+                    name: "fields"
+                    widget: "list"
+                    fields:
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Type"
+                        name: "type"
+                        widget: "select"
+                        options:
+                          - { label: "Text Input", value: "text" }
+                          - { label: "Number Input", value: "number" }
+                          - { label: "Email Input", value: "email" }
+                          - { label: "Phone Input", value: "tel" }
+                          - { label: "Password Input", value: "password" }
+                          - { label: "Website Input", value: "url" }
+                          - { label: "Checkboxes", value: "checkbox" }
+                          - { label: "Radio Button Select", value: "radio" }
+                      - label: "ID"
+                        name: "id"
+                        widget: "string"
+                        hint: "Must unique for each form field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
+                      - label: "Name"
+                        name: "name"
+                        widget: "string"
+                        hint: "If you have a group of Radio Select inputs, they must all have the same Name in order to only allow one to be selected. In all other cases, the names should be unique for each field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
+              - label: "Job Selection"
+                name: "jobs"
+                widget: "object"
+                fields:
+                  - label: "Section Title"
+                    name: "legend"
+                    widget: "string"
+                  - label: "Additional Information"
+                    name: "additionalInfo"
+                    widget: "string"
+                  - label: "Form Groups"
+                    name: "group"
+                    widget: "list"
+                    fields:
+                      - label: "Group Title"
+                        name: "groupTitle"
+                        widget: "string"
+                      - label: "Group Display Width - Mobile Screen"
+                        name: "groupXSSize"
+                        widget: "select"
+                        options:
+                          - { label: "Half - 1/2", value: "1-2" }
+                          - { label: "Full - 1", value: "1" }
+                      - label: "Group Display Width - Small Screen"
+                        name: "groupSSize"
+                        widget: "select"
+                        options:
+                          - { label: "Quarter - 1/4", value: "1-4" }
+                          - { label: "Third - 1/3", value: "1-3" }
+                          - { label: "Half - 1/2", value: "1-2" }
+                          - { label: "Full - 1", value: "1" }
+                      - label: "Group Display Width - Medium Size"
+                        name: "groupMSize"
+                        widget: "select"
+                        options:
+                          - { label: "Quarter - 1/4", value: "1-4" }
+                          - { label: "Third - 1/3", value: "1-3" }
+                          - { label: "Half - 1/2", value: "1-2" }
+                          - { label: "Full - 1", value: "1" }
+                      - label: "Group Display Width - Large Size"
+                        name: "groupLSize"
+                        widget: "select"
+                        options:
+                          - { label: "Quarter - 1/4", value: "1-4" }
+                          - { label: "Third - 1/3", value: "1-3" }
+                          - { label: "Half - 1/2", value: "1-2" }
+                          - { label: "Full - 1", value: "1" }
+                      - label: "Form Fields"
+                        name: "fields"
+                        widget: "list"
+                        fields:
+                          - label: "Label"
+                            name: "label"
+                            widget: "string"
+                          - label: "Type"
+                            name: "type"
+                            widget: "select"
+                            options:
+                              - { label: "Text Input", value: "text" }
+                              - { label: "Number Input", value: "number" }
+                              - { label: "Email Input", value: "email" }
+                              - { label: "Phone Input", value: "tel" }
+                              - { label: "Password Input", value: "password" }
+                              - { label: "Website Input", value: "url" }
+                              - { label: "Checkboxes", value: "checkbox" }
+                              - { label: "Radio Button Select", value: "radio" }
+                          - label: "ID"
+                            name: "id"
+                            widget: "string"
+                            hint: "Must unique for each form field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
+                          - label: "Name"
+                            name: "name"
+                            widget: "string"
+                            hint: "If you have a group of Radio Select inputs, they must all have the same Name in order to only allow one to be selected. In all other cases, the names should be unique for each field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
+              - label: "Volunteering locations"
+                name: "service"
+                widget: "object"
+                fields:
+                  - label: "Section Title"
+                    name: "legend"
+                    widget: "string"
+                  - label: "Additional Information"
+                    name: "additionalInfo"
+                    widget: "string"
+                  - label: "Form Fields"
+                    name: "fields"
+                    widget: "list"
+                    fields:
+                      - label: "Label"
+                        name: "label"
+                        widget: "string"
+                      - label: "Type"
+                        name: "type"
+                        widget: "select"
+                        options:
+                          - { label: "Text Input", value: "text" }
+                          - { label: "Number Input", value: "number" }
+                          - { label: "Email Input", value: "email" }
+                          - { label: "Phone Input", value: "tel" }
+                          - { label: "Password Input", value: "password" }
+                          - { label: "Website Input", value: "url" }
+                          - { label: "Checkboxes", value: "checkbox" }
+                          - { label: "Radio Button Select", value: "radio" }
+                      - label: "ID"
+                        name: "id"
+                        widget: "string"
+                        hint: "Must unique for each form field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
+                      - label: "Name"
+                        name: "name"
+                        widget: "string"
+                        hint: "If you have a group of Radio Select inputs, they must all have the same Name in order to only allow one to be selected. In all other cases, the names should be unique for each field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
+              - label: "Availability"
+                name: "availability"
+                widget: "object"
+                fields:
+                  - label: "Section Title"
+                    name: "legend"
+                    widget: "string"
+                  - label: "Additional Information"
+                    name: "additionalInfo"
+                    widget: "string"
+                  - label: "Form Groups"
+                    name: "group"
+                    widget: "list"
+                    fields:
+                      - label: "Group Title"
+                        name: "groupTitle"
+                        widget: "string"
+                      - label: "Group Display Width - Mobile Screen"
+                        name: "groupXSSize"
+                        widget: "select"
+                        options:
+                          - { label: "Half - 1/2", value: "1-2" }
+                          - { label: "Full - 1", value: "1" }
+                      - label: "Group Display Width - Small Screen"
+                        name: "groupSSize"
+                        widget: "select"
+                        options:
+                          - { label: "Quarter - 1/4", value: "1-4" }
+                          - { label: "Third - 1/3", value: "1-3" }
+                          - { label: "Half - 1/2", value: "1-2" }
+                          - { label: "Full - 1", value: "1" }
+                      - label: "Group Display Width - Medium Size"
+                        name: "groupMSize"
+                        widget: "select"
+                        options:
+                          - { label: "Quarter - 1/4", value: "1-4" }
+                          - { label: "Third - 1/3", value: "1-3" }
+                          - { label: "Half - 1/2", value: "1-2" }
+                          - { label: "Full - 1", value: "1" }
+                      - label: "Group Display Width - Large Size"
+                        name: "groupLSize"
+                        widget: "select"
+                        options:
+                          - { label: "Quarter - 1/4", value: "1-4" }
+                          - { label: "Third - 1/3", value: "1-3" }
+                          - { label: "Half - 1/2", value: "1-2" }
+                          - { label: "Full - 1", value: "1" }
+                      - label: "Form Fields"
+                        name: "fields"
+                        widget: "list"
+                        fields:
+                          - label: "Label"
+                            name: "label"
+                            widget: "string"
+                          - label: "Type"
+                            name: "type"
+                            widget: "select"
+                            options:
+                              - { label: "Text Input", value: "text" }
+                              - { label: "Number Input", value: "number" }
+                              - { label: "Email Input", value: "email" }
+                              - { label: "Phone Input", value: "tel" }
+                              - { label: "Password Input", value: "password" }
+                              - { label: "Website Input", value: "url" }
+                              - { label: "Checkboxes", value: "checkbox" }
+                              - { label: "Radio Button Select", value: "radio" }
+                          - label: "ID"
+                            name: "id"
+                            widget: "string"
+                            hint: "Must unique for each form field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
+                          - label: "Name"
+                            name: "name"
+                            widget: "string"
+                            hint: "If you have a group of Radio Select inputs, they must all have the same Name in order to only allow one to be selected. In all other cases, the names should be unique for each field. Must be lowercase, with dashes (-) instead of spaces. Ex: the-hub."
 
           # - label: "Volunteer Form"
           #   name: "volunteerForm"

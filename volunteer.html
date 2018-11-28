@@ -65,7 +65,7 @@ pageName: volunteer
         {% endif %}
         <div class="grid island-1-2">
           {% for groups in pages.volunteer-form.jobs.group %}
-            <div class="unit [ xs-{{groups.groupXSSize}} {% if groups.groupSSize %}S-{{groups.groupSSize}}{% endif %} {% if groups.groupMSize %}m-{{groups.groupMSize}}{% endif %} {% if groups.groupLSize %}L-{{groups.groupLSize}}{% endif %} ] island-1-2">
+            <div class="unit [ xs-{{groups.groupXSSize}} {% if groups.groupSSize %}S-{{groups.groupSSize}}{% endif %} {% if groups.groupMSize %}m-{{groups.groupMSize}}{% endif %} {% if groups.groupLSize %}l-{{groups.groupLSize}}{% endif %} ] island-1-2">
               <p class="bold mega">{{groups.groupTitle}}</p>
               {% for field in groups.fields %}
               <div class="push-1-2">
@@ -84,7 +84,7 @@ pageName: volunteer
         {% endif %}
         <div class="grid island-1-2">
           {% for groups in pages.volunteer-form.availability.group %}
-            <div class="unit [ xs-{{groups.groupXSSize}} {% if groups.groupSSize %}S-{{groups.groupSSize}}{% endif %} {% if groups.groupMSize %}m-{{groups.groupMSize}}{% endif %} {% if groups.groupLSize %}L-{{groups.groupLSize}}{% endif %} ] island-1-2">
+            <div class="unit [ xs-{{groups.groupXSSize}} {% if groups.groupSSize %}S-{{groups.groupSSize}}{% endif %} {% if groups.groupMSize %}m-{{groups.groupMSize}}{% endif %} {% if groups.groupLSize %}l-{{groups.groupLSize}}{% endif %} ] island-1-2">
               <p class="bold mega">{{groups.groupTitle}}</p>
               {% for field in groups.fields %}
               <div class="push-1-2">
