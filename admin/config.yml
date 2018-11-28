@@ -783,6 +783,15 @@ collections:
       - label: "Location Map Link"
         name: "eventLocationLink"
         widget: "string"
+        required: false
+      - label: "Ticket Link Text"
+        name: "ticketLinkText"
+        widget: "string"
+        required: false
+      - label: "Ticket Link"
+        name: "ticketLink"
+        widget: "string"
+        required: false
       - label: "Include banner on article page?"
         name: "banner"
         widget: "boolean"

@@ -4495,6 +4495,15 @@ address.icon-label {
   display: none;
 } */
 
+.categories-wrap.cat-news .divider,
+.categories-wrap.cat-events .divider {
+  display: none;
+}
+
+.categories-wrap.cat-events.cat-news .divider {
+  display: block;
+}
+
 .categories-wrap.cat-all .no-articles,
 .categories-wrap.cat-news .no-articles,
 .categories-wrap.cat-events .no-articles {

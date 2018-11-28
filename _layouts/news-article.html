@@ -1,7 +1,7 @@
 ---
 layout: main
 ---
-{% if banner == true %}
+{% if page.banner == true %}
 <header class="hero hero-news push-2" style="background-image: url('{{site.baseurl}}{{page.banImage}}')">
   <div class="hero-overlay"></div>
   <div class="wrapper gutter">
@@ -10,7 +10,7 @@ layout: main
 </header>
 {% else %}
   <header class="pad-t-2 pad-b-2">
-    <h1>{{page.title}}</h1>
+    <h1 class="wrapper text-center pad-t-2">{{page.title}}</h1>
   </header>
 {% endif %}
 <div class="pad-b-2">
@@ -20,16 +20,26 @@ layout: main
       <div class="stretch-rows giga push-2">
         <div class="row push-1-2">
           <strong class="push-r-1-2">Date:</strong>
-          <span class="stretch">{{page.eventDate}}</span>
+          <p class="stretch push-0">{{page.eventDate}}</p>
         </div>
         <div class="row push-1-2">
           <strong class="push-r-1-2">Time:</strong>
-          <span class="stretch">{{page.eventTime}}</span>
+          <p class="stretch push-0">{{page.eventTime}}</p>
         </div>
-        <div class="row">
+        <div class="row push-1-2">
           <strong class="push-r-1-2">Location:</strong>
-          <a class="stretch" href="{{page.eventLocationLink}}" target="_blank">{{page.eventLocation}}</a>
+          {% if page.eventLocationLink %}
+            <p class="stretch push-0"><a href="{{page.eventLocationLink}}" target="_blank">{{page.eventLocation}}</a></p>
+          {% else %}
+            <p class="stretch push-0">{{page.eventLocation}}</p>
+          {% endif %}
         </div>
+        {% if page.ticketLink %}
+          <div class="row">
+            <strong class="push-r-1-2">Tickets:</strong>
+            <p class="stretch push-0"><a class="stretch" href="{{page.ticketLink}}" target="_blank">{{page.ticketLinkText}}</a></p>
+          </div>
+        {% endif %}
       </div>
       <h2>Event Description:</h2>
     {% endif %}
