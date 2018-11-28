@@ -4,7 +4,7 @@ title: 118 Mill Street Update
 meta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit lamet tolk amel yut…
 source:
 category: news
-pbanner: 'true'
+banner: 'true'
 banImage: /images/uploads/reno-front.jpg
 ---
 
