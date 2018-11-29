@@ -23,6 +23,14 @@
     bottom .25s cubic-bezier(.75, 0, .25, 1);
 }
 
+.nav-light-items .tog {
+  background-color: #fff;
+}
+
+.sticky.nav-light-items .tog {
+  background-color: var(--color-primary);
+}
+
 .tog-top {
   top: 0;
 }

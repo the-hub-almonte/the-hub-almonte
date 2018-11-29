@@ -11,10 +11,6 @@
 .categories-wrap.cat-events .events {
   display: block
 }
-/*
-.categories-wrap.cat-events .news{
-  display: none;
-} */
 
 .categories-wrap.cat-news .divider,
 .categories-wrap.cat-events .divider {
