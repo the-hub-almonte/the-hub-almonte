@@ -4583,6 +4583,7 @@ address.icon-label {
     display: flex;
     align-content: stretch;
     height: 85vh;
+    max-height: 700px;
     position: relative;
   }
 
