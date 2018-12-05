@@ -1,7 +1,7 @@
 <nav class="{{include.navClass}}" role="navigation">
   <ul class="{{include.ulClass}}">
     <li class="{{include.liClass}}">
-      <a class="{{include.aLogo}}" href="{{site.baseurl}}/">
+      <a class="{{include.aLogo}} logo-wrap" href="{{site.baseurl}}/">
         <svg class="logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620.2 132.8">
         <title>hub-logo</title>
         <path d="M190.1,46.5H173.5c-5,0-7.7-2.5-7.7-7.1v-.6c0-4.5,2.7-6.9,7.7-6.9h49.7c5.1,0,7.7,2.4,7.7,6.9v.6c0,4.6-2.6,7.1-7.7,7.1H206.9V98.2c0,5-2.7,7.6-7.5,7.6H197c-4.5,0-6.9-2.6-6.9-7.6Z" />
@@ -19,8 +19,13 @@
         <li class="{{include.liInner}} home-link">
           <a class="{{include.aInner}}" href="{{site.baseurl}}/">Home</a>
         </li>
-        <li class="{{include.liInner}}">
-          <a class="{{include.aInner}} {% if page.url contains 'about' %}current{% endif %} subnav-label" href="{{site.baseurl}}/about/">About</a>
+        <li class="{{include.liInner}} subnav-wrap">
+          <a class="subnav-icon" href="#">
+            <i class="icon i-1">
+              <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+            </i>
+          </a>
+          <a class="{{include.aInner}} {% if page.url contains 'about' %}current{% endif %} subnav-label relative" href="{{site.baseurl}}/about/">About</a>
           <div class="subnav">
             {% include about-subnav.html olClass='push-0 list-group milli' %}
           </div>

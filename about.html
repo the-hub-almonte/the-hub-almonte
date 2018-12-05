@@ -16,7 +16,7 @@ pageName: about
     <h2 class="yotta text-fff">{{pages.historyTitleSlide.title}}</h2>
   </div>
   {% for slides in pages.history-slides.edit-history-slides %}
-    <div id="slide-{{slides.name}}" class="slide {% if slides.reverse == true %}slide-reverse{% endif %}">
+    <div id="slide-{{slides.name}}" class="slide {% if slides.reverse == true %}slide-reverse{% endif %}" tabindex="0">
       <div class="slide-unit slide-content {{slides.slideBGColor}}">
         <div class="slide-content-wrap gutter pad-t-b-2">
           <div class="giga">{{slides.content | markdownify }}</div>
@@ -48,7 +48,7 @@ pageName: about
     </div>
   </div>
   {% for serviceSlides in pages.our-services %}
-    <div id="{{serviceSlides.link}}" class="slide {% if serviceSlides.reverse == true %}slide-reverse{% endif %}">
+    <div id="{{serviceSlides.link}}" class="slide {% if serviceSlides.reverse == true %}slide-reverse{% endif %}" tabindex="0">
       <div class="slide-unit slide-content {{serviceSlides.slideBGColor}}">
         <div class="slide-content-wrap gutter pad-t-b-2">
           <h2>{{serviceSlides.title}}</h2>
@@ -64,7 +64,7 @@ pageName: about
 </section>
 <div id="what-we-give" class="anchor anchor-about"></div>
 <section class="what-we-give" tabindex="0">
-  <div class="slide slide-banner slide-reverse" style="background-image: url('{{site.baseurl}}{{pages.what-we-give.bannerImg}}');">
+  <div class="slide slide-banner slide-reverse" style="background-image: url('{{site.baseurl}}{{pages.what-we-give.bannerImg}}');" tabindex="0">
     <div class="hero-overlay"></div>
     <div class="slide-unit slide-content">
       <div class="slide-content-wrap gutter pad-t-b-2">
@@ -74,7 +74,7 @@ pageName: about
   </div>
   <div class="pad-t-b-2">
     <div class="wrapper">
-      <h2 class="text-center gutter">{{pages.what-we-give.donationsTitle}}</h2>
+      <h2 class="text-center gutter" tabindex="0">{{pages.what-we-give.donationsTitle}}</h2>
       <p class="text-center gutter max-length">{{pages.what-we-give.donationsByline}}</p>
       <div class="grid island-1-2 donation-grid">
         <div class="unit [ xs-1 m-1-2 ] island-1-2">

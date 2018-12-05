@@ -69,7 +69,7 @@ x.addListener(myFunction) // Attach listener function on state changes
 
 function myFunction(x) {
   if (x.matches) {
-    $('.subnav-label').on('click', function (e) {
+    $('.subnav-icon').on('click', function (e) {
       e.preventDefault();
       $('.subnav').toggleClass('open');
     });
@@ -81,6 +81,25 @@ function myFunction(x) {
     });
   }
 }
+
+$('.subnav a').focus(function () {
+  $('.subnav').addClass('open');
+  $('.subnav-wrap > a').addClass('current');
+});
+
+$('.subnav a').focusout(function () {
+  $('.subnav').removeClass('open');
+  $('.subnav-wrap > a').removeClass('current');
+});
+
+$('.subnav').hover(
+  function() {
+    $('.subnav-wrap > a').addClass('current');
+  }, function() {
+    $('.subnav-wrap > a').removeClass('current');
+  }
+);
+
 //
 // $('.print-button-footer').on('click', function () {
 //   window.print();

@@ -4081,14 +4081,25 @@ address.icon-label {
   display: inline-block;
   z-index: 10000;
   position: relative;
+  transition: color var(--transition-primary);
 }
 
 .nav-light-items .logo {
   color: #fff;
 }
 
+.nav-light-items .logo:hover,
+.nav-light-items .logo-wrap:focus .logo {
+  color: var(--color-primary);
+}
+
 .sticky.nav-light-items .logo {
   color: var(--color-primary);
+}
+
+.sticky.nav-light-items .logo:hover,
+.sticky.nav-light-items .logo-wrap:focus .logo {
+  color: var(--color-primary-light);
 }
 
 .nav .nav-items a:not(.btn) {
@@ -4149,6 +4160,9 @@ address.icon-label {
   width: calc(100% - 2.6rem);
 }
 
+.subnav-icon {
+  display: none;
+}
 
 @media only screen and (max-width: 37.999em) {
 
@@ -4186,12 +4200,14 @@ address.icon-label {
   }
 
   .nav .nav-items a:not(.btn) {
-    color: var(--color-primary);
+    color: #fff;
   }
 
-  .nav .nav-items a:not(.btn):hover {
+  .subnav-icon:hover + a,
+  .subnav-icon:focus + a,
+  .nav .nav-items a:not(.btn):hover,
+  .nav .nav-items a:not(.btn):focus {
     background-color: var(--color-primary);
-    color: var(--color-secondary);
   }
 
   .nav .nav-items .btn {
@@ -4199,13 +4215,18 @@ address.icon-label {
 
   }
 
-  .nav .nav-items .btn:hover {
+  .nav .nav-items .btn:hover,
+  .nav .nav-items .btn:focus {
     background-color: #fff;
     border-color: #fff;
     color: var(--color-secondary);
   }
 
   /* ---------- SubNav ---------- */
+
+  .subnav-wrap {
+    position: relative;
+  }
 
   .subnav {
     max-height: 0;
@@ -4222,14 +4243,34 @@ address.icon-label {
     padding: 1.3rem;
     display: block;
     background-color: var(--color-primary);
-    color: var(--color-secondary);
+    color: #fff;
+    border-top: 1px solid var(--color-secondary);
     border-bottom: 1px solid var(--color-secondary);
   }
 
-  .nav .nav-items .subnav a:not(.btn):hover {
-    color: var(--color-primary);
+  .nav .nav-items .subnav li:first-child a:not(.btn) {
+    border-top: 2px solid var(--color-secondary);
+  }
+
+  .nav .nav-items .subnav a:not(.btn):hover,
+  .nav .nav-items .subnav a:not(.btn):focus {
     background-color: var(--color-secondary);
     border-color: var(--color-primary);
+  }
+
+  .subnav-icon {
+    position: absolute;
+    right: 50%;
+    transform: translatex(320%) rotate(90deg);
+    top: 1.3rem;
+    padding: 0!important;
+    z-index: 1;
+    display: inline-block;
+  }
+
+  .subnav-icon:hover,
+  .subnav-icon:focus {
+    background-color: transparent!important;
   }
 
 }
@@ -4299,7 +4340,10 @@ address.icon-label {
   /* ---------- SubNav ---------- */
 
   .subnav-label:hover + .subnav ol,
-  .subnav:hover ol {
+  .subnav-label:focus + .subnav ol,
+  .subnav:hover ol,
+  .subnav:focus ol,
+  .subnav.open ol {
     max-height: 160px;
   }
 
@@ -4329,7 +4373,8 @@ address.icon-label {
     padding: .35rem .7rem;
   }
 
-  .nav .nav-items .subnav a:not(.btn):hover {
+  .nav .nav-items .subnav a:not(.btn):hover,
+  .nav .nav-items .subnav a:not(.btn):focus {
     background-color: var(--color-primary);
     color: #fff;
   }
@@ -4865,11 +4910,13 @@ input.dollar-input {
   color: #fff;
 }
 
-.bg-primary.slide-unit a:not(.btn):hover {
+.bg-primary.slide-unit a:not(.btn):hover,
+.bg-primary.slide-unit a:not(.btn):focus {
   color: var(--color-secondary);
 }
 
-.bg-secondary.slide-unit a:not(.btn):hover {
+.bg-secondary.slide-unit a:not(.btn):hover,
+.bg-secondary.slide-unit a:not(.btn):focus {
   color: var(--color-primary-light);
 }
 
@@ -4878,12 +4925,14 @@ input.dollar-input {
 }
 
 .bg-lg,
-.bg-lg-hov:hover {
+.bg-lg-hov:hover
+.bg-lg-hov:focus {
   background-color: var(--color-lg);
 }
 
 .bg-lg-lighter,
-.bg-lg-lighter-hov:hover {
+.bg-lg-lighter-hov:hover,
+.bg-lg-lighter-hov:focus {
   background-color: var(--color-lg-lighter);
 }
 
@@ -5000,7 +5049,8 @@ input.dollar-input {
   transition: opacity var(--transition-primary);
 }
 
-.to-top:hover span {
+.to-top:hover span,
+.to-top:focus span {
   opacity: 1;
 }
 
@@ -5009,6 +5059,7 @@ input.dollar-input {
 }
 
 .to-top:hover,
+.to-top:focus,
 .to-top:focus {
   background-color: var(--color-primary);
   color: #fff;

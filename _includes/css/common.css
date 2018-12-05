@@ -147,11 +147,13 @@ input.dollar-input {
   color: #fff;
 }
 
-.bg-primary.slide-unit a:not(.btn):hover {
+.bg-primary.slide-unit a:not(.btn):hover,
+.bg-primary.slide-unit a:not(.btn):focus {
   color: var(--color-secondary);
 }
 
-.bg-secondary.slide-unit a:not(.btn):hover {
+.bg-secondary.slide-unit a:not(.btn):hover,
+.bg-secondary.slide-unit a:not(.btn):focus {
   color: var(--color-primary-light);
 }
 
@@ -160,12 +162,14 @@ input.dollar-input {
 }
 
 .bg-lg,
-.bg-lg-hov:hover {
+.bg-lg-hov:hover
+.bg-lg-hov:focus {
   background-color: var(--color-lg);
 }
 
 .bg-lg-lighter,
-.bg-lg-lighter-hov:hover {
+.bg-lg-lighter-hov:hover,
+.bg-lg-lighter-hov:focus {
   background-color: var(--color-lg-lighter);
 }
 
@@ -282,7 +286,8 @@ input.dollar-input {
   transition: opacity var(--transition-primary);
 }
 
-.to-top:hover span {
+.to-top:hover span,
+.to-top:focus span {
   opacity: 1;
 }
 
@@ -291,6 +296,7 @@ input.dollar-input {
 }
 
 .to-top:hover,
+.to-top:focus,
 .to-top:focus {
   background-color: var(--color-primary);
   color: #fff;
