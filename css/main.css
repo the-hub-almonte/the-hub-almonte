@@ -1,13 +1,10 @@
----
----
-
-{% include css/modules.css %}
-{% include css/grid.css %}
-{% include css/type.css %}
-{% include css/footer.css %}
-{% include css/nav.css %}
-{% include css/nav-tog.css %}
-{% include css/news-events.css %}
-{% include css/slides.css %}
-{% include css/about.css %}
-{% include css/common.css %}
+@import "modules.css";
+@import "grid.css";
+@import "type.css";
+@import "footer.css";
+@import "nav.css";
+@import "nav-tog.css";
+@import "news-events.css";
+@import "slides.css";
+@import "about.css";
+@import "common.css";

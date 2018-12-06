@@ -1,0 +1,18 @@
+{
+  "name": "the-hub-almonte",
+  "version": "1.0.0",
+  "description": "Website design for Almonte based charity, The Hub",
+  "scripts": {
+    "postcss": "postcss css/main.css --no-map -u postcss-import -u postcss-cssnext --postcss-cssnext.browsers 'last 2 versions' -u cssnano --cssnano.safe -o css/main.min.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-hub-almonte/the-hub-almonte.git"
+  },
+  "dependencies": {
+    "cssnano": "^4.1.7",
+    "postcss-cli": "^6.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1"
+  }
+}
