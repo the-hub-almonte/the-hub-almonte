@@ -11,12 +11,6 @@ banner:
     heroBtnText:
   heroImg:
 bodyContent: >-
-  ## Donate Online
-
-
-  To donate online, fill in the [form below](#donate-form).
-
-
   ## Prefer not to donate online?
 
 
@@ -35,5 +29,5 @@ bodyContent: >-
   ## Donation Receipts
 
 
-  Upon completing your donation you should shortly receive by email a receipt suitable for tax purposes. If your receipt doesn’t arrive please email info@thehubalmonte.com.
+  Upon completing your donation you should shortly receive by email a receipt suitable for tax purposes. If your receipt doesn’t arrive please email [info@thehubalmonte.com](mailto:info@thehubalmonte.com).
 sponsorBar: false

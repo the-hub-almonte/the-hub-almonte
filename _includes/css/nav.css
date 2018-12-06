@@ -408,3 +408,17 @@
   }
 
 }
+
+@media only screen and (max-height: 38em) {
+
+  .about-subnav-bar.sticky {
+    text-align: center;
+    position: static;
+    width: 100%;
+    left: auto;
+    top: auto;
+    z-index: auto;
+    box-shadow: none;
+  }
+
+}

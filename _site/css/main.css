@@ -4470,6 +4470,20 @@ address.icon-label {
 
 }
 
+@media only screen and (max-height: 38em) {
+
+  .about-subnav-bar.sticky {
+    text-align: center;
+    position: static;
+    width: 100%;
+    left: auto;
+    top: auto;
+    z-index: auto;
+    box-shadow: none;
+  }
+
+}
+
 /* ---------- Tog Nav ---------- */
 
 .tog-nav {
@@ -4626,9 +4640,94 @@ address.icon-label {
 
   .slide {
     display: flex;
-    align-content: stretch;
-    height: 85vh;
-    max-height: 700px;
+    align-items: stretch;
+    /* height: 85vh; */
+    min-height: 65vh;
+    position: relative;
+  }
+
+  .slide-banner {
+    align-items: center;
+  }
+
+  .slide-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .slide-unit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+  }
+
+  .slide-content-wrap {
+    max-width: 30em;
+  }
+
+  .slide-content {
+    left: 0;
+    top: 0;
+    clip-path: polygon(
+      0 0,
+      85% 0,
+      100% 100%,
+      0 100%
+    );
+    z-index: 1;
+    padding: 0 5rem 0 2rem;
+    width: 65%;
+  }
+
+  .slide-img {
+    left: 55%;
+    top: 0;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      15% 100%
+    );
+    width: 45%;
+  }
+
+  .slide-reverse .slide-content {
+    left: 35%;
+    clip-path: polygon(
+      15% 0,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+    padding: 0 0 0 7rem;
+  }
+
+  .slide-reverse .slide-img {
+    left: 0;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      85% 100%,
+      0 100%
+    );
+  }
+
+  .slide-banner .slide-content {
+    width: 50%;
+    position: static;
+    clip-path: none;
+    padding: 0;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .slide {
+    display: flex;
+    align-items: stretch;
+    height: 40em;
     position: relative;
   }
 
@@ -5068,6 +5167,14 @@ input.dollar-input {
 .anchor {
   position: relative;
   top: -3.590625rem;
+}
+
+.paypal-form input {
+  width: 100%;
+  max-width: 15rem;
+  height: auto!important;
+  background-color: transparent;
+  border: 0;
 }
 
 
