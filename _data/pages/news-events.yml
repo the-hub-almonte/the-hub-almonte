@@ -5,4 +5,7 @@ hero: false
 banner:
   bannerButton:
     heroBtn: false
+previews:
+  maxEvents: 5
+  maxNews: 5
 sponsorBar: false
