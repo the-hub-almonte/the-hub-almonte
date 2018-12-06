@@ -944,12 +944,18 @@ collections:
               - label: "Sponsor Name"
                 name: "title"
                 widget: "string"
+              - label: "Sponsor Link"
+                name: "sponsorLink"
+                widget: "string"
+                hint: "A link to the sponsors website."
+                required: false
               - label: "Sponsor Logo"
                 name: "logo"
                 widget: "image"
               - label: "Logo Alt Tag"
                 name: "logoAlt"
                 widget: "string"
+                required: false
                 hint: "Short description saying who the logo belongs to for accessibility."
   - name: "social-media"
     label: "Social Media List"

@@ -2,9 +2,12 @@ sponsors:
   - title: 'Algonquin College'
     logo: ac-logo.jpg
     logoAlt:
+    sponsorLink: '#'
   - title: 'Government of Canada'
     logo: gc-logo.png
     logoAlt:
+    sponsorLink: '#'
   - title: 'Government of Ontario'
     logo: ontario-logo.jpg
     logoAlt:
+    sponsorLink: '#'
