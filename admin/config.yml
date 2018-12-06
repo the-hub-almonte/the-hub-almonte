@@ -975,7 +975,7 @@ collections:
     files:
       - label: "Social Media List"
         name: "social-media"
-        file: "_data/sponsor-list.yml"
+        file: "_data/social-media.yml"
         fields:
           - label: "Social Media List"
             name: "social-media"
