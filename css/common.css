@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #8f102d;
+  --color-primary: #991120;
   --color-primary-light: #bd153b;
   --color-primary-dark: #55091b;
   --color-secondary: #333;
@@ -257,7 +257,7 @@ input.dollar-input {
 
 .to-top {
   display: none;
-  background-color: rgba(143, 16, 45, .7);
+  background-color: rgba(153, 17, 32, .5);
   color: #fff;
   position: fixed;
   bottom: -4rem;
