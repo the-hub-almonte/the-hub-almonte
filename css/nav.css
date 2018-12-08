@@ -103,6 +103,10 @@
   display: none;
 }
 
+nav .logo {
+  max-height: 2.15rem;
+}
+
 @media only screen and (max-width: 37.999em) {
 
   .nav .nav-items {

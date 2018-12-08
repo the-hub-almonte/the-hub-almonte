@@ -361,9 +361,3 @@ input.dollar-input {
   }
 
 }
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  h1 {
-    color: green;
-  }
-}
