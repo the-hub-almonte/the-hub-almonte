@@ -2,10 +2,10 @@
 <section class="sponsor-bar text-center pad-t-b-2" tabindex="0">
   <h2 class="max-length gutter">Our Sponsors</h2>
   <p class="max-length gutter">The Hub, Rebound, and all of the rest of our services would not be possible without the generous support from our sponsors:</p>
-  <div class="grid grid-h-center grid-stretch island-1-2 wrapper">
+  <div class="grid grid-h-center grid-middle island-1-2 wrapper">
     {% for sponsor in site.data.sponsor-list.sponsors %}
-      <a class="unit [ xs-1-2 m-1-3 l-1-4 ] island-1-2 unit-content-distribute" href="{{sponsor.sponsorLink}}">
-        <div class="logo-wrap gutter push content-fill unit-content-center-vertical">
+      <a class="unit [ xs-1-2 m-1-3 l-1-4 ] island-1-2" href="{{sponsor.sponsorLink}}">
+        <div class="logo-wrap gutter push">
           <img class="img-flex" src="{{site.baseurl}}/images/sponsors/{{sponsor.logo}}" alt="{{sponsor-logoAlt}}">
         </div>
         <strong class="block {{include.sponsorClass}}">{{sponsor.title}}</strong>
