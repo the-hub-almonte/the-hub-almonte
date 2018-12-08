@@ -41,6 +41,7 @@ bodyContent: >-
     <iframe class="embed-item" src="https://www.youtube.com/embed/nmEGrSPTd4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 volunteer-form:
+  formSubmitEmail: info@thehubalmonte.com
   availability:
     additionalInfo: Select all that apply
     group:
