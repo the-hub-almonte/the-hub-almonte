@@ -10,7 +10,7 @@ hero: true
 banner:
   bannerButton:
     heroBtn: true
-    heroBtnLink: 'https://arobillard.github.io/the-hub-almonte/about/'
+    heroBtnLink: /about/
     heroBtnText: Learn More
   heroImg: /images/uploads/hero-home.jpg
 announcements:
