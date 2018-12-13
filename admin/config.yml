@@ -818,8 +818,8 @@ collections:
             widget: "boolean"
             hint: "Turn on to include list of sponsors at bottom of page above footer."
       - label: "404 Page"
-        name: "404"
-        file: _data/pages/404.yml
+        name: "not-found"
+        file: _data/pages/not-found.yml
         fields:
           - label: "Page Title"
             name: "title"
