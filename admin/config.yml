@@ -1019,6 +1019,7 @@ collections:
               - label: "Weekly Hours"
                 name: "weeklyHours"
                 widget: "object"
+                hint: "If the store is closed, leave the opening time empty and write 'Closed' in the closing time."
                 fields:
                   - label: "Monday Opening Time"
                     name: "monOpen"
