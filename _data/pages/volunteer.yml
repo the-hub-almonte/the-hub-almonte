@@ -240,3 +240,5 @@ volunteer-form:
         name: student
         type: radio
     legend: Are you a student seeking volunteer hours?
+sponsorBar: false
+newsPreview: false

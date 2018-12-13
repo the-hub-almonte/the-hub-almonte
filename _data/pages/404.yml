@@ -1,0 +1,18 @@
+title: Page not found
+metaDesc: Page not found.
+bylineText: >-
+  Sorry, but the page you have searched for does not exist.
+h1Text: 404 page not found
+hero: false
+banner:
+  bannerButton:
+    heroBtn: false
+    heroBtnLink:
+    heroBtnText:
+  heroImg:
+bodyContent: >-
+  <div class="text-center">
+    <a class="btn" href="https:thehubalmonte.com">Return Home</a>
+  </div>
+sponsorBar: true
+newsPreview: true

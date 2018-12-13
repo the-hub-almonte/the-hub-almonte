@@ -27,6 +27,11 @@ layout: default
       {% endif %}
     {% endif %}
     {{content}}
+    {% if pages.newsPreview == true %}
+      <section id="news-preview" class="news-preview pad-t-b-2 bg-lg" tabindex="0">
+        {% include news-events-prev.html %}
+      </section>
+    {% endif %}
     {% if pages.sponsorBar == true %}
       {% include sponsor-bar.html sponsorClass='hidden' %}
     {% endif %}
