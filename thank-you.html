@@ -1,0 +1,13 @@
+---
+layout: main
+pageClass: thank-you
+title: Thank You
+pageName: thank-you
+---
+{% assign pages=site.data.pages.[page.pageName] %}
+<div class="max-length gutter push-2 smooth-scroll">
+  {{pages.bodyContent | markdownify}}
+</div>
+<section id="news-preview" class="news-preview pad-t-b-2 bg-lg" tabindex="0">
+  {% include news-events-prev.html %}
+</section>
