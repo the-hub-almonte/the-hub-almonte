@@ -12,7 +12,7 @@ banner:
     heroBtn: true
     heroBtnLink: /about/
     heroBtnText: Learn More
-  heroImg: /images/uploads/hero-home.jpg
+  heroImg: /images/uploads/5th-anniv-group.jpg
 announcements:
   activateAnnouncements: true
   announcementButton:
