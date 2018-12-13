@@ -14,7 +14,7 @@ banner:
     heroBtnText: Learn More
   heroImg: /images/uploads/5th-anniv-group.jpg
 announcements:
-  activateAnnouncements: true
+  activateAnnouncements: false
   announcementButton:
     announcementBtn: true
     announcementBtnLink: /about/
