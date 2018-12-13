@@ -1,0 +1,11 @@
+---
+layout: main
+pageClass: thank-you
+title: Thank You
+pageName: thank-you
+permalink: 404.html
+---
+{% assign pages=site.data.pages.[page.pageName] %}
+<div class="max-length gutter push-2 smooth-scroll">
+  {{pages.bodyContent | markdownify}}
+</div>
