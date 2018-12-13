@@ -3,7 +3,7 @@
 $('.masthead, body').removeClass('sticky');
 $('.to-top').removeClass('visible');
 $('.footer .subnav a').attr('tabindex', -1);
-
+$('.dropdown-content, .dropdown-title').removeClass('open');
 
 $(function() {
    $(window).scroll(function () {
@@ -100,7 +100,9 @@ $('.subnav').hover(
   }
 );
 
-//
-// $('.print-button-footer').on('click', function () {
-//   window.print();
-// });
+// Dropdown
+
+$('.dropdown-title').on('click', function (e) {
+  e.preventDefault();
+  $('.dropdown-content, .dropdown-title').toggleClass('open');
+});

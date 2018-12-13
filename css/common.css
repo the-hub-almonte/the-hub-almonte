@@ -315,6 +315,29 @@ input.dollar-input {
   border: 0;
 }
 
+.dropdown-title {
+  color: var(--color-secondary-dark);
+}
+
+.dropdown-title .icon {
+  transition: transform var(--transition-primary);
+  color: var(--color-secondary)
+}
+
+.dropdown-title:hover .icon,
+.dropdown-title.open .icon {
+  transform: rotate(90deg);
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-primary);
+}
+
+.dropdown-content.open {
+  max-height: 10rem;
+}
 
 @media only screen and (min-width: 38em) {
 

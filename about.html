@@ -73,7 +73,7 @@ pageName: about
     </div>
   </div>
   <div class="pad-t-b-2">
-    <div class="wrapper">
+    <div class="wrapper pad-t-b">
       <h2 class="text-center gutter" tabindex="0">{{pages.what-we-give.donationsTitle}}</h2>
       <p class="text-center gutter max-length">{{pages.what-we-give.donationsByline}}</p>
       <div class="grid island-1-2 donation-grid">
@@ -110,7 +110,7 @@ pageName: about
           </div>
         {% endfor %}
       </div>
-      <div class="donations-total gutter">
+      <div class="donations-total gutter push">
         <div class="grid pad-t-1-2 pad-b-1-2">
           <div class="unit [ xs-1 m-1-2 ] unit-push-m-1-2 pad-t-1-2 pad-b-1-2">
             <div class="grid">
@@ -118,12 +118,31 @@ pageName: about
                 <p class="push-0 text-upper ">Grand Total</p>
               </div>
               <div class="unit [ xs-1-2 ] bold giga text-right">
-                <p class="push-0">$57,504.83</p>
+                <p class="push-0">{{pages.what-we-give.donationsTotal}}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {% if pages.what-we-give.donationsDropdown %}
+        <div class="past-donations gutter">
+          <div class="dropdown">
+            <a class="dropdown-title open inline-block" href="#">
+              <h3 class="inline-block icon-label push-0 push-r-1-2">Past Donations</h3>
+              <i class="icon i-1">
+                <svg><use xlink:href="{{site.baseurl}}/images/icons.svg#right-indicator" /></svg>
+              </i>
+            </a>
+            <div class="dropdown-content open">
+              <ul class="list-group push-0 pad-t pad-b">
+                {% for years in pages.what-we-give.donationsDropdown %}
+                  <li><a href="{{years.yearLink}}">{{years.yearLabel}}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>

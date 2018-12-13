@@ -2,7 +2,7 @@ title: Home
 metaDesc: >-
   A fixture in the Almonte community since 1974, The Hub is a not-for-profit
   store that raises money to benefit their community.
-h1Text: Making communities Great again.
+h1Text: Giving back to the community since 1974.
 bylineText: >-
   The Hub’s goal has always been to service the greater Almonte community and be
   there when they need us most.
@@ -12,9 +12,9 @@ banner:
     heroBtn: true
     heroBtnLink: /about/
     heroBtnText: Learn More
-  heroImg: /images/uploads/5th-anniv-group.jpg
+  heroImg: /images/uploads/hero-home.jpg
 announcements:
-  activateAnnouncements: false
+  activateAnnouncements: true
   announcementButton:
     announcementBtn: true
     announcementBtnLink: /about/
@@ -26,5 +26,5 @@ announcements:
 
     We recently received a full dining room set including table, four chairs,
     dishes, candle sticks, and more!
-newsPreview: true
 sponsorBar: true
+newsPreview: true

@@ -241,11 +241,16 @@ what-we-give:
     - amount: $400.00
       donor: Union Hall Community Center
   donationsTitle: 2017 Donations
+  donationsTotal: $57,504.83
+  donationsDropdown:
+    - yearLabel: 2016 Donations
+      yearLink: https://google.ca
+
 board:
   boardAbout: >-
     The Hub's success would not be possible without the dedication and work of
     the board of directors. They have donated countless hours and skill to help
-    shape our success. 
+    shape our success.
   boardMembers:
     - member: Eloise Caverson
       position: President
