@@ -254,10 +254,10 @@ collections:
                 widget: "list"
                 fields:
                   - label: "Year Title"
-                    name: "yearsLabel"
+                    name: "yearLabel"
                     widget: "string"
                   - label: "File Link"
-                    name: "yearsLink"
+                    name: "yearLink"
                     widget: "string"
                     hint: "Upload pdf file to the media section of CMS and then enter the link to the file here."
           - label: "Board of Directors"
