@@ -1,7 +1,10 @@
 social-media:
-  - label: "YouTube"
-    link: "https://www.youtube.com/channel/UCL5Uk95Y8NyZxzHIh1031-w"
-    iconRef: "youtube"
-  - label: "Facebook"
-    link: "https://www.facebook.com/TheHubAlmonte/"
-    iconRef: "facebook"
+  - iconRef: youtube
+    label: YouTube
+    link: 'https://www.youtube.com/channel/UCL5Uk95Y8NyZxzHIh1031-w'
+  - iconRef: facebook
+    label: Facebook
+    link: 'https://www.facebook.com/TheHubAlmonte/'
+  - iconRef: instagram
+    label: Instagram
+    link: 'https://www.instagram.com/thehubalmonte/'
