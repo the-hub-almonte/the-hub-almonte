@@ -240,5 +240,11 @@ volunteer-form:
         name: student
         type: radio
     legend: Are you a student seeking volunteer hours?
+  qualifications:
+    fields:
+      - id: qualifications
+        label: qualifications
+        name: qualifications
+    legend: Describe any related experience or qualifications.
 sponsorBar: false
 newsPreview: false
