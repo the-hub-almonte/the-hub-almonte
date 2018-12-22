@@ -223,6 +223,7 @@ h4,
   line-height: 1.95rem;
 }
 
+.charitable-status-info h2,
 h5,
 .mega {
   font-size: 1.125rem;
@@ -627,6 +628,7 @@ legend {
     line-height: 1.75rem;
   }
 
+  .charitable-status-info h2,
   h5,
   .mega {
     font-size: 1.125rem;
@@ -1052,6 +1054,7 @@ legend {
     line-height: 1.875rem;
   }
 
+  .charitable-status-info h2,
   h5,
   .mega {
     font-size: 1.2rem;
@@ -1477,6 +1480,7 @@ legend {
     line-height: 1.875rem;
   }
 
+  .charitable-status-info h2,
   h5,
   .mega {
     font-size: 1.2rem;

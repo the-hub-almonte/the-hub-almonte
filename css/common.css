@@ -339,6 +339,10 @@ input.dollar-input {
   max-height: 10rem;
 }
 
+.charitable-status-info h2 {
+  margin-bottom: .65rem;
+}
+
 @media only screen and (min-width: 38em) {
 
 
@@ -364,6 +368,10 @@ input.dollar-input {
     top: -7.6244318182rem;
   }
 
+  .charitable-status-info h2 {
+    margin-bottom: .7rem;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -381,6 +389,10 @@ input.dollar-input {
 
   .anchor-about {
     top: -8.1rem;
+  }
+
+  .charitable-status-info h2 {
+    margin-bottom: .75rem;
   }
 
 }

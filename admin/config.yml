@@ -1154,4 +1154,4 @@ collections:
         fields:
           - label: "Charitable Status Information"
             name: "csInfo"
-            widget: "makdown"
+            widget: "markdown"
